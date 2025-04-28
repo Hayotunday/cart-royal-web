@@ -1,37 +1,38 @@
-import BuyingGuide from "@/components/BuyingGuide";
-import CategoryTagFilter from "@/components/CategoryTagFilter";
-import Pagination from "@/components/Pagination";
-import PriceRange from "@/components/PriceRange";
-import ProductCard from "@/components/ProductCard";
-import ProductFeatureMenu from "@/components/ProductFeatureMenu";
-import constants from "@/config/app";
-import {
-  Box,
-  Checkbox,
-  Circle,
-  Flex,
-  Grid,
-  Heading,
-  Icon,
-  Image,
-  Input,
-  Link,
-  Menu,
-  MenuButton,
-  MenuItemOption,
-  MenuList,
-  MenuOptionGroup,
-  Text,
-  VStack,
-} from "@chakra-ui/react";
-import { Heart } from "iconsax-react";
+// import BuyingGuide from "@/components/BuyingGuide";
+// import CategoryTagFilter from "@/components/CategoryTagFilter";
+// import Pagination from "@/components/Pagination";
+// import PriceRange from "@/components/PriceRange";
+// import ProductCard from "@/components/ProductCard";
+// import ProductFeatureMenu from "@/components/ProductFeatureMenu";
+// import constants from "@/config/app";
+// import {
+//   Box,
+//   Checkbox,
+//   Circle,
+//   Flex,
+//   Grid,
+//   Heading,
+//   Icon,
+//   Image,
+//   Input,
+//   Link,
+//   Menu,
+//   MenuButton,
+//   MenuItemOption,
+//   MenuList,
+//   MenuOptionGroup,
+//   Text,
+//   VStack,
+// } from "@chakra-ui/react";
+// import { Heart } from "iconsax-react";
 import React from "react";
-import Footer from "./Footer";
+// import Footer from "./Footer";
 
 const ProductList = ({ title }: { title?: string }) => {
   return (
-    <>
-      <Flex px={30} gap={10} pb={10}>
+    <div>
+      ProductList
+      {/* <Flex px={30} gap={10} pb={10}>
         <Box w={"300px"} className="product_filter_lists_category">
           <ProductFeatureMenu title="Categories">
             <Box height={"200px"} overflowY={"auto"}>
@@ -170,7 +171,7 @@ const ProductList = ({ title }: { title?: string }) => {
           )}
 
           <Box mb={5}>
-            {/* main content here */}
+             main content here 
 
             <Grid
               templateColumns={"repeat(auto-fit, minmax(200px,1fr))"}
@@ -186,8 +187,8 @@ const ProductList = ({ title }: { title?: string }) => {
           <BuyingGuide />
         </Box>
       </Flex>
-      <Footer />
-    </>
+      <Footer /> */}
+    </div>
   );
 };
 

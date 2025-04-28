@@ -1,5 +1,5 @@
-import { Box, Flex, Heading } from "@chakra-ui/react";
-import { AddCircle, MinusCirlce } from "iconsax-react";
+// import { Box, Flex, Heading } from "@chakra-ui/react";
+// import { AddCircle, MinusCirlce } from "iconsax-react";
 import React, { ReactNode, useState } from "react";
 
 const ProductFeatureMenu = ({
@@ -13,7 +13,8 @@ const ProductFeatureMenu = ({
 }) => {
   const [isOpen, setOpen] = useState(false);
   return (
-    <Box
+    <div>
+      {/* <Box
       mb={3}
       pointerEvents={disabled ? "none" : "all"}
       opacity={disabled ? 0.7 : 1}
@@ -33,7 +34,8 @@ const ProductFeatureMenu = ({
       </Flex>
 
       {isOpen && children}
-    </Box>
+    </Box> */}
+    </div>
   );
 };
 

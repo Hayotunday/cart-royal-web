@@ -1,22 +1,23 @@
-import {
-  Box,
-  Button,
-  Center,
-  Circle,
-  Flex,
-  Heading,
-  Icon,
-  IconButton,
-  Image,
-  Text,
-} from "@chakra-ui/react";
-import { motion } from "framer-motion";
-import { Heart, HeartAdd, HeartCircle, Truck } from "iconsax-react";
+// import {
+//   Box,
+//   Button,
+//   Center,
+//   Circle,
+//   Flex,
+//   Heading,
+//   Icon,
+//   IconButton,
+//   Image,
+//   Text,
+// } from "@chakra-ui/react";
+// import { motion } from "framer-motion";
+// import { Heart, HeartAdd, HeartCircle, Truck } from "iconsax-react";
 import React from "react";
 
 const ProductCard = () => {
   return (
-    <Box>
+    <div className="">
+      {/* <Box>
       <Flex h="200px" pos={"relative"} my={2}>
         <Image
           w={"full"}
@@ -51,7 +52,8 @@ const ProductCard = () => {
           <Text>Free Shiping</Text>
         </Flex>
       </Box>
-    </Box>
+    </Box> */}
+    </div>
   );
 };
 
