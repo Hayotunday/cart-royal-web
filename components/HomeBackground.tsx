@@ -43,12 +43,13 @@ const HomeBackground = () => {
           <Image
             src="/phones.png"
             alt="Background Phone Image"
-            width={450}
-            height={450}
+            width={400}
+            height={400}
+            className="mt-20"
           />
         </div>
 
-        <div className="w-full flex justify-center items-center mb-5">
+        <div className="w-full flex justify-center items-center mb-3">
           <Button
             onClick={scrollToShop}
             className="bg-white hover:bg-white text-primary-red font-bold py-2 px-4 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105"

@@ -1,6 +1,5 @@
-// import { Box, Flex, Heading } from "@chakra-ui/react";
-// import { AddCircle, MinusCirlce } from "iconsax-react";
 import React, { ReactNode, useState } from "react";
+import { FiMinusCircle, FiPlusCircle } from "react-icons/fi";
 
 const ProductFeatureMenu = ({
   title,
@@ -13,28 +12,29 @@ const ProductFeatureMenu = ({
 }) => {
   const [isOpen, setOpen] = useState(false);
   return (
-    <div>
-      {/* <Box
-      mb={3}
-      pointerEvents={disabled ? "none" : "all"}
-      opacity={disabled ? 0.7 : 1}
-      w={"full"}
-    >
-      <Flex
-        cursor={"pointer"}
+    <div className="w-full h-full flex flex-col bg-gray-100 p-3">
+      <div
         onClick={() => {
           setOpen(!isOpen);
         }}
-        align={"center"}
-        justify={"space-between"}
-        py={2}
+        className="w-full h-fit px-4 flex flex-row justify-between items-center cursor-pointer bg-gray-100"
       >
-        <Heading fontSize={"1.2rem"}>{title}</Heading>
-        <Heading> {isOpen ? <MinusCirlce /> : <AddCircle />} </Heading>
-      </Flex>
+        <h1 className="text-xl font-bold text-black text-left">{title}</h1>
+        <div className="transition-all duration-300 ease-in-out transform">
+          {" "}
+          {isOpen ? (
+            <FiMinusCircle size={25} />
+          ) : (
+            <FiPlusCircle size={25} />
+          )}{" "}
+        </div>
+      </div>
 
-      {isOpen && children}
-    </Box> */}
+      {isOpen && (
+        <div className="w-full max-h-40 flex flex-col bg-gray-100 pl-7 py-3 overflow-x-hidden overflow-y-scroll">
+          {children}
+        </div>
+      )}
     </div>
   );
 };

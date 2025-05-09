@@ -4,7 +4,7 @@ import { categories } from "@/lib/constants";
 
 const CategoryNav = () => {
   return (
-    <nav className="w-full flex justify-between items-center py-4 px-10 border-y border-gray-300 overflow-x-auto">
+    <nav className="w-full flex justify-between items-center py-4 px-10 border-t border-gray-300 overflow-x-auto">
       {categories.map((category) => (
         <Link
           key={category.label}
