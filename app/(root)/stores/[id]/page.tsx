@@ -7,6 +7,7 @@ import CategoryNav from "@/components/layout/CategoryNav";
 import ProductCard from "@/components/shared/ProductCard";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { useParams } from "next/navigation";
 
 // Sample store data - in a real app, this would come from an API
 const storeDetails = {
@@ -114,7 +115,9 @@ const categories = [
   "Accessories",
 ];
 
-export default function StoreDetails({ params }: { params: { id: string } }) {
+export default function StoreDetails() {
+  const params = useParams<{ id?: string }>();
+
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All Categories");
   const [sortBy, setSortBy] = useState<

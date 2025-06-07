@@ -7,6 +7,7 @@ import Header from "@/components/layout/Header";
 import CategoryNav from "@/components/layout/CategoryNav";
 import { Button } from "@/components/ui/button";
 import ProductCard from "@/components/shared/ProductCard";
+import { useParams } from "next/navigation";
 
 // Sample product data - in a real app, this would come from an API
 const productDetails = {
@@ -79,7 +80,9 @@ const relatedProducts = [
   },
 ];
 
-export default function ProductDetails({ params }: { params: { id: string } }) {
+export default function ProductDetails() {
+  const params = useParams<{ id?: string }>();
+
   const [selectedImage, setSelectedImage] = useState(0);
   const [selectedSize, setSelectedSize] = useState<string | null>(null);
   const [quantity, setQuantity] = useState(1);

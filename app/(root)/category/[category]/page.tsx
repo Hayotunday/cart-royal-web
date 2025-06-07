@@ -6,6 +6,7 @@ import CategoryNav from "@/components/layout/CategoryNav";
 import ProductCard from "@/components/shared/ProductCard";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { useParams } from "next/navigation";
 
 // Sample product data - in a real app, this would come from an API
 const allProducts = [
@@ -162,7 +163,9 @@ type StringArrayFilterKeys = {
   [K in keyof FilterState]: FilterState[K] extends string[] ? K : never;
 }[keyof FilterState];
 
-export default function Products({ params }: { params: { category: string } }) {
+export default function Products() {
+  const params = useParams<{ category?: string }>();
+
   const categoryName = params?.category || "men";
   const formattedCategoryName =
     categoryName.charAt(0).toUpperCase() +
