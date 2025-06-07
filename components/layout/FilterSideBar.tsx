@@ -1,7 +1,11 @@
 import React from "react";
-import ProductFeatureMenu from "./ProductFeatureMenu";
+import ProductFeatureMenu from "../shared/ProductFeatureMenu";
+import RangeSlider from "../shared/RangeSlider";
 
 const FilterSideBar = ({ category }: { category: string }) => {
+  const handleRangeChange = (values: number[]) => {
+    console.log("Selected range:", values);
+  };
   return (
     <div className="w-1/5 h-full mt-2 mb-5">
       <ProductFeatureMenu title="Type">
@@ -14,7 +18,9 @@ const FilterSideBar = ({ category }: { category: string }) => {
         <div></div>
       </ProductFeatureMenu>
       <ProductFeatureMenu title="Price">
-        <div></div>
+        <div>
+          <RangeSlider />
+        </div>
       </ProductFeatureMenu>
       <ProductFeatureMenu title="Size">
         <div></div>

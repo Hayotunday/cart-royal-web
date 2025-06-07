@@ -1,6 +1,6 @@
 import React from "react";
 
-const Shops = () => {
+const Shopping = () => {
   return (
     <main className="p-14" id="shop">
       <h1>Shops</h1>
@@ -9,4 +9,4 @@ const Shops = () => {
   );
 };
 
-export default Shops;
+export default Shopping;

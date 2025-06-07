@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 
 const HomeBackground = () => {
   const scrollToShop = () => {
@@ -28,7 +28,7 @@ const HomeBackground = () => {
           height={1000}
           className="absolute -right-1/3 top-5 z-10"
         />
-        <div className="justify-between items-center px-20 flex z-20">
+        <div className="justify-between items-center px-20 mt-24 flex z-20">
           <div className="flex flex-col justify-center items-start text-white w-1/2">
             <h1 className="py-1 text-6xl font-extrabold">Buy and Sell</h1>
             <p className="text-white text-sm mt-10">

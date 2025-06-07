@@ -1,13 +1,20 @@
 import React from "react";
-import StoreCard from "@/components/StoreCard";
+import StoreCard from "@/components/shared/StoreCard";
+import Link from "next/link";
 
 const StoresList = () => {
   return (
     <div className="w-full h-full flex flex-col bg-gray-100">
       <div className="gap-5 mt-5 flex flex-col items-center justify-center">
-        <h1 className="font-extrabold text-2xl w-full text-left">
-          Official Stores
-        </h1>
+        <div className="w-full flex flex-row justify-between items-center">
+          <h1 className="font-extrabold text-2xl text-left">Official Stores</h1>
+
+          <Link href="/stores" className="w-fit">
+            <p className="font-medium text-base text-right hover:text-primary-red">
+              See All
+            </p>
+          </Link>
+        </div>
         <div className="flex flex-row flex-wrap justify-between items-center gap-1">
           <StoreCard title="Samsung" />
           <StoreCard title="Adidas" />

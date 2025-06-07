@@ -7,31 +7,42 @@ import Header from "@/components/layout/Header";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 
-export default function SignIn() {
+export default function SignUp() {
+  const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const [passwordError, setPasswordError] = useState("");
 
-  const handleSignIn = async (e: React.FormEvent) => {
+  const handleSignUp = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    // Basic validation
+    if (password !== confirmPassword) {
+      setPasswordError("Passwords do not match");
+      return;
+    }
+
+    setPasswordError("");
     setIsLoading(true);
 
-    // Simulate authentication process
+    // Simulate registration process
     setTimeout(() => {
       setIsLoading(false);
-      // In a real app, this would redirect to home page after successful login
-      console.log("Sign in with:", email, password);
+      // In a real app, this would register the user and redirect
+      console.log("Sign up with:", fullName, email, password);
     }, 1500);
   };
 
-  const handleGoogleSignIn = () => {
+  const handleGoogleSignUp = () => {
     setIsLoading(true);
 
     // Simulate Google authentication process
     setTimeout(() => {
       setIsLoading(false);
       // In a real app, this would handle Google OAuth
-      console.log("Sign in with Google");
+      console.log("Sign up with Google");
     }, 1500);
   };
 
@@ -43,13 +54,30 @@ export default function SignIn() {
         <div className="w-full max-w-md">
           <div className="bg-white rounded-lg shadow-md p-8">
             <div className="text-center mb-6">
-              <h1 className="text-2xl font-bold">Sign In to Cart Royal</h1>
+              <h1 className="text-2xl font-bold">Create an Account</h1>
               <p className="text-gray-600 mt-2">
-                Welcome back! Please enter your details
+                Join Cart Royal to start shopping
               </p>
             </div>
 
-            <form onSubmit={handleSignIn} className="space-y-4">
+            <form onSubmit={handleSignUp} className="space-y-4">
+              <div>
+                <label
+                  htmlFor="fullName"
+                  className="block text-sm font-medium text-gray-700 mb-1"
+                >
+                  Full Name
+                </label>
+                <Input
+                  id="fullName"
+                  type="text"
+                  placeholder="Enter your full name"
+                  value={fullName}
+                  onChange={(e) => setFullName(e.target.value)}
+                  required
+                />
+              </div>
+
               <div>
                 <label
                   htmlFor="email"
@@ -68,32 +96,72 @@ export default function SignIn() {
               </div>
 
               <div>
-                <div className="flex items-center justify-between mb-1">
-                  <label
-                    htmlFor="password"
-                    className="block text-sm font-medium text-gray-700"
-                  >
-                    Password
-                  </label>
-                  <Link
-                    href="/forgot-password"
-                    className="text-sm text-primary hover:underline"
-                  >
-                    Forgot password?
-                  </Link>
-                </div>
+                <label
+                  htmlFor="password"
+                  className="block text-sm font-medium text-gray-700 mb-1"
+                >
+                  Password
+                </label>
                 <Input
                   id="password"
                   type="password"
-                  placeholder="Enter your password"
+                  placeholder="Create a password"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   required
                 />
+                <p className="text-xs text-gray-500 mt-1">
+                  Password must be at least 8 characters long
+                </p>
+              </div>
+
+              <div>
+                <label
+                  htmlFor="confirmPassword"
+                  className="block text-sm font-medium text-gray-700 mb-1"
+                >
+                  Confirm Password
+                </label>
+                <Input
+                  id="confirmPassword"
+                  type="password"
+                  placeholder="Confirm your password"
+                  value={confirmPassword}
+                  onChange={(e) => setConfirmPassword(e.target.value)}
+                  required
+                />
+                {passwordError && (
+                  <p className="text-xs text-red-500 mt-1">{passwordError}</p>
+                )}
+              </div>
+
+              <div className="flex items-center">
+                <input
+                  id="terms"
+                  type="checkbox"
+                  className="h-4 w-4 text-primary border-gray-300 rounded"
+                  required
+                />
+                <label
+                  htmlFor="terms"
+                  className="ml-2 block text-sm text-gray-700"
+                >
+                  I agree to the{" "}
+                  <Link href="/terms" className="text-primary hover:underline">
+                    Terms of Service
+                  </Link>{" "}
+                  and{" "}
+                  <Link
+                    href="/privacy"
+                    className="text-primary hover:underline"
+                  >
+                    Privacy Policy
+                  </Link>
+                </label>
               </div>
 
               <Button type="submit" className="w-full" disabled={isLoading}>
-                {isLoading ? "Signing in..." : "Sign In"}
+                {isLoading ? "Creating account..." : "Create Account"}
               </Button>
             </form>
 
@@ -113,7 +181,7 @@ export default function SignIn() {
                 type="button"
                 variant="outline"
                 className="w-full mt-4 flex items-center justify-center"
-                onClick={handleGoogleSignIn}
+                onClick={handleGoogleSignUp}
                 disabled={isLoading}
               >
                 <svg
@@ -138,18 +206,18 @@ export default function SignIn() {
                     d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
                   />
                 </svg>
-                Sign in with Google
+                Sign up with Google
               </Button>
             </div>
 
             <div className="mt-6 text-center">
               <p className="text-sm text-gray-600">
-                Don't have an account?{" "}
+                Already have an account?{" "}
                 <Link
-                  href="/signup"
+                  href="/signin"
                   className="text-primary hover:underline font-medium"
                 >
-                  Sign up
+                  Sign in
                 </Link>
               </p>
             </div>
