@@ -4,14 +4,14 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { BiSolidPurchaseTag } from "react-icons/bi";
 import { IoPersonCircleSharp } from "react-icons/io5";
 import { MdCardGiftcard, MdLogout, MdPerson, MdSettings } from "react-icons/md";
-import { BiSolidPurchaseTag } from "react-icons/bi";
+import { TbJewishStarFilled } from "react-icons/tb";
 
 const ProfileAvatar = () => {
   return (
@@ -28,7 +28,7 @@ const ProfileAvatar = () => {
 };
 
 const ProfileHandler = () => {
-  const isAuthenticated = false; // Replace with actual authentication logic
+  const isAuthenticated = true; // Replace with actual authentication logic
   return (
     <>
       {isAuthenticated ? (
@@ -37,9 +37,11 @@ const ProfileHandler = () => {
             <DropdownMenuTrigger>
               <ProfileAvatar />
             </DropdownMenuTrigger>
-            <DropdownMenuContent className="text-gray-700">
-              <DropdownMenuLabel>My Account</DropdownMenuLabel>
-              <DropdownMenuSeparator />
+            <DropdownMenuContent
+              className="text-gray-700 w-40"
+              side="bottom"
+              align="end"
+            >
               <DropdownMenuItem>
                 <Link
                   href="/profile"
@@ -65,6 +67,15 @@ const ProfileHandler = () => {
                 >
                   <BiSolidPurchaseTag className="text-lg" />
                   <p className="text-center font-semibold">Purchases</p>
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link
+                  href="/purchases"
+                  className="flex flex-row items-center gap-2"
+                >
+                  <TbJewishStarFilled className="text-lg" />
+                  <p className="text-center font-semibold">Wishlist</p>
                 </Link>
               </DropdownMenuItem>
               <DropdownMenuSeparator />

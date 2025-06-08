@@ -18,7 +18,7 @@ const ProductList = ({ title }: { title?: string }) => {
             {title ? title : "Title"}
           </h1>
 
-          <Link href="/products" className="w-fit">
+          <Link href="/products/all?q=options" className="w-fit">
             <p className="font-medium text-base text-right hover:text-primary-red">
               See All
             </p>
