@@ -18,14 +18,14 @@ export default function CheckoutPage() {
       name: "Wireless Bluetooth Earbuds",
       price: 15000,
       quantity: 1,
-      image: "/placeholder-product.png",
+      image: "/catalogue/img.jpg",
     },
     {
       id: "2",
       name: "Smart Watch with Heart Rate Monitor",
       price: 25000,
       quantity: 2,
-      image: "/placeholder-product.png",
+      image: "/catalogue/img.jpg",
     },
   ];
 
@@ -286,10 +286,10 @@ export default function CheckoutPage() {
   };
 
   return (
-    <main className="min-h-screen flex flex-col">
+    <main className="min-h-screen flex flex-col w-full items-center">
       <Header />
 
-      <div className="container px-4 py-8">
+      <div className="container px-4 py-8 w-full">
         <h1 className="text-2xl font-bold mb-6 text-center">Checkout</h1>
 
         {renderStepIndicator()}

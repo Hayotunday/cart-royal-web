@@ -2,18 +2,19 @@ import React from "react";
 import Advertisement from "./Advertisement";
 import StoresList from "./StoreList";
 import ProductList from "./ProductList";
+import { sampleStoreProducts } from "@/data/index";
 
 const Shop = () => {
   return (
     <main className="p-14" id="shop">
       <StoresList />
-      <ProductList title="New Arrivals" />
+      <ProductList title="New Arrivals" products={sampleStoreProducts} />
       <Advertisement />
-      <ProductList />
-      <ProductList />
+      <ProductList products={sampleStoreProducts} />
+      <ProductList products={sampleStoreProducts} />
       <Advertisement />
-      <ProductList />
-      <ProductList />
+      <ProductList products={sampleStoreProducts} />
+      <ProductList products={sampleStoreProducts} />
     </main>
   );
 };

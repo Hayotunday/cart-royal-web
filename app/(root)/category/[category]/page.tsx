@@ -14,7 +14,7 @@ const allProducts = [
     id: "1",
     name: "Men's Casual T-Shirt",
     price: 5000,
-    image: "/placeholder-product.png",
+    image: "/catalogue/img.jpg",
     brand: "Fashion Brand",
     type: "T-Shirt",
     color: "Blue",
@@ -22,14 +22,14 @@ const allProducts = [
     freeShipping: true,
     rating: 4.5,
     officialStore: true,
-    storeLogoUrl: "/placeholder-logo.png",
+    storeLogoUrl: "/catalogue/img.jpg",
     storeName: "Fashion Store",
   },
   {
     id: "2",
     name: "Men's Slim Fit Jeans",
     price: 12000,
-    image: "/placeholder-product.png",
+    image: "/catalogue/img.jpg",
     brand: "Denim Co",
     type: "Jeans",
     color: "Black",
@@ -42,7 +42,7 @@ const allProducts = [
     id: "3",
     name: "Men's Running Shoes",
     price: 25000,
-    image: "/placeholder-product.png",
+    image: "/catalogue/img.jpg",
     brand: "SportyFit",
     type: "Shoes",
     color: "Red",
@@ -50,14 +50,14 @@ const allProducts = [
     freeShipping: true,
     rating: 4.8,
     officialStore: true,
-    storeLogoUrl: "/placeholder-logo.png",
+    storeLogoUrl: "/catalogue/img.jpg",
     storeName: "Sports Outlet",
   },
   {
     id: "4",
     name: "Men's Formal Shirt",
     price: 8000,
-    image: "/placeholder-product.png",
+    image: "/catalogue/img.jpg",
     brand: "Elegance",
     type: "Shirt",
     color: "White",
@@ -70,7 +70,7 @@ const allProducts = [
     id: "5",
     name: "Men's Leather Wallet",
     price: 7500,
-    image: "/placeholder-product.png",
+    image: "/catalogue/img.jpg",
     brand: "LeatherCraft",
     type: "Accessory",
     color: "Brown",
@@ -78,14 +78,14 @@ const allProducts = [
     freeShipping: false,
     rating: 4.6,
     officialStore: true,
-    storeLogoUrl: "/placeholder-logo.png",
+    storeLogoUrl: "/catalogue/img.jpg",
     storeName: "Leather Goods",
   },
   {
     id: "6",
     name: "Men's Hooded Sweatshirt",
     price: 15000,
-    image: "/placeholder-product.png",
+    image: "/catalogue/img.jpg",
     brand: "Urban Style",
     type: "Hoodie",
     color: "Gray",
@@ -98,7 +98,7 @@ const allProducts = [
     id: "7",
     name: "Men's Cargo Shorts",
     price: 9000,
-    image: "/placeholder-product.png",
+    image: "/catalogue/img.jpg",
     brand: "Outdoor Life",
     type: "Shorts",
     color: "Khaki",
@@ -111,7 +111,7 @@ const allProducts = [
     id: "8",
     name: "Men's Analog Watch",
     price: 35000,
-    image: "/placeholder-product.png",
+    image: "/catalogue/img.jpg",
     brand: "TimeKeeper",
     type: "Accessory",
     color: "Silver",
@@ -119,7 +119,7 @@ const allProducts = [
     freeShipping: true,
     rating: 4.9,
     officialStore: true,
-    storeLogoUrl: "/placeholder-logo.png",
+    storeLogoUrl: "/catalogue/img.jpg",
     storeName: "Watch World",
   },
 ];
@@ -316,11 +316,11 @@ export default function Products() {
   };
 
   return (
-    <main className="min-h-screen flex flex-col">
+    <main className="min-h-screen flex flex-col w-full flex flex-col items-center">
       <Header />
       <CategoryNav />
 
-      <div className="container px-4 py-6">
+      <div className="container py-6 w-full">
         <h1 className="text-2xl font-bold mb-6">
           {formattedCategoryName} Store
         </h1>
@@ -722,8 +722,8 @@ export default function Products() {
           </div>
 
           {/* Products Grid */}
-          <div className="flex-1">
-            <div className="flex justify-between items-center mb-4">
+          <div className="flex-1 w-full flex flex-col items-center">
+            <div className="w-full flex justify-between items-center mb-4">
               <p className="text-gray-600">
                 {filteredProducts.length} products found
               </p>

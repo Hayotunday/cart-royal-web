@@ -27,7 +27,7 @@ export default function Wishlist() {
       urgency: "high",
       status: "pending",
       createdAt: "2025-06-01T10:30:00",
-      images: ["/placeholder-product.png"],
+      images: ["/catalogue/img.jpg"],
     },
     {
       id: "wish-2",
@@ -39,7 +39,7 @@ export default function Wishlist() {
       status: "fulfilled",
       createdAt: "2025-05-15T14:45:00",
       fulfilledAt: "2025-05-25T09:20:00",
-      images: ["/placeholder-product.png"],
+      images: ["/catalogue/img.jpg"],
     },
   ];
 
@@ -156,11 +156,11 @@ export default function Wishlist() {
   };
 
   return (
-    <main className="min-h-screen flex flex-col">
+    <main className="min-h-screen flex flex-col items-center w-full">
       <Header />
       <CategoryNav />
 
-      <div className="container px-4 py-8">
+      <div className="container px-4 py-8 w-full">
         <h1 className="text-2xl font-bold mb-6">Wishlist Special Requests</h1>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">

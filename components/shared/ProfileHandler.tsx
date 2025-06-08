@@ -15,11 +15,8 @@ import { TbJewishStarFilled } from "react-icons/tb";
 
 const ProfileAvatar = () => {
   return (
-    <Avatar>
-      <AvatarImage
-        className="border-2 border-gray-700"
-        src="https://github.com/shadcn.png"
-      />
+    <Avatar className="rounded-full cursor-pointer">
+      <AvatarImage className="" src="https://github.com/shadcn.png" />
       <AvatarFallback className="border-2 border-gray-700 p-1 flex items-center justify-center text-sm font-semibold">
         CN
       </AvatarFallback>
@@ -45,7 +42,7 @@ const ProfileHandler = () => {
               <DropdownMenuItem>
                 <Link
                   href="/profile"
-                  className="flex flex-row items-center gap-2"
+                  className="flex flex-row items-center gap-2 w-full"
                 >
                   <MdPerson className="text-lg" />
                   <p className="text-center font-semibold">Profile</p>
@@ -54,7 +51,7 @@ const ProfileHandler = () => {
               <DropdownMenuItem>
                 <Link
                   href="/profile/gift-card"
-                  className="flex flex-row items-center gap-2"
+                  className="flex flex-row items-center gap-2 w-full"
                 >
                   <MdCardGiftcard className="text-lg" />
                   <p className="text-center font-semibold">Gift Card</p>
@@ -63,7 +60,7 @@ const ProfileHandler = () => {
               <DropdownMenuItem>
                 <Link
                   href="/purchases"
-                  className="flex flex-row items-center gap-2"
+                  className="flex flex-row items-center gap-2 w-full"
                 >
                   <BiSolidPurchaseTag className="text-lg" />
                   <p className="text-center font-semibold">Purchases</p>
@@ -71,8 +68,8 @@ const ProfileHandler = () => {
               </DropdownMenuItem>
               <DropdownMenuItem>
                 <Link
-                  href="/purchases"
-                  className="flex flex-row items-center gap-2"
+                  href="/wishlist"
+                  className="flex flex-row items-center gap-2 w-full"
                 >
                   <TbJewishStarFilled className="text-lg" />
                   <p className="text-center font-semibold">Wishlist</p>
@@ -82,7 +79,7 @@ const ProfileHandler = () => {
               <DropdownMenuItem>
                 <Link
                   href="/profile/settings"
-                  className="flex flex-row items-center gap-2"
+                  className="flex flex-row items-center gap-2 w-full"
                 >
                   <MdSettings className="text-lg" />
                   <p className="text-center font-semibold">Settings</p>
@@ -92,7 +89,7 @@ const ProfileHandler = () => {
               <DropdownMenuItem>
                 <Link
                   href="/signin"
-                  className="flex flex-row items-center gap-2"
+                  className="flex flex-row items-center gap-2 w-full"
                 >
                   <MdLogout className="text-lg" />
                   <p className="text-center font-semibold">Log out</p>

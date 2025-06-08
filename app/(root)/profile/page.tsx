@@ -1,12 +1,12 @@
 "use client";
 
 import React, { useState } from "react";
+import Link from "next/link";
 import Header from "@/components/layout/Header";
 import CategoryNav from "@/components/layout/CategoryNav";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import Link from "next/link";
 
 // Sample user data - in a real app, this would come from an API
 const userData = {
@@ -15,7 +15,7 @@ const userData = {
   email: "john.doe@example.com",
   phone: "+234 123 456 7890",
   joinDate: "June 2023",
-  profileImage: "/placeholder-avatar.png",
+  profileImage: "/catalogue/img.jpg",
   points: 2500,
   referralCode: "JOHNDOE25",
   referralLink: "https://cartroyal.com/ref/JOHNDOE25",
@@ -28,7 +28,7 @@ const followedStores = [
   {
     id: "store-1",
     name: "Fashion Store",
-    logo: "/placeholder-logo.png",
+    logo: "/catalogue/img.jpg",
     category: "Clothing",
     productCount: 156,
     isOfficial: true,
@@ -36,7 +36,7 @@ const followedStores = [
   {
     id: "store-2",
     name: "Electronics Hub",
-    logo: "/placeholder-logo.png",
+    logo: "/catalogue/img.jpg",
     category: "Electronics",
     productCount: 243,
     isOfficial: true,
@@ -44,7 +44,7 @@ const followedStores = [
   {
     id: "store-3",
     name: "Home Decor",
-    logo: "/placeholder-logo.png",
+    logo: "/catalogue/img.jpg",
     category: "Home & Living",
     productCount: 189,
     isOfficial: false,
@@ -200,7 +200,7 @@ export default function Profile() {
   };
 
   return (
-    <main className="min-h-screen flex flex-col">
+    <main className="min-h-screen flex flex-col w-full items-center">
       <Header />
       <CategoryNav />
 
@@ -212,7 +212,7 @@ export default function Profile() {
               <div className="p-6 flex flex-col items-center text-center">
                 <div className="w-24 h-24 rounded-full overflow-hidden mb-4">
                   <img
-                    src={userData.profileImage || "/placeholder-avatar.png"}
+                    src={userData.profileImage || "/catalogue/img.jpg"}
                     alt={userData.name}
                     className="w-full h-full object-cover"
                   />
@@ -230,15 +230,10 @@ export default function Profile() {
                       {userData.points.toLocaleString()}
                     </span>
                   </div>
-                  <Link href="/points-history">
-                    <Button variant="outline" size="sm" className="w-full">
-                      View Points History
-                    </Button>
-                  </Link>
                 </div>
 
                 <div className="w-full border-t border-gray-200 pt-4 mt-4">
-                  <Link href="/settings">
+                  <Link href="/profile/settings">
                     <Button variant="outline" size="sm" className="w-full mb-2">
                       Settings
                     </Button>
@@ -264,22 +259,22 @@ export default function Profile() {
                 onValueChange={setActiveTab}
                 className="w-full"
               >
-                <TabsList className="flex border-b border-gray-200 px-6 pt-4">
+                <TabsList className="flex border-b border-gray-200 px-6 w-full">
                   <TabsTrigger
                     value="overview"
-                    className="px-4 py-2 -mb-px data-[state=active]:border-b-2 data-[state=active]:border-primary rounded-none"
+                    className="px-4 data-[state=active]:border-b-2 data-[state=active]:border-primary rounded-none flex items-center justify-center"
                   >
                     Overview
                   </TabsTrigger>
                   <TabsTrigger
                     value="followed-stores"
-                    className="px-4 py-2 -mb-px data-[state=active]:border-b-2 data-[state=active]:border-primary rounded-none"
+                    className="px-4 data-[state=active]:border-b-2 data-[state=active]:border-primary rounded-none flex items-center justify-center"
                   >
                     Followed Stores
                   </TabsTrigger>
                   <TabsTrigger
                     value="notifications"
-                    className="px-4 py-2 -mb-px data-[state=active]:border-b-2 data-[state=active]:border-primary rounded-none flex items-center"
+                    className="px-4 data-[state=active]:border-b-2 data-[state=active]:border-primary rounded-none flex items-center justify-center"
                   >
                     Notifications
                     {unreadCount > 0 && (
@@ -290,9 +285,15 @@ export default function Profile() {
                   </TabsTrigger>
                   <TabsTrigger
                     value="wishlist"
-                    className="px-4 py-2 -mb-px data-[state=active]:border-b-2 data-[state=active]:border-primary rounded-none"
+                    className="px-4 data-[state=active]:border-b-2 data-[state=active]:border-primary rounded-none flex items-center justify-center"
                   >
                     Wishlist
+                  </TabsTrigger>
+                  <TabsTrigger
+                    value="point-history"
+                    className="px-4 data-[state=active]:border-b-2 data-[state=active]:border-primary rounded-none flex items-center justify-center"
+                  >
+                    Point History
                   </TabsTrigger>
                 </TabsList>
 
@@ -337,7 +338,7 @@ export default function Profile() {
                             </div>
 
                             <div className="mt-4">
-                              <Link href="/settings">
+                              <Link href="/profile/settings">
                                 <Button variant="outline" size="sm">
                                   Edit Profile
                                 </Button>

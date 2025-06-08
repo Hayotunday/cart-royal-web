@@ -1,5 +1,5 @@
 import React from "react";
-import StoreCard from "@/components/shared/StoreCard";
+import StoreItem from "@/components/shared/StoreItem";
 import Link from "next/link";
 
 const StoresList = () => {
@@ -16,18 +16,18 @@ const StoresList = () => {
           </Link>
         </div>
         <div className="flex flex-row flex-wrap justify-between items-center gap-1">
-          <StoreCard title="Samsung" />
-          <StoreCard title="Adidas" />
-          <StoreCard title="Apple" />
-          <StoreCard title="Xiaomi" />
-          <StoreCard title="Denim" />
-          <StoreCard title="Nike" />
-          <StoreCard title="Infinix" />
-          <StoreCard title="Nivea" />
-          <StoreCard title="Rolex" />
-          <StoreCard title="Toyota" />
-          <StoreCard title="KIA" />
-          <StoreCard title="Samsung" />
+          <StoreItem title="Samsung" />
+          <StoreItem title="Adidas" />
+          <StoreItem title="Apple" />
+          <StoreItem title="Xiaomi" />
+          <StoreItem title="Denim" />
+          <StoreItem title="Nike" />
+          <StoreItem title="Infinix" />
+          <StoreItem title="Nivea" />
+          <StoreItem title="Rolex" />
+          <StoreItem title="Toyota" />
+          <StoreItem title="KIA" />
+          <StoreItem title="Samsung" />
         </div>
       </div>
     </div>

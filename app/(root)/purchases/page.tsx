@@ -302,10 +302,10 @@ export default function PurchasesPage() {
   };
 
   return (
-    <main className="min-h-screen flex flex-col">
+    <main className="min-h-screen flex flex-col w-full items-center">
       <Header />
 
-      <div className="container px-4 py-8">
+      <div className="container px-4 py-8 w-full">
         <h1 className="text-2xl font-bold mb-6">My Purchases</h1>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

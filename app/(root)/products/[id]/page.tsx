@@ -19,10 +19,10 @@ const productDetails = {
   originalPrice: 7500,
   discount: 33,
   images: [
-    "/placeholder-product.png",
-    "/placeholder-product.png",
-    "/placeholder-product.png",
-    "/placeholder-product.png",
+    "/catalogue/img.jpg",
+    "/catalogue/img.jpg",
+    "/catalogue/img.jpg",
+    "/catalogue/img.jpg",
   ],
   brand: "Fashion Brand",
   type: "T-Shirt",
@@ -33,7 +33,7 @@ const productDetails = {
   reviewCount: 128,
   inStock: true,
   officialStore: true,
-  storeLogoUrl: "/placeholder-logo.png",
+  storeLogoUrl: "/catalogue/img.jpg",
   storeName: "Fashion Store",
   storeId: "fashion-store",
   specifications: [
@@ -52,15 +52,15 @@ const relatedProducts = [
     id: "2",
     name: "Men's Slim Fit Jeans",
     price: 12000,
-    image: "/placeholder-product.png",
+    image: "/catalogue/img.jpg",
     freeShipping: false,
   },
   {
     id: "3",
     name: "Men's Running Shoes",
     price: 25000,
-    image: "/placeholder-product.png",
-    storeLogoUrl: "/placeholder-logo.png",
+    image: "/catalogue/img.jpg",
+    storeLogoUrl: "/catalogue/img.jpg",
     storeName: "Sports Outlet",
     freeShipping: true,
   },
@@ -68,14 +68,14 @@ const relatedProducts = [
     id: "4",
     name: "Men's Formal Shirt",
     price: 8000,
-    image: "/placeholder-product.png",
+    image: "/catalogue/img.jpg",
     freeShipping: true,
   },
   {
     id: "6",
     name: "Men's Hooded Sweatshirt",
     price: 15000,
-    image: "/placeholder-product.png",
+    image: "/catalogue/img.jpg",
     freeShipping: true,
   },
 ];
@@ -455,7 +455,7 @@ export default function ProductDetails() {
         {/* Related Products */}
         <div className="mt-12">
           <h2 className="text-xl font-bold mb-6">You May Also Like</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
             {relatedProducts.map((product) => (
               <ProductCard
                 key={product.id}

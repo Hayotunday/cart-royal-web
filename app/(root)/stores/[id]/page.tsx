@@ -13,8 +13,8 @@ import { useParams } from "next/navigation";
 const storeDetails = {
   id: "fashion-store",
   name: "Fashion Store",
-  logo: "/placeholder-logo.png",
-  coverImage: "/placeholder-product.png",
+  logo: "/catalogue/img.jpg",
+  coverImage: "/catalogue/img.jpg",
   category: "Clothing",
   rating: 4.8,
   followers: 12500,
@@ -38,17 +38,17 @@ const storeProducts = [
     id: "1",
     name: "Men's Casual T-Shirt",
     price: 5000,
-    image: "/placeholder-product.png",
+    image: "/catalogue/img.jpg",
     brand: "Fashion Brand",
     freeShipping: true,
-    storeLogoUrl: "/placeholder-logo.png",
+    storeLogoUrl: "/catalogue/img.jpg",
     storeName: "Fashion Store",
   },
   {
     id: "2",
     name: "Men's Slim Fit Jeans",
     price: 12000,
-    image: "/placeholder-product.png",
+    image: "/catalogue/img.jpg",
     brand: "Denim Co",
     freeShipping: false,
   },
@@ -56,7 +56,7 @@ const storeProducts = [
     id: "4",
     name: "Men's Formal Shirt",
     price: 8000,
-    image: "/placeholder-product.png",
+    image: "/catalogue/img.jpg",
     brand: "Elegance",
     freeShipping: true,
   },
@@ -64,7 +64,7 @@ const storeProducts = [
     id: "6",
     name: "Men's Hooded Sweatshirt",
     price: 15000,
-    image: "/placeholder-product.png",
+    image: "/catalogue/img.jpg",
     brand: "Urban Style",
     freeShipping: true,
   },
@@ -72,17 +72,17 @@ const storeProducts = [
     id: "7",
     name: "Women's Summer Dress",
     price: 9500,
-    image: "/placeholder-product.png",
+    image: "/catalogue/img.jpg",
     brand: "Fashion Brand",
     freeShipping: true,
-    storeLogoUrl: "/placeholder-logo.png",
+    storeLogoUrl: "/catalogue/img.jpg",
     storeName: "Fashion Store",
   },
   {
     id: "8",
     name: "Women's Handbag",
     price: 18000,
-    image: "/placeholder-product.png",
+    image: "/catalogue/img.jpg",
     brand: "Elegance",
     freeShipping: true,
   },
@@ -90,17 +90,17 @@ const storeProducts = [
     id: "9",
     name: "Women's High Heels",
     price: 22000,
-    image: "/placeholder-product.png",
+    image: "/catalogue/img.jpg",
     brand: "Fashion Brand",
     freeShipping: false,
-    storeLogoUrl: "/placeholder-logo.png",
+    storeLogoUrl: "/catalogue/img.jpg",
     storeName: "Fashion Store",
   },
   {
     id: "10",
     name: "Women's Casual Sneakers",
     price: 14000,
-    image: "/placeholder-product.png",
+    image: "/catalogue/img.jpg",
     brand: "Urban Style",
     freeShipping: true,
   },
@@ -168,13 +168,13 @@ export default function StoreDetails() {
   };
 
   return (
-    <main className="min-h-screen flex flex-col">
+    <main className="min-h-screen flex flex-col w-full items-center">
       <Header />
       <CategoryNav />
 
-      <div className="container px-4 py-6">
+      <div className="container px-4 py-6 flex flex-col items-center w-full">
         {/* Store Header */}
-        <div className="mb-8">
+        <div className="mb-8 w-full">
           <div className="relative rounded-lg overflow-hidden h-48 md:h-64 mb-6">
             <div className="absolute inset-0">
               <img
@@ -256,7 +256,7 @@ export default function StoreDetails() {
         {activeTab === "products" ? (
           <>
             {/* Search and Filter */}
-            <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-4 mb-8">
+            <div className="bg-white w-full rounded-lg shadow-sm border border-gray-200 p-4 mb-8">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <div>
                   <label
@@ -326,8 +326,8 @@ export default function StoreDetails() {
             </div>
 
             {/* Products Grid */}
-            <div>
-              <div className="flex justify-between items-center mb-4">
+            <div className="w-full">
+              <div className="w-full flex justify-between items-center mb-4">
                 <h2 className="text-xl font-semibold">All Products</h2>
                 <p className="text-gray-600">
                   {filteredProducts.length} products found
@@ -335,7 +335,7 @@ export default function StoreDetails() {
               </div>
 
               {filteredProducts.length > 0 ? (
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
                   {filteredProducts.map((product) => (
                     <ProductCard
                       key={product.id}
@@ -388,7 +388,7 @@ export default function StoreDetails() {
             </div>
           </>
         ) : (
-          <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+          <div className="bg-white w-full rounded-lg shadow-sm border border-gray-200 p-6">
             <h2 className="text-xl font-semibold mb-4">
               About {storeDetails.name}
             </h2>

@@ -11,8 +11,8 @@ const initialFavorites = [
     id: "1",
     name: "Wireless Bluetooth Earbuds",
     price: 15000,
-    image: "/placeholder-product.png",
-    storeLogoUrl: "/placeholder-logo.png",
+    image: "/catalogue/img.jpg",
+    storeLogoUrl: "/catalogue/img.jpg",
     storeName: "Electronics Hub",
     freeShipping: true,
   },
@@ -20,15 +20,15 @@ const initialFavorites = [
     id: "2",
     name: "Smart Watch with Heart Rate Monitor",
     price: 25000,
-    image: "/placeholder-product.png",
+    image: "/catalogue/img.jpg",
     freeShipping: false,
   },
   {
     id: "3",
     name: "Portable Bluetooth Speaker",
     price: 12000,
-    image: "/placeholder-product.png",
-    storeLogoUrl: "/placeholder-logo.png",
+    image: "/catalogue/img.jpg",
+    storeLogoUrl: "/catalogue/img.jpg",
     storeName: "Sound Masters",
     freeShipping: true,
   },
@@ -36,14 +36,14 @@ const initialFavorites = [
     id: "4",
     name: "Wireless Charging Pad",
     price: 8000,
-    image: "/placeholder-product.png",
+    image: "/catalogue/img.jpg",
     freeShipping: false,
   },
   {
     id: "5",
     name: "HD Webcam for Video Conferencing",
     price: 18000,
-    image: "/placeholder-product.png",
+    image: "/catalogue/img.jpg",
     freeShipping: true,
   },
 ];
@@ -61,10 +61,10 @@ export default function Favorites() {
   };
 
   return (
-    <main className="min-h-screen flex flex-col">
+    <main className="min-h-screen flex flex-col items-center">
       <Header />
 
-      <div className="container px-4 py-8">
+      <div className="container px-4 py-8 w-full">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
           <div>
             <h1 className="text-2xl font-bold">My Favorites</h1>
@@ -136,9 +136,12 @@ export default function Favorites() {
         {favorites.length > 0 ? (
           <>
             {view === "grid" ? (
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full">
                 {favorites.map((item) => (
-                  <div key={item.id} className="relative group">
+                  <div
+                    key={item.id}
+                    className="relative bg-gray-200 rounded-lg overflow-hidden group"
+                  >
                     <ProductCard
                       id={item.id}
                       name={item.name}
