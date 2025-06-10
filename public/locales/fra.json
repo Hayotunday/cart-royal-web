@@ -1,0 +1,75 @@
+{
+  "landingPage": {
+    "navbar": {
+      "viewProfile": "Voir le profil",
+      "helpCenter": "Centre d'aide",
+      "giveFeedback": "Donnez-nous votre avis",
+      "privacyPolicy": "Politique de confidentialité",
+      "logIn": "Se connecter",
+      "getStarted": "Commencer",
+      "logout": "Se déconnecter"
+    },
+    "loginPage": {
+      "logIn": "Connexion",
+      "close": "Fermer",
+      "createAccount": "Créer un compte",
+      "logIntoAccount": "Connectez-vous à votre compte",
+      "emailAddress": "Adresse e-mail",
+      "enterEmailAddress": "Entrez votre adresse e-mail",
+      "password": "Mot de passe",
+      "enterPassword": "Entrez votre mot de passe",
+      "continueWithGoogle": "Continuer avec Google",
+      "cantLogin": "Impossible de se connecter ?",
+      "tosDesc": "En cliquant sur créer un compte, vous acceptez nos ",
+      "tos": "Conditions d'utilisation",
+      "privacyPolicy": "Politique de confidentialité",
+      "and": "et",
+      "or": "OU",
+      "processing": "Traitement...",
+      "continue": "Continuer",
+      "hidePassword": "Masquer le mot de passe",
+      "showPassword": "Afficher le mot de passe"
+    },
+    "signUpPage": {
+      "letsCreateAccount": "Créons votre compte",
+      "chooseAccountType": "Choisissez un type de compte",
+      "createBuyerAccount": "Je crée un compte acheteur",
+      "createSellerAccount": "Je crée un compte vendeur",
+      "continue": "Continuer",
+      "chooseSignMethod": "Choisissez une méthode d'inscription",
+      "continueWithEmail": "Continuer avec l'e-mail",
+      "alreadyHaveAccount": "Vous avez déjà un compte ?",
+      "fullName": "Nom complet",
+      "chooseUsername": "Choisissez un nom d'utilisateur",
+      "enterYourFullName": "Entrez votre nom complet",
+      "confirmPassword": "Confirmez le mot de passe",
+      "country": "Pays",
+      "selectCountryPlaceholder": "Sélectionnez votre pays",
+      "searchCountryPlaceholder": "Rechercher un pays...",
+      "noCountryFound": "Aucun pays trouvé"
+    },
+    "welcomePage": {
+      "welcomeAboard": "Bienvenue à bord",
+      "welcomeText": "Votre plateforme d'achat n°1 pour une relocalisation sans faille, des conseils juridiques et une vie internationale."
+    },
+    "drawers": {
+      "selectLanguages": {
+        "confirm": "Confirmer les modifications"
+      }
+    },
+    "formErrors": {
+      "invalidEmail": "Format d'e-mail invalide",
+      "emailRequired": "L'e-mail est requis",
+      "fullNameRequired": "Le nom complet est requis",
+      "enterFullName": "Veuillez entrer votre nom complet",
+      "passwordRequired": "Le mot de passe est requis",
+      "minPassword": "Le mot de passe doit comporter au moins 8 caractères",
+      "passwordsMismatch": "Les mots de passe ne correspondent pas",
+      "weakPassword": "Le mot de passe est trop faible",
+      "selectCountry": "Veuillez sélectionner un pays",
+      "usernameRequired": "Le nom d'utilisateur est requis",
+      "minUsername": "Le nom d'utilisateur doit comporter au moins 3 caractères",
+      "cpasswordRequired": "La confirmation du mot de passe est requise"
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "landingPage": {
+    "navbar": {
+      "viewProfile": "View Profile",
+      "helpCenter": "Help Center",
+      "giveFeedback": "Give us feedback",
+      "privacyPolicy": "Privacy Policy",
+      "logIn": "Log In",
+      "getStarted": "Get started",
+      "logout": "Logout"
+    },
+    "loginPage": {
+      "logIn": "Login",
+      "close": "Close",
+      "createAccount": "Create Account",
+      "logIntoAccount": "Log into your account",
+      "emailAddress": "E-mail address",
+      "enterEmailAddress": "Enter your e-mail address",
+      "password": "Password",
+      "enterPassword": "Enter your password",
+      "continueWithGoogle": "Continue with Google",
+      "cantLogin": "Can't log in?",
+      "tosDesc": "By clicking creating an account, you agree to our ",
+      "tos": "Terms Of Service",
+      "privacyPolicy": "Privacy Policy",
+      "and": "and",
+      "or": "OR",
+      "processing": "Processing...",
+      "continue": "Continue",
+      "hidePassword": "Hide password",
+      "showPassword": "Show password"
+    },
+    "signUpPage": {
+      "letsCreateAccount": "Let's create your account",
+      "chooseAccountType": "Choose an account type",
+      "createBuyerAccount": "I am creating a buyer account",
+      "createSellerAccount": "I am creating a seller account",
+      "continue": "Continue",
+      "chooseSignMethod": "Choose signup method",
+      "continueWithEmail": "Continue with e-mail",
+      "alreadyHaveAccount": "Already have an account?",
+      "fullName": "Full Name",
+      "chooseUsername": "Choose a username",
+      "enterYourFullName": "Enter your full name",
+      "confirmPassword": "Confirm password",
+      "country": "Country",
+      "selectCountryPlaceholder": "Select your country",
+      "searchCountryPlaceholder": "Search country...",
+      "noCountryFound": "No country found"
+    },
+    "welcomePage": {
+      "welcomeAboard": "Welcome on board",
+      "welcomeText": "Your No. 1 shopping platform for seamless relocation, legal guidance, and global living."
+    },
+    "drawers": {
+      "selectLanguages": {
+        "confirm": "Confirm Changes"
+      }
+    },
+    "formErrors": {
+      "invalidEmail": "Invalid email format",
+      "emailRequired": "Email is required",
+      "fullNameRequired": "Full name is required",
+      "enterFullName": "Please enter your full name",
+      "passwordRequired": "Password is required",
+      "minPassword": "Password must be at least 8 characters",
+      "passwordsMismatch": "Passwords do not match",
+      "weakPassword": "Password is too weak",
+      "selectCountry": "Please select a country",
+      "usernameRequired": "Username is required",
+      "minUsername": "Username must be at least 3 characters",
+      "cpasswordRequired": "Confirm password is required"
+    }
+  }
+}

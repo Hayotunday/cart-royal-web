@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
   title: "CartRoyal",
@@ -12,8 +13,14 @@ export default function HomeLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="font-raleway antialiased scroll-smooth w-full h-full">
-        {children}
+      <head>
+        <link rel="stylesheet" href="/css/all.min.css" />
+      </head>
+      <body className="font-inter antialiased scroll-smooth w-full h-full">
+        <main>
+          {children}
+          <Toaster />
+        </main>
       </body>
     </html>
   );

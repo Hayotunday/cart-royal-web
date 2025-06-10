@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Toaster } from "@/components/ui/sonner";
 import "./globals.css";
+import { Providers } from "./providers";
 
 export const metadata: Metadata = {
   title: "CartRoyal",
@@ -14,8 +15,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="font-raleway antialiased scroll-smooth">{children}</body>
-      <Toaster />
+      <head>
+        <link rel="stylesheet" href="/css/all.min.css" />
+      </head>
+      <body className="font-inter antialiased scroll-smooth">
+        <Providers>{children}</Providers>
+        <Toaster />
+      </body>
     </html>
   );
 }
