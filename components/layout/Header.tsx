@@ -22,9 +22,7 @@ const Header = ({ viewOnly = false }: { viewOnly?: boolean }) => {
       <SearchBar />
 
       <div className="flex flex-row gap-5 items-center">
-        <div>
-          <SelectLanguages />
-        </div>
+        <SelectLanguages />
 
         <Link href={"/favorites"}>
           <MdFavoriteBorder className="text-3xl text-gray-700" />
@@ -45,9 +43,7 @@ const Header = ({ viewOnly = false }: { viewOnly?: boolean }) => {
           width={200}
         />
       </Link>
-      <div>
-        <SelectLanguages />
-      </div>
+      <SelectLanguages />
     </header>
   );
 };

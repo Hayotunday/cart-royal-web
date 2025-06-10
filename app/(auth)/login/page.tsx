@@ -253,7 +253,7 @@ export default function SignIn() {
 
           <div className="mt-6 flex items-center justify-center gap-x-1.5">
             <Link
-              href="/forgotpassword"
+              href="/password/forgot"
               className="text-sm text-gray-600 hover:text-gray-800"
             >
               {t("landingPage.loginPage.cantLogin")}

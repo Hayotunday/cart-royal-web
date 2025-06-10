@@ -1,379 +1,123 @@
 {
   "landingPage": {
-  "navbar": {
-  "home": "Inicio",
-  "countriesData": "Países y datos",
-  "community": "Comunidad",
-  "taxCalculator": "Calculadora de impuestos",
-  "pricing": "Precios",
-  "viewProfile": "Ver perfil",
-  "helpCenter": "Centro de ayuda",
-  "giveFeedback": "Envíanos tus comentarios",
-  "privacyPolicy": "Política de privacidad",
-  "upgradePlan": "Plan de actualización",
-  "logIn": "Iniciar sesión",
-  "getStarted": "Comienza",
-  "logout": "Cerrar sesión"
-  },
-  "showcase": {
-  "title": "Mudanza más inteligente, vive mejor.",
-  "para": "Tu plataforma con IA para una reubicación fluida, asesoramiento legal y una vida global.",
-  "buttonText": "Comienza"
-  },
-  "features": {
-  "title": "Funciones",
-  "cards": {
-  "card1": {
-  "title": "Compara países",
-  "para": "Toma decisiones informadas comparando diferentes países y analizando factores clave como el coste de la vida, las tasas impositivas y la calidad de vida."
-  },
-  "card2": {
-  "title": "Información inteligente con IA",
-  "para": "Únete a foros y grupos con nómadas globales con ideas afines."
-  },
-  "card3": {
-  "title": "Países y datos",
-  "para": "Únete a foros y grupos con nómadas globales con ideas afines."
+    "navbar": {
+      "viewProfile": "Ver perfil",
+      "helpCenter": "Centro de ayuda",
+      "giveFeedback": "Danos tu opinión",
+      "privacyPolicy": "Política de privacidad",
+      "logIn": "Iniciar sesión",
+      "getStarted": "Comenzar",
+      "logout": "Cerrar sesión"
+    },
+    "loginPage": {
+      "logIn": "Iniciar sesión",
+      "close": "Cerrar",
+      "createAccount": "Crear cuenta",
+      "logIntoAccount": "Inicia sesión en tu cuenta",
+      "emailAddress": "Correo electrónico",
+      "enterEmailAddress": "Ingresa tu correo electrónico",
+      "password": "Contraseña",
+      "enterPassword": "Ingresa tu contraseña",
+      "continueWithGoogle": "Continuar con Google",
+      "cantLogin": "¿No puedes iniciar sesión?",
+      "tosDesc": "Al crear una cuenta, aceptas nuestros ",
+      "tos": "Términos de servicio",
+      "privacyPolicy": "Política de privacidad",
+      "and": "y",
+      "or": "O",
+      "processing": "Procesando...",
+      "continue": "Continuar",
+      "hidePassword": "Ocultar contraseña",
+      "showPassword": "Mostrar contraseña"
+    },
+    "signUpPage": {
+      "letsCreateAccount": "Creemos tu cuenta",
+      "chooseAccountType": "Elige un tipo de cuenta",
+      "createBuyerAccount": "Estoy creando una cuenta de comprador",
+      "createSellerAccount": "Estoy creando una cuenta de vendedor",
+      "continue": "Continuar",
+      "chooseSignMethod": "Elige un método de registro",
+      "continueWithEmail": "Continuar con correo electrónico",
+      "alreadyHaveAccount": "¿Ya tienes una cuenta?",
+      "fullName": "Nombre completo",
+      "chooseUsername": "Elige un nombre de usuario",
+      "enterYourFullName": "Ingresa tu nombre completo",
+      "confirmPassword": "Confirmar contraseña",
+      "country": "País",
+      "selectCountryPlaceholder": "Selecciona tu país",
+      "searchCountryPlaceholder": "Buscar país...",
+      "noCountryFound": "No se encontró ningún país"
+    },
+    "welcomePage": {
+      "welcomeAboard": "Bienvenido a bordo",
+      "welcomeText": "Tu plataforma de compras No. 1 para mudanzas sin problemas, orientación legal y vida global."
+    },
+    "forgotPasswordPage": {
+      "emailAddress": "Correo electrónico",
+      "forgotPassword": "¿Olvidaste tu contraseña?",
+      "enterEmailToReset": "Ingresa el correo de tu cuenta y te enviaremos un OTP para restablecer tu contraseña.",
+      "sendOTP": "Enviar OTP",
+      "verifyOTP": "Verificar OTP",
+      "resendOTP": "Reenviar OTP",
+      "backToLogin": "Volver a iniciar sesión",
+      "sending": "Enviando...",
+      "otpSent": "Se ha enviado un OTP a",
+      "continue": "Continuar",
+      "clickContinue": "Haz clic en el botón continuar para crear una nueva contraseña.",
+      "rememberedPassword": "¿Recordaste tu contraseña?",
+      "login": "Iniciar sesión"
+    },
+    "resetPasswordPage": {
+      "resetPassword": "Restablecer contraseña",
+      "resetPasswordDescription": "Tu nueva contraseña debe ser única y diferente a las usadas anteriormente.",
+      "enterOTP": "Ingresa OTP",
+      "newPassword": "Nueva contraseña",
+      "confirmPassword": "Confirmar contraseña",
+      "createNewPassword": "Crear una nueva contraseña",
+      "enterNewPassword": "Ingresa tu nueva contraseña",
+      "confirmNewPassword": "Confirma tu nueva contraseña",
+      "reset": "Restablecer",
+      "passwordChanged": "Contraseña cambiada",
+      "passwordChangedDescription": "Tu contraseña se ha cambiado exitosamente.",
+      "backToLogin": "Volver a iniciar sesión",
+      "processing": "Procesando...",
+      "proceedToLogin": "Proceder a iniciar sesión"
+    },
+    "drawers": {
+      "selectLanguages": {
+        "confirm": "Confirmar cambios"
+      }
+    },
+    "toasts": {
+      "accountCreated": "Cuenta creada exitosamente",
+      "accountUpdated": "Cuenta actualizada exitosamente",
+      "passwordChanged": "Contraseña cambiada exitosamente",
+      "passwordStrength": "La contraseña debe tener al menos 8 caracteres, incluir mayúsculas, minúsculas, números y símbolos",
+      "passwordsMismatch": "Las contraseñas no coinciden",
+      "resetFailed": "Error al restablecer la contraseña, por favor inténtalo de nuevo",
+      "emailSent": "Correo enviado exitosamente",
+      "invalidEmail": "Dirección de correo no válida",
+      "otpMinimumLength": "El OTP debe tener al menos 6 caracteres",
+      "otpVerified": "OTP verificado exitosamente",
+      "otpResent": "OTP reenviado exitosamente",
+      "sendError": "Error al enviar OTP. Por favor inténtalo de nuevo.",
+      "resendError": "Error al reenviar OTP. Por favor inténtalo de nuevo.",
+      "errorOccurred": "Ocurrió un error, por favor inténtalo más tarde",
+      "invalidCredentials": "Credenciales inválidas, por favor inténtalo de nuevo"
+    },
+    "formErrors": {
+      "invalidEmail": "Formato de correo electrónico inválido",
+      "emailRequired": "El correo electrónico es obligatorio",
+      "fullNameRequired": "El nombre completo es obligatorio",
+      "enterFullName": "Por favor ingresa tu nombre completo",
+      "passwordRequired": "La contraseña es obligatoria",
+      "minPassword": "La contraseña debe tener al menos 8 caracteres",
+      "passwordsMismatch": "Las contraseñas no coinciden",
+      "weakPassword": "La contraseña es demasiado débil",
+      "selectCountry": "Por favor selecciona un país",
+      "usernameRequired": "El nombre de usuario es obligatorio",
+      "minUsername": "El nombre de usuario debe tener al menos 3 caracteres",
+      "cpasswordRequired": "Confirmar contraseña es obligatorio"
+    }
   }
-  }
-  },
-  "countries": {
-  "title": "Países populares",
-  "para": "Explora destinos populares y empieza a planificar tu mudanza."
-  },
-  "whyChooseUs": {
-  "title": "¿Por qué elegirnos?",
-  "card1": {
-  "title": "Datos con IA que te ahorran tiempo",
-  "para": "Información siempre actualizada y fiable." },
-  "card2": {
-  "title": "Contactos verificados y fuentes confiables:",
-  "para": "Una plataforma comunitaria que garantiza credibilidad."
-  },
-  "card3": {
-  "title": "Solución integral",
-  "para": "Todo, desde visas hasta el costo de vida, en un solo lugar."
-  },
-  "card4": {
-  "title": "Alertas personalizadas",
-  "para": "Manténgase al día con notificaciones personalizadas y una función de favoritos."
-  }
-  },
-  "termsOfService": {
-  "title": "Términos y Condiciones",
-  "paragraph": "¡Bienvenido a globalrelocate.com! Estos Términos y Condiciones ('Términos') rigen el uso de nuestra plataforma basada en IA para una reubicación fluida, asesoramiento legal y vida global, a la que se accede a través de la URL globalrelocate.com (en adelante, 'la Plataforma'). Al acceder o utilizar la Plataforma, usted acepta estos Términos. Léalos detenidamente.",
-  "sections": {
-  "platformUse": "1. Uso de la Plataforma",
-  "platformUse_1": "1.1 Requisitos: Debe tener al menos 18 años o capacidad legal para celebrar contratos en su jurisdicción para utilizar la Plataforma. Al acceder o utilizar la Plataforma, declara y garantiza que cumple con los requisitos de elegibilidad.",
-  "platformUse_2": "1.2 Cuenta de usuario: Es posible que se le solicite crear una cuenta de usuario para acceder a ciertas funciones de la Plataforma. Usted es responsable de mantener la confidencialidad de la información de su cuenta y acepta ser el único responsable de todas las actividades realizadas a través de ella.",
-  "platformUse_3": "1.3 Actividades Prohibidas: Usted se compromete a no participar en ninguna actividad que infrinja estos Términos o cualquier ley o normativa aplicable. Las actividades prohibidas incluyen, entre otras:",
-  "prohibited_1": "Violar los derechos de propiedad intelectual",
-  "prohibited_2": "Subir o compartir contenido ilegal, dañino o que infrinja los derechos de terceros",
-  "prohibited_3": "Interferir con el correcto funcionamiento de la Plataforma",
-  "prohibited_4": "Suplantar la identidad de otra persona o entidad",
-  
-  "intellectualProperty": "2. Propiedad Intelectual",
-  "intellectualProperty_1": "2.1 Propiedad: Todo el contenido, incluyendo, entre otros, texto, gráficos, logotipos, imágenes, clips de audio, vídeos y software, disponible en la Plataforma es propiedad de Global Relocate o de sus licenciantes y está protegido por las leyes de propiedad intelectual.", 
-  "intellectualProperty_2": "2.2 Uso del Contenido: Puede acceder y utilizar el contenido de la Plataforma únicamente con fines personales y no comerciales. No puede modificar, reproducir, distribuir, exhibir, ejecutar ni crear obras derivadas del contenido sin la autorización previa por escrito de Global Relocate.",
-  
-  "disclaimer": "3. Exención de Garantías",
-  "disclaimer_1": "3.1 La Plataforma se proporciona 'tal cual' y 'según disponibilidad', sin garantías de ningún tipo. Global Relocate renuncia a todas las garantías, ya sean expresas o implícitas, incluidas, entre otras, las de comerciabilidad, idoneidad para un fin determinado y no infracción.",
-  
-  "disclaimer_2": "3.2 Global Relocate no garantiza la exactitud, integridad ni fiabilidad de ningún contenido o información de la Plataforma. Usted reconoce que el uso de la Plataforma es bajo su propio riesgo.",
-  
-  "liability": "4. Limitación de Responsabilidad",
-  "liability_1": "4.1 En la medida máxima permitida por la ley, Global Relocate y sus directores, empleados, afiliados y agentes no serán responsables de ningún daño directo, indirecto, incidental, especial o consecuente que surja de, o esté relacionado de alguna manera con, el uso que usted haga de la Plataforma o su contenido.",
-
-  "thirdParty": "5. Enlaces de terceros.",
-  
-  "thirdParty_1": "5.1 La Plataforma puede contener enlaces a sitios web o servicios de terceros. Global Relocate no se responsabiliza del contenido, la exactitud ni la fiabilidad de dichos sitios web o servicios de terceros. La inclusión de dichos enlaces no implica la aprobación ni la afiliación de Global Relocate.",
-  
-  "modifications": "6. Modificaciones y rescisión.",
-  
-  "modifications_1": "6.1 Global Relocate se reserva el derecho de modificar, suspender o interrumpir cualquier parte o la totalidad de la Plataforma, temporal o permanentemente, sin previo aviso. Global Relocate no será responsable ante usted ni ante terceros por ninguna modificación, suspensión o interrupción de la Plataforma.",
-  
-  "governingLaw": "7. Ley aplicable y jurisdicción",
-  "governingLaw_1": "7.1 Estos Términos se regirán e interpretarán de conformidad con las leyes de [Su país]. Cualquier disputa que surja de o esté relacionada con estos Términos o su uso de la Plataforma estará sujeta a la jurisdicción exclusiva de los tribunales de [Su ciudad, país].",
-  
-  "entireAgreement": "8. Acuerdo completo",
-  "entireAgreement_1": "8.1 Estos Términos constituyen el acuerdo completo entre usted y Global Relocate con respecto al uso de la Plataforma y sustituyen cualquier acuerdo, comunicación o declaración anterior o actual.",
-  
-  "whyChoose": "9. Por qué elegir Global Relocate",
-  "whyChoose_1": "En Global Relocate, nos comprometemos a ayudarle a reubicarse de forma más inteligente y a vivir mejor. Por qué debería elegirnos:",
-  "whyChoose_bullet1": "Datos con IA que ahorran tiempo: Acceda a información siempre actualizada y fiable para tomar decisiones informadas.",
-  "whyChoose_bullet2": "Contactos verificados y fuentes de confianza: Benefíciese de una plataforma comunitaria que garantiza credibilidad y confianza.",
-  "whyChoose_bullet3": "Solución integral: Encuentre todo, desde visas hasta el coste de la vida, en un solo lugar.",
-  "whyChoose_bullet4": "Alertas personalizadas: Manténgase al día con notificaciones personalizadas y una función de favoritos diseñada especialmente para usted."
-  }
-  }
-  },
-  "loginPage": {
-  "close": "Cerrar",
-  "createAccount": "Crear cuenta",
-  "logIntoGR": "Iniciar sesión en Global Relocate",
-  "password": "Contraseña",
-  "enterPassword": "Ingrese su contraseña",
-  "continueWithGoogle": "Continuar con Google",
-  "cantLogin": "¿No puedes iniciar sesión?",
-  "tosDesc": "Al hacer clic en 'Crear una cuenta', aceptas nuestras ",
-  "tos": "Términos del servicio",
-  "privacyPolicy": "Política de privacidad",
-  "and": "y",
-  "or": "O",
-  "processing": "Procesando...",
-  "continue": "Continuar",
-  "hidePassword": "Ocultar contraseña",
-  "showPassword": "Mostrar contraseña"
-  },
-  "signUpPage": {
-  "letsCreateAccount": "Creemos tu cuenta",
-  "chooseAccountType": "Elige un tipo de cuenta",
-  "createPersonalAccount": "Estoy creando una cuenta personal",
-  "createCorporateAccount": "Estoy creando una cuenta corporativa",
-  "continue": "Continuar",
-  "chooseSignMethod": "Elige el método de registro",
-  "continueWithEmail": "Continuar con Correo electrónico",
-  "alreadyHaveAccount": "¿Ya tienes una cuenta?",
-  "fullName": "Nombre completo",
-  "chooseUsername": "Elige un nombre de usuario",
-  "enterYourFullName": "Introduce tu nombre completo",
-  "confirmPassword": "Confirmar contraseña",
-  "country": "País"
-  },
-  "welcomePage": {
-  "welcomeAboard": "Bienvenido a bordo",
-  "welcomeText": "Tu plataforma basada en IA para una reubicación fluida, asesoramiento legal y una vida global."
-  },
-  "userDashboard": {
-  "sidebar": {
-  "countries": "Países",
-  "aiAssistant": "Asistente de IA",
-  "compareCountries": "Comparar países",
-  "taxCalculator": "Calculadora de impuestos",
-  "notifications": "Notificaciones",
-  "favourites": "Favoritos",
-  "community": "Comunidad",
-  "cta": {
-  "title": "Prueba Pro",
-  "para": "Actualmente estás en el plan gratuito válido por 3 días. Actualízate ahora para seguir usando Global Relocate.",
-  "buttonText": "Más información",
-  }
-  },
-  "notifications": {
-  "noNotifications": "Aún no tienes notificaciones.",
-  "markAllAsRead": "Marcar todo como leído",
-  "deleteAll": "Eliminar todo",
-  "markAsRead": "Marcar como leído",
-  "delete": "Eliminar notificación",
-  "showLess": "Mostrar menos",
-  "showMore": "Mostrar más resultados"
-  },
-  "countries": {
-  "title": "Países",
-  "noDataText": "¡No hay datos disponibles!",
-  "searchText": "Buscar países",
-  "clickToSelect": "Haz clic para seleccionar un país",
-  "view": "Ver",
-  "searchResults": "Resultados de la búsqueda",
-  "aiSuggestedCountries": "Países sugeridos por IA",
-  "searchCountries": "Buscar país"intentos"
-},
-"country": {
-"countryIn": "País en",
-"addFavorite": "Añadir a favoritos",
-"removeFavorite": "Eliminar de favoritos",
-"share": "Compartir",
-"overview": "Resumen",
-"map": "Mapa",
-"keyFacts": "Datos clave",
-"visaMigration": "Visas e inmigración",
-"taxes": "Impuestos",
-"flag": "Bandera",
-"capital": "Capital",
-"languages": "Idiomas",
-"currency": "Moneda",
-"population": "Población",
-"dialingCode": "Prefijo telefónico",
-"back": "Atrás",
-"noOverview": "No hay resumen disponible para este país",
-"noVisaInfo": "No hay información disponible sobre visas e inmigración".
-},
-"ai": {
-"rename": "Cambiar nombre",
-"deleteConversation": "Eliminar conversación",
-"share": "Compartir",
-"hello": "Hola",
-"newChat": "Nuevo chat",
-"askAI": "Pregunta a la IA...",
-"uploadDocument": "Subir documento",
-"uploadDocumentDesc": "Subir un documento para procesarlo con el asistente de IA",
-"cancel": "Cancelar",
-"upload": "Subir"
-},
-"settings": {
-"accountSettings": "Configuración de la cuenta",
-"editProfile": "Editar perfil",
-"profile": "Perfil",
-"account": "Cuenta",
-"preferences": "Preferencias",
-"avatar": "Avatar",
-"fullName": "Nombre completo",
-"username": "Nombre de usuario",
-"bio": "Biografía",
-"country": "País",
-"emailAddress": "Correo electrónico",
-"verified": "Verificado",
-"subscription": "Suscripción",
-"subscriptionDesc": "Actualmente estás en la versión gratuita Plan válido por 3 días. Actualízate ahora para seguir usando Global Relocate.
-"deleteAccount": "Eliminar cuenta",
-"deleteDesc": "Eliminar permanentemente tu cuenta y tus datos",
-"language": "Idioma",
-"chooseLanguage": "Elige un idioma",
-"selectLanguage": "Selecciona un idioma",
-"learnMore": "Más información",
-"saveChanges": "Guardar cambios",
-"cancel": "Cancelar",
-"saving": "Guardando...",
-"unsavedChanges": "Tienes cambios sin guardar",
-"addName": "Añadir nombre",
-"addBio": "Añade una biografía para contar tu historia",
-"addUsername": "Añadir nombre de usuario",
-"addLocation": "Añadir ubicación",
-"confirmAccountDelete": "Confirmar la eliminación de la cuenta",
-"confirmAccountDeleteDesc": "Antes de eliminar tu cuenta, por favor, tómate un momento para entender qué pasará con tus datos". "confirm": "Confirmar",
-"neverMind": "No importa",
-"confirmDeleteWarning": "Recuerda que la eliminación de tu cuenta es irreversible.",
-"confirmDeleteList1": "Se eliminarán los datos de tu perfil, preferencias y configuración.",
-"confirmDeleteList2": "Todos los datos se eliminarán permanentemente 30 días después de la eliminación de la cuenta.",
-"deleting": "Eliminando...",
-"youHave": "Tienes:",
-"administrator": "Administrador"
-},
-"continents": {
-"all": "Todos",
-"europe": "Europa",
-"asia": "Asia",
-"africa": "África",
-"south america": "Sudamérica",
-"north america": "Norteamérica",
-"antarctica": "Antártida",
-"oceania": "Oceanía"
-},
-"tax": {
-"taxCalculator": "Calculadora de impuestos",
-"taxCacluatorDesc": "Calcula tu carga fiscal estimada en diferentes países",
-"country": "País",
-"annualIncome": "Ingresos anuales",
-"userAccount": "Cuenta de usuario",
-"totalDeductions": "Deducciones totales",
-"selectCountry": "Selecciona tu país",
-"selectAccount": "Selecciona el tipo de cuenta",
-"enterIncome": "Introduce tus ingresos anuales",
-"enterDeductions": "Introduce las deducciones totales",
-"calculateTax": "Calcula impuestos",
-"individual": "Individual",
-"corporate": "Corporativo",
-"taxSummary": "Resumen de impuestos",
-"taxAmount": "Importe del impuesto",
-"effectiveRate": "Tasa efectiva",
-"takeHomeAmount": "Importe neto"
-},
-"upgradePage": {
-"back": "Atrás",
-"upgradePlan": "Mejora tu plan",
-"upgradePlanDesc": "Elija el plan perfecto para respaldar su viaje de reubicación global. Accede a herramientas e información completas para que tu mudanza sea perfecta.
-"currentPlan": "Tu plan actual",
-"getStarted": "Comienza",
-"free": "Gratis",
-"basic": "Básico",
-"premium": "Premium",
-"perMonth": "Por mes",
-"forEveryone": "Para todos",
-"freePlan": {
-"item1": "Acceso de prueba de 3 días",
-"item2": "Información básica del país",
-"item3": "Acceso a la comunidad (solo lectura)",
-"item4": "Calculadora de impuestos limitada",
-"item5": "Comparación básica de costos"
-},
-"basicPlan": {
-"item1": "Información completa del país",
-"item2": "Participación en la comunidad",
-"item3": "Calculadora de impuestos completa",
-"item4": "Herramientas de comparación de costos",
-"item5": "Guías básicas de reubicación",
-"item6": "Soporte por correo electrónico" },
-"premiumPlan": {
-"item1": "Todas las funciones básicas",
-"item2": "Acceso ilimitado a los datos de cada país",
-"item3": "Participación total de la comunidad",
-"item4": "Calculadora de impuestos avanzada",
-"item5": "Asistente de reubicación con IA",
-"item6": "Información sobre el coste de la vida",
-"item7": "Guías de requisitos de visa",
-"item8": "Apoyo prioritario",
-"item9": "Hoja de ruta de reubicación personalizada"
-}
-},
-"favorites": {
-"noFavorites": "Aún no tienes favoritos",
-"addToFavorites": "Añadir a favoritos",
-"removeFromFavorites": "Eliminar de favoritos"
-}
-},
-"drawers": {
-"selectLanguages": {
-"confirm": "Confirmar cambios"
-}
-},
-"footer": {
-"sitemap": "Mapa del sitio",
-"company": "Empresa",
-"terms": "Términos",
-"privacy": "Privacidad",
-"contact": "Contáctanos",
-"subscribeNewsletter": "Suscríbete a nuestro boletín informativo",
-"subscribeNewsDesc": "Mantente al día con las últimas novedades sobre reubicación global",
-"enterEmail": "Introduce tu correo electrónico",
-"subscribe": "Suscribirse",
-"copyright": "Todo el contenido de este sitio web está protegido por derechos de autor",
-"rankings": "Clasificaciones",
-"safestCountries": "Los países más seguros",
-"humanFreedomLevel": "Nivel de libertad humana",
-"lifeExpectancy": "Esperanza de vida",
-"happinessIndex": "Índice mundial de felicidad",
-"citizenshipQualityRankings": "Clasificación de calidad de la ciudadanía",
-"trends": "Tendencias",
-"foreignCitizenship": "Ciudadanía extranjera",
-"digitalNomadVisas": "Visas para nómadas digitales",
-"taxesRankings": "Clasificación de impuestos",
-"residencyPermit": "Permiso de residencia" },
-"toast": {
-"thanksNewsletter": "¡Gracias por suscribirse a nuestro boletín!",
-"linkCopied": "¡Enlace copiado al portapapeles!",
-"linkCopyFailed": "No se pudo copiar el enlace",
-"newSessionStarted": "Nueva sesión iniciada",
-"newSessionFailed": "No se pudo iniciar una nueva sesión. Inténtelo de nuevo.",
-"redirectToPayPage": "Redireccionando a la página de pago...",
-"activeSessionShare": "Necesita una sesión activa para compartir",
-"sessionDeleteFailed": "No se pudo eliminar la sesión. Inténtelo de nuevo.",
-"sessionDeleteSuccess": "¡Sesión eliminada correctamente!",
-"sessionRenameSuccess": "¡Sesión renombrada correctamente!",
-"sessionRenameFailed": "No se pudo cambiar el nombre de la sesión." Inténtalo de nuevo.",
-"enterSessionName": "Introduce un nuevo nombre para esta sesión:"
-},
-"formErrors": {
-"invalidEmail": "Formato de correo electrónico inválido",
-"emailRequired": "Correo electrónico obligatorio",
-"fullNameRequired": "Nombre completo obligatorio",
-"enterFullName": "Introduce tu nombre completo",
-"passwordRequired": "Contraseña obligatoria",
-"minPassword": "La contraseña debe tener al menos 8 caracteres",
-"passwordsMismatch": "Las contraseñas no coinciden",
-"weakPassword": "Contraseña demasiado débil",
-"selectCountry": "Selecciona un país",
-"usernameRequired": "Nombre de usuario obligatorio",
-"minUsername": "El nombre de usuario debe tener al menos 3 caracteres",
-"cpasswordRequired": "Confirmar contraseña obligatoria"
-}
 }
