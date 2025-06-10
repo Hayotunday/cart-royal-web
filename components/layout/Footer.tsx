@@ -16,7 +16,7 @@ const Footer = () => {
     if (email) {
       // Here you should typically make an API call to subscribe the email
       showToast({
-        message: dictionary.toast.thanksNewsletter,
+        message: "Thank you for subscribing!",
         type: "success",
       });
       setEmail("");
