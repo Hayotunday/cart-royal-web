@@ -35,10 +35,20 @@ export default function ResetPassword() {
     color: "gray",
     feedback: "",
   });
+  const [email, setEmail] = useState("");
   const navigate = useRouter();
   const location = usePathname();
   const { dictionary, isReady } = useLanguage();
-  const email = new URLSearchParams(window.location.search).get("email") || "";
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const params = new URLSearchParams(window.location.search);
+      const emailParam = params.get("email");
+      if (emailParam) {
+        setEmail(emailParam);
+      }
+    }
+  }, []);
 
   useEffect(() => {
     if (!email) {
