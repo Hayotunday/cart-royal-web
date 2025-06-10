@@ -5,7 +5,7 @@ import { BsEye, BsEyeSlash } from "react-icons/bs";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { IoCloseCircleOutline } from "react-icons/io5";
 import { CountryDropdown } from "@/components/ui/country-dropdown";
-import { useTranslation } from "react-i18next";
+import { useLanguage } from "@/context/LanguageContext";
 import { useRouter } from "next/navigation";
 
 interface RegisterFormProps {
@@ -66,7 +66,7 @@ const RegisterForm: React.FC<RegisterFormProps> = ({
     feedback: "",
   });
   const navigate = useRouter();
-  const { t } = useTranslation();
+  const { dictionary, isReady } = useLanguage();
 
   const calculatePasswordStrength = (password: string) => {
     let score = 0;
@@ -120,33 +120,33 @@ const RegisterForm: React.FC<RegisterFormProps> = ({
     let error = "";
     if (name === "email") {
       if (!value) {
-        error = t("formErrors.emailRequired");
+        error = dictionary.landingPage.formErrors.emailRequired;
       } else if (!/\S+@\S+\.\S+/.test(value)) {
-        error = t("formErrors.invalidEmail");
+        error = dictionary.landingPage.formErrors.invalidEmail;
       }
     } else if (name === "fullName") {
       if (!value) {
-        error = t("formErrors.fullNameRequired");
+        error = dictionary.landingPage.formErrors.fullNameRequired;
       } else if (value.trim().length < 2) {
-        error = t("formErrors.enterFullName");
+        error = dictionary.landingPage.formErrors.enterFullName;
       }
     } else if (name === "password") {
       if (!value) {
-        error = t("formErrors.passwordRequired");
+        error = dictionary.landingPage.formErrors.passwordRequired;
       } else {
         const strength = calculatePasswordStrength(value);
         setPasswordStrength(strength);
         if (value.length < 8) {
-          error = t("formErrors.minPassword");
+          error = dictionary.landingPage.formErrors.minPassword;
         } else if (strength.score < 3) {
-          error = t("formErrors.weakPassword");
+          error = dictionary.landingPage.formErrors.weakPassword;
         }
       }
     } else if (name === "confirmPassword") {
       if (!value) {
-        error = t("formErrors.cpasswordRequired");
+        error = dictionary.landingPage.formErrors.cpasswordRequired;
       } else if (value !== formData.password) {
-        error = t("formErrors.passwordsMismatch");
+        error = dictionary.landingPage.formErrors.passwordsMismatch;
       }
     }
 
@@ -215,16 +215,20 @@ const RegisterForm: React.FC<RegisterFormProps> = ({
     }
   };
 
+  if (!isReady) {
+    return null;
+  }
+
   return (
     <>
       <h1 className="text-[32px] font-medium mb-10 text-left pl-6 w-[100%]">
-        {t("landingPage.signUpPage.letsCreateAccount")}
+        {dictionary.landingPage.signUpPage.letsCreateAccount}
       </h1>
 
       <div className="px-6 space-y-4 w-full">
         <div className="relative">
           <label className="text-sm text-gray-700 mb-1 block">
-            {t("landingPage.signUpPage.fullName")}{" "}
+            {dictionary.landingPage.signUpPage.fullName}{" "}
             <span className="text-red-500">*</span>
           </label>
           <input
@@ -235,7 +239,7 @@ const RegisterForm: React.FC<RegisterFormProps> = ({
             className={`w-full p-3 rounded-lg border ${
               errors.fullName ? "border-red-500" : "border-gray-300"
             } focus:outline-none focus:border-[#FCA311] focus:ring-0 hover:border-[#FCA311] transition-colors duration-200`}
-            placeholder={t("landingPage.signUpPage.enterYourFullName")}
+            placeholder={dictionary.landingPage.signUpPage.enterYourFullName}
           />
           {errors.fullName && (
             <span className="text-red-500 text-xs mt-1">{errors.fullName}</span>
@@ -244,7 +248,7 @@ const RegisterForm: React.FC<RegisterFormProps> = ({
 
         <div className="relative">
           <label className="text-sm text-gray-700 mb-1 block">
-            {t("landingPage.loginPage.emailAddress")}{" "}
+            {dictionary.landingPage.loginPage.emailAddress}{" "}
             <span className="text-red-500">*</span>
           </label>
           <input
@@ -264,7 +268,7 @@ const RegisterForm: React.FC<RegisterFormProps> = ({
 
         <div>
           <label className="text-sm text-gray-700 mb-1 block">
-            {t("landingPage.loginPage.password")}{" "}
+            {dictionary.landingPage.loginPage.password}{" "}
             <span className="text-red-500">*</span>
           </label>
           <div className="relative">
@@ -276,7 +280,7 @@ const RegisterForm: React.FC<RegisterFormProps> = ({
               className={`w-full p-3 pr-10 rounded-lg border ${
                 errors.password ? "border-red-500" : "border-gray-300"
               } focus:outline-none focus:border-[#FCA311] focus:ring-0 hover:border-[#FCA311] transition-colors duration-200`}
-              placeholder={t("landingPage.loginPage.password")}
+              placeholder={dictionary.landingPage.loginPage.password}
             />
             <button
               type="button"
@@ -323,7 +327,7 @@ const RegisterForm: React.FC<RegisterFormProps> = ({
 
         <div>
           <label className="text-sm text-gray-700 mb-1 block">
-            {t("landingPage.signUpPage.confirmPassword")}{" "}
+            {dictionary.landingPage.signUpPage.confirmPassword}{" "}
             <span className="text-red-500">*</span>
           </label>
           <div className="relative">
@@ -335,7 +339,7 @@ const RegisterForm: React.FC<RegisterFormProps> = ({
               className={`w-full p-3 pr-10 rounded-lg border ${
                 errors.confirmPassword ? "border-red-500" : "border-gray-300"
               } focus:outline-none focus:border-[#FCA311] focus:ring-0 hover:border-[#FCA311] transition-colors duration-200`}
-              placeholder={t("landingPage.signUpPage.confirmPassword")}
+              placeholder={dictionary.landingPage.signUpPage.confirmPassword}
             />
             <button
               type="button"
@@ -358,7 +362,7 @@ const RegisterForm: React.FC<RegisterFormProps> = ({
 
         <div>
           <label className="text-sm text-gray-700 mb-1 block">
-            {t("landingPage.signUpPage.country")}{" "}
+            {dictionary.landingPage.signUpPage.country}{" "}
             <span className="text-red-500">*</span>
           </label>
           <CountryDropdown
@@ -376,7 +380,7 @@ const RegisterForm: React.FC<RegisterFormProps> = ({
 
       <div className="px-6 mt-6">
         <button
-          className={`w-full py-3 rounded-lg transition-colors ${
+          className={`w-full py-3 rounded-lg transition-colors cursor-pointer ${
             isFormValid && !loading
               ? "bg-[#FCA311] hover:bg-[#e5940c] text-black"
               : "bg-[#FCA31180] text-black cursor-not-allowed"
@@ -385,8 +389,8 @@ const RegisterForm: React.FC<RegisterFormProps> = ({
           disabled={!isFormValid || loading}
         >
           {loading
-            ? t("landingPage.loginPage.processing")
-            : t("landingPage.loginPage.continue")}
+            ? dictionary.landingPage.loginPage.processing
+            : dictionary.landingPage.loginPage.continue}
         </button>
       </div>
 

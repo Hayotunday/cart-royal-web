@@ -3,12 +3,11 @@
 import { useState } from "react";
 import Link from "next/link";
 import { IoCloseCircleOutline } from "react-icons/io5";
-// import { forgotPassword } from "../../services/api";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { CheckCircle2 } from "lucide-react";
 import Header from "@/components/layout/Header";
 import { useRouter } from "next/navigation";
-import { useTranslation } from "react-i18next";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function ForgotPasswordPage() {
   const [email, setEmail] = useState("");
@@ -18,7 +17,7 @@ export default function ForgotPasswordPage() {
   const [apiError, setApiError] = useState("");
   const [successMessage, setSuccessMessage] = useState("");
   const navigate = useRouter();
-  const { t } = useTranslation();
+  const { dictionary, isReady } = useLanguage();
 
   const validateEmail = (email: string) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -30,7 +29,7 @@ export default function ForgotPasswordPage() {
     setEmail(value);
 
     if (value && !validateEmail(value)) {
-      setEmailError(t("landingPage.toasts.invalidEmail"));
+      setEmailError(dictionary.landingPage.toasts.invalidEmail);
     } else {
       setEmailError("");
     }
@@ -48,7 +47,7 @@ export default function ForgotPasswordPage() {
         setEmailSent(true);
       } catch (error: any) {
         setApiError(
-          error.message || t("landingPage.forgotPasswordPage.sendError")
+          error.message || dictionary.landingPage.forgotPasswordPage.sendError
         );
       } finally {
         setIsLoading(false);
@@ -67,10 +66,10 @@ export default function ForgotPasswordPage() {
 
     try {
       // await forgotPassword(email);
-      setSuccessMessage(t("landingPage.forgotPasswordPage.otpResent"));
+      setSuccessMessage(dictionary.landingPage.forgotPasswordPage.otpResent);
     } catch (error: any) {
       setApiError(
-        error.message || t("landingPage.forgotPasswordPage.resendError")
+        error.message || dictionary.landingPage.forgotPasswordPage.resendError
       );
     } finally {
       setIsLoading(false);
@@ -83,6 +82,10 @@ export default function ForgotPasswordPage() {
 
   const isFormValid = email && !emailError;
 
+  if (!isReady) {
+    return null; // Wait until the language context is ready
+  }
+
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
@@ -94,10 +97,10 @@ export default function ForgotPasswordPage() {
           {!emailSent ? (
             <>
               <h1 className="text-3xl font-medium mb-4">
-                {t("landingPage.forgotPasswordPage.forgotPassword")}
+                {dictionary.landingPage.forgotPasswordPage.forgotPassword}
               </h1>
               <p className="text-base text-gray-700 mb-12 text-center">
-                {t("landingPage.forgotPasswordPage.enterEmailToReset")}
+                {dictionary.landingPage.forgotPasswordPage.enterEmailToReset}
               </p>
 
               {/* Form Section */}
@@ -119,7 +122,7 @@ export default function ForgotPasswordPage() {
                 <form className="space-y-6" onSubmit={handleSubmit}>
                   <div>
                     <label className="block text-sm mb-2">
-                      {t("landingPage.forgotPasswordPage.emailAddress")}
+                      {dictionary.landingPage.forgotPasswordPage.emailAddress}
                     </label>
                     <input
                       type="email"
@@ -146,8 +149,8 @@ export default function ForgotPasswordPage() {
                     disabled={!isFormValid || isLoading}
                   >
                     {isLoading
-                      ? t("landingPage.forgotPasswordPage.sending")
-                      : t("landingPage.forgotPasswordPage.sendOTP")}
+                      ? dictionary.landingPage.forgotPasswordPage.sending
+                      : dictionary.landingPage.forgotPasswordPage.sendOTP}
                   </button>
                 </form>
               </div>
@@ -155,7 +158,7 @@ export default function ForgotPasswordPage() {
           ) : (
             <>
               <h1 className="text-3xl font-medium mb-4">
-                {t("landingPage.forgotPasswordPage.verifyOTP")}
+                {dictionary.landingPage.forgotPasswordPage.verifyOTP}
               </h1>
               <div className="w-full">
                 {apiError && (
@@ -190,28 +193,28 @@ export default function ForgotPasswordPage() {
                 )}
 
                 <p className="text-base text-gray-700 mb-4 text-center">
-                  {t("landingPage.forgotPasswordPage.otpSent")}{" "}
+                  {dictionary.landingPage.forgotPasswordPage.otpSent}{" "}
                   <span className="font-bold">{email}</span>
                 </p>
                 <p className="text-base text-gray-700 mb-12 text-center">
-                  {t("landingPage.forgotPasswordPage.clickContinue")}
+                  {dictionary.landingPage.forgotPasswordPage.clickContinue}
                 </p>
 
                 <div className="space-y-4">
                   <button
                     onClick={handleContinue}
-                    className="w-full py-3 rounded-lg bg-[#FCA311] hover:bg-[#e5940c] text-black text-center transition-colors"
+                    className="w-full py-3 rounded-lg bg-[#FCA311] hover:bg-[#e5940c] text-black text-center transition-colors cursor-pointer"
                   >
-                    {t("landingPage.forgotPasswordPage.continue")}
+                    {dictionary.landingPage.forgotPasswordPage.continue}
                   </button>
                   <button
                     onClick={handleResendEmail}
-                    className="w-full py-3 rounded-lg text-blue-600 text-center hover:underline"
+                    className="w-full py-3 rounded-lg text-blue-600 text-center hover:underline cursor-pointer"
                     disabled={isLoading}
                   >
                     {isLoading
-                      ? t("landingPage.forgotPasswordPage.sending")
-                      : t("landingPage.forgotPasswordPage.resendOTP")}
+                      ? dictionary.landingPage.forgotPasswordPage.sending
+                      : dictionary.landingPage.forgotPasswordPage.resendOTP}
                   </button>
                 </div>
               </div>
@@ -220,7 +223,7 @@ export default function ForgotPasswordPage() {
 
           <div className="mt-6 flex items-center justify-center gap-x-4">
             <span className="text-sm text-gray-600">
-              {t("landingPage.forgotPasswordPage.rememberedPassword")}{" "}
+              {dictionary.landingPage.forgotPasswordPage.rememberedPassword}{" "}
             </span>
             <span className="text-sm">
               <i className="far fa-arrow-right"></i>
@@ -229,7 +232,7 @@ export default function ForgotPasswordPage() {
               href="/login"
               className="text-sm text-blue-600 hover:underline"
             >
-              {t("landingPage.forgotPasswordPage.login")}
+              {dictionary.landingPage.forgotPasswordPage.login}
             </Link>
           </div>
         </div>

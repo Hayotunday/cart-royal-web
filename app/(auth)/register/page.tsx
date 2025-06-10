@@ -2,22 +2,15 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import Header from "@/components/layout/Header";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
 import { useTranslation } from "react-i18next";
 import RegisterForm from "@/components/forms/register-form";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function SignUp() {
-  const [fullName, setFullName] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [confirmPassword, setConfirmPassword] = useState("");
+  const { dictionary, isReady } = useLanguage();
   const [isLoading, setIsLoading] = useState(false);
-  const [passwordError, setPasswordError] = useState("");
-
   const [selectedAccountType, setSelectedAccountType] = useState<string | null>(
     null
   );
@@ -65,27 +58,27 @@ export default function SignUp() {
     } = {};
 
     if (!formData.email) {
-      newErrors.email = t("formErrors.emailRequired");
+      newErrors.email = t("landingPage.formErrors.emailRequired");
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-      newErrors.email = t("formErrors.invalidEmail");
+      newErrors.email = t("landingPage.formErrors.invalidEmail");
     }
 
     if (!formData.fullName) {
-      newErrors.fullName = t("formErrors.fullNameRequired");
+      newErrors.fullName = t("landingPage.formErrors.fullNameRequired");
     }
 
     if (!formData.password) {
-      newErrors.password = t("formErrors.passwordRequired");
+      newErrors.password = t("landingPage.formErrors.passwordRequired");
     } else if (formData.password.length < 8) {
-      newErrors.password = t("formErrors.minPassword");
+      newErrors.password = t("landingPage.formErrors.minPassword");
     }
 
     if (formData.password !== formData.confirmPassword) {
-      newErrors.confirmPassword = t("formsErrors.passwordsMismatch");
+      newErrors.confirmPassword = t("landingPage.formErrors.passwordsMismatch");
     }
 
     if (!formData.country) {
-      newErrors.country = t("formsErrors.selectCountry");
+      newErrors.country = t("landingPage.formErrors.selectCountry");
     }
 
     setErrors({
@@ -102,7 +95,7 @@ export default function SignUp() {
   const handleContinue = () => {
     if (showEmailForm) {
       if (validateForm()) {
-        navigate.push("/verifymail");
+        navigate.push("/verify");
       }
     } else {
       setShowSignupMethods(true);
@@ -134,26 +127,6 @@ export default function SignUp() {
     }));
   };
 
-  const handleSignUp = async (e: React.FormEvent) => {
-    e.preventDefault();
-
-    // Basic validation
-    if (password !== confirmPassword) {
-      setPasswordError("Passwords do not match");
-      return;
-    }
-
-    setPasswordError("");
-    setIsLoading(true);
-
-    // Simulate registration process
-    setTimeout(() => {
-      setIsLoading(false);
-      // In a real app, this would register the user and redirect
-      console.log("Sign up with:", fullName, email, password);
-    }, 1500);
-  };
-
   const handleGoogleSignUp = () => {
     setIsLoading(true);
 
@@ -169,16 +142,16 @@ export default function SignUp() {
   const AccountTypeSelection = () => (
     <>
       <h1 className="text-[32px] font-medium mb-7 text-left pl-6 w-[100%]">
-        {t("landingPage.signUpPage.letsCreateAccount")}
+        {dictionary.landingPage.signUpPage.letsCreateAccount}
       </h1>
 
       <p className="text-base text-gray-700 mb-6 text-left pl-6">
-        {t("landingPage.signUpPage.chooseAccountType")}
+        {dictionary.landingPage.signUpPage.chooseAccountType}
       </p>
 
       <div className="space-y-4 px-6">
         <button
-          className={`w-[100%] flex items-center justify-between p-6 rounded-lg transition-all ${
+          className={`w-full flex items-center justify-between p-6 rounded-lg transition-all cursor-pointer ${
             selectedAccountType === "buyer"
               ? "border-[1px] border-black bg-[#F5F5F5]"
               : "bg-[#F5F5F5]"
@@ -188,7 +161,7 @@ export default function SignUp() {
           <div className="flex items-center">
             <i className="far fa-user text-lh mr-3 text-lg text-gray-700" />
             <span className="text-left text-gray-700 text-sm">
-              {t("landingPage.signUpPage.createBuyerAccount")}
+              {dictionary.landingPage.signUpPage.createBuyerAccount}
             </span>
           </div>
           <div
@@ -204,7 +177,7 @@ export default function SignUp() {
         </button>
 
         <button
-          className={`w-[100%] flex items-center justify-between p-6 rounded-lg transition-all ${
+          className={`w-full flex items-center justify-between p-6 rounded-lg transition-all cursor-pointer ${
             selectedAccountType === "seller"
               ? "border-[1px] border-black bg-[#F5F5F5]"
               : "bg-[#F5F5F5]"
@@ -214,7 +187,7 @@ export default function SignUp() {
           <div className="flex items-center">
             <i className="far fa-user-tag mr-3 text-lg text-gray-700" />
             <span className="text-left text-gray-700 text-sm">
-              {t("landingPage.signUpPage.createSellerAccount")}
+              {dictionary.landingPage.signUpPage.createSellerAccount}
             </span>
           </div>
           <div
@@ -232,7 +205,7 @@ export default function SignUp() {
 
       <div className="px-6">
         <button
-          className={`w-[100%] py-2 mt-8 text-black rounded-lg ${
+          className={`w-full py-2 mt-8 text-black rounded-lg cursor-pointer ${
             selectedAccountType
               ? "bg-[#FCA311] hover:bg-[#e5940c]"
               : "bg-[#FCA31180] cursor-not-allowed"
@@ -240,7 +213,7 @@ export default function SignUp() {
           disabled={!selectedAccountType}
           onClick={handleContinue}
         >
-          {t("landingPage.signUpPage.continue")}
+          {dictionary.landingPage.signUpPage.continue}
         </button>
       </div>
     </>
@@ -250,11 +223,11 @@ export default function SignUp() {
   const SignupMethods = () => (
     <>
       <h1 className="text-[32px] font-medium mb-10 text-left pl-6 w-[100%]">
-        {t("landingPage.signUpPage.letsCreateAccount")}
+        {dictionary.landingPage.signUpPage.letsCreateAccount}
       </h1>
 
       <p className="text-base text-gray-700 mb-6 text-left pl-6">
-        {t("landingPage.signUpPage.chooseSignMethod")}
+        {dictionary.landingPage.signUpPage.chooseSignMethod}
       </p>
 
       <div className="space-y-4 px-6">
@@ -287,7 +260,7 @@ export default function SignUp() {
               />
             </svg>
             <span className="text-gray-700">
-              {t("landingPage.loginPage.continueWithGoogle")}
+              {dictionary.landingPage.loginPage.continueWithGoogle}
             </span>
           </div>
           <i className="far fa-arrow-right text-lg" />
@@ -301,7 +274,7 @@ export default function SignUp() {
           <div className="flex items-center cursor-pointer w-full">
             <i className="far fa-envelope text-lg mr-3" />
             <span className="text-gray-700">
-              {t("landingPage.signUpPage.continueWithEmail")}
+              {dictionary.landingPage.signUpPage.continueWithEmail}
             </span>
           </div>
           <i className="far fa-arrow-back text-lg" />
@@ -309,6 +282,10 @@ export default function SignUp() {
       </div>
     </>
   );
+
+  if (!isReady) {
+    return null;
+  }
 
   return (
     <main className="min-h-screen flex flex-col">
@@ -354,7 +331,7 @@ export default function SignUp() {
         {!showEmailForm && (
           <div className="mt-4 px-6 text-sm flex items-center justify-center gap-x-1.5">
             <div className="text-gray-600">
-              {t("landingPage.signUpPage.alreadyHaveAccount")}
+              {dictionary.landingPage.signUpPage.alreadyHaveAccount}
             </div>
             <span className="text-gray-600">
               <i className="far fa-arrow-right mr-1" />
@@ -363,20 +340,20 @@ export default function SignUp() {
               href="/login"
               className="underline underline-offset-4 font-medium"
             >
-              {t("landingPage.loginPage.logIn")}
+              {dictionary.landingPage.loginPage.logIn}
             </Link>
           </div>
         )}
 
         {/* Terms and Privacy Policy Section */}
         <p className="text-left mt-3 text-xs text-gray-500 px-6 w-[100%]">
-          {t("landingPage.loginPage.tosDesc")}{" "}
+          {dictionary.landingPage.loginPage.tosDesc}{" "}
           <Link href="/term" className="text-black underline">
-            {t("landingPage.loginPage.tos")}
+            {dictionary.landingPage.loginPage.tos}
           </Link>{" "}
-          {t("landingPage.loginPage.and")}{" "}
+          {dictionary.landingPage.loginPage.and}{" "}
           <Link href="/privacy" className="text-black underline">
-            {t("landingPage.loginPage.privacyPolicy")}
+            {dictionary.landingPage.loginPage.privacyPolicy}
           </Link>
         </p>
         <div className="mb-5"></div>

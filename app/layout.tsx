@@ -2,6 +2,11 @@ import type { Metadata } from "next";
 import { Toaster } from "@/components/ui/sonner";
 import "./globals.css";
 import { Providers } from "./providers";
+import { Inter } from "next/font/google";
+
+const inter = Inter({
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "CartRoyal",
@@ -14,11 +19,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={inter.className}>
       <head>
         <link rel="stylesheet" href="/css/all.min.css" />
       </head>
-      <body className="font-inter antialiased scroll-smooth">
+      <body className="antialiased scroll-smooth">
         <Providers>{children}</Providers>
         <Toaster />
       </body>

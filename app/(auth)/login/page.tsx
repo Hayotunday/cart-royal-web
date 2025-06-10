@@ -3,9 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Header from "@/components/layout/Header";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import { useTranslation } from "react-i18next";
+import { useLanguage } from "@/context/LanguageContext";
 import { useRouter } from "next/navigation";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 
@@ -19,8 +17,8 @@ export default function SignIn() {
   const [showPassword, setShowPassword] = useState(false);
   const [emailError, setEmailError] = useState("");
   const [passwordError, setPasswordError] = useState("");
-  const { t } = useTranslation();
   const navigate = useRouter();
+  const { dictionary, isReady } = useLanguage();
 
   const validateEmail = (email: string) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -43,7 +41,7 @@ export default function SignIn() {
 
     if (name === "email") {
       if (value && !validateEmail(value)) {
-        setEmailError("Email Address not valid");
+        setEmailError(dictionary.landingPage.formErrors.invalidEmail);
       } else {
         setEmailError("");
       }
@@ -51,7 +49,7 @@ export default function SignIn() {
 
     if (name === "password") {
       if (value && !validatePassword(value)) {
-        setPasswordError("Password must be at least 8 characters");
+        setPasswordError(dictionary.landingPage.formErrors.minPassword);
       } else {
         setPasswordError("");
       }
@@ -85,6 +83,10 @@ export default function SignIn() {
   const isFormValid =
     formData.email && formData.password && !emailError && !passwordError;
 
+  if (!isReady) {
+    return null;
+  }
+
   return (
     <main className="min-h-screen flex flex-col">
       <Header viewOnly />
@@ -93,7 +95,7 @@ export default function SignIn() {
         {/* Main Content */}
         <div className="max-w-6xl mx-auto px-6 pt-8 md:pt-16">
           <h1 className="text-3xl font-medium mb-12 text-center">
-            {t("landingPage.loginPage.logIntoAccount")}
+            {dictionary.landingPage.loginPage.logIntoAccount}
           </h1>
 
           <div className="flex flex-col md:flex-row md:space-x-12 justify-center">
@@ -102,13 +104,10 @@ export default function SignIn() {
               <form className="space-y-6" onSubmit={handleSubmit} noValidate>
                 <div className="relative">
                   <label htmlFor="email" className="block text-sm mb-2">
-                    {t("landingPage.loginPage.enterEmailAddress")}
+                    {dictionary.landingPage.loginPage.enterEmailAddress}
                   </label>
                   {emailError && (
-                    <p
-                      className="absolute right-0 top-0 text-red-500 text-xs"
-                      role="alert"
-                    >
+                    <p className="text-red-500 text-xs my-2" role="alert">
                       {emailError}
                     </p>
                   )}
@@ -129,13 +128,10 @@ export default function SignIn() {
 
                 <div className="relative">
                   <label htmlFor="password" className="block text-sm mb-2">
-                    {t("landingPage.loginPage.password")}
+                    {dictionary.landingPage.loginPage.password}
                   </label>
                   {passwordError && (
-                    <p
-                      className="absolute right-0 top-0 text-red-500 text-xs"
-                      role="alert"
-                    >
+                    <p className=" text-red-500 text-xs my-2" role="alert">
                       {passwordError}
                     </p>
                   )}
@@ -149,7 +145,9 @@ export default function SignIn() {
                       className={`w-full px-4 py-3 pr-10 rounded-lg border ${
                         passwordError ? "border-red-500" : "border-gray-300"
                       } focus:outline-none focus:border-[#FCA311] hover:border-[#FCA311]`}
-                      placeholder={t("landingPage.loginPage.enterPassword")}
+                      placeholder={
+                        dictionary.landingPage.loginPage.enterPassword
+                      }
                       aria-invalid={passwordError ? "true" : "false"}
                       aria-describedby={
                         passwordError ? "password-error" : undefined
@@ -161,8 +159,8 @@ export default function SignIn() {
                       className="absolute right-3 top-1/2 transform -translate-y-1/2"
                       aria-label={
                         showPassword
-                          ? t("landingPage.loginPage.hidePassword")
-                          : t("landingPage.loginPage.showPassword")
+                          ? dictionary.landingPage.loginPage.hidePassword
+                          : dictionary.landingPage.loginPage.showPassword
                       }
                     >
                       {showPassword ? (
@@ -199,8 +197,8 @@ export default function SignIn() {
                   disabled={!isFormValid || isLoading}
                 >
                   {isLoading
-                    ? t("landingPage.loginPage.processing")
-                    : t("landingPage.loginPage.continue")}
+                    ? dictionary.landingPage.loginPage.processing
+                    : dictionary.landingPage.loginPage.continue}
                 </button>
               </form>
             </div>
@@ -209,7 +207,7 @@ export default function SignIn() {
             <div className="my-8 md:my-0 flex md:flex-col items-center justify-center">
               <div className="flex-1 md:h-full md:w-px border-t md:border-l border-gray-300"></div>
               <span className="px-4 text-gray-500">
-                {t("landingPage.loginPage.or")}
+                {dictionary.landingPage.loginPage.or}
               </span>
               <div className="flex-1 md:h-full md:w-px border-t md:border-l border-gray-300"></div>
             </div>
@@ -244,7 +242,9 @@ export default function SignIn() {
                       d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
                     />
                   </svg>
-                  <span>{t("landingPage.loginPage.continueWithGoogle")}</span>
+                  <span>
+                    {dictionary.landingPage.loginPage.continueWithGoogle}
+                  </span>
                 </div>
                 <i className="far fa-arrow-right text-lg" />
               </button>
@@ -256,7 +256,7 @@ export default function SignIn() {
               href="/password/forgot"
               className="text-sm text-gray-600 hover:text-gray-800"
             >
-              {t("landingPage.loginPage.cantLogin")}
+              {dictionary.landingPage.loginPage.cantLogin}
             </Link>
             <span className="mx-2 text-gray-500">
               <i className="far fa-arrow-right text-sm font-semibold" />
@@ -265,18 +265,18 @@ export default function SignIn() {
               href="/register"
               className="text-sm font-medium underline underline-offset-4"
             >
-              {t("landingPage.loginPage.createAccount")}
+              {dictionary.landingPage.loginPage.createAccount}
             </Link>
           </div>
 
           <p className="mt-8 text-sm text-gray-600 text-center">
-            {t("landingPage.loginPage.tosDesc")}
+            {dictionary.landingPage.loginPage.tosDesc}
             <Link href="/terms" className="underline hover:text-gray-800">
-              {t("landingPage.loginPage.tos")}
+              {dictionary.landingPage.loginPage.tos}
             </Link>{" "}
-            {t("landingPage.loginPage.and")}{" "}
+            {dictionary.landingPage.loginPage.and}{" "}
             <Link href="/privacy" className="underline hover:text-gray-800">
-              {t("landingPage.loginPage.privacyPolicy")}
+              {dictionary.landingPage.loginPage.privacyPolicy}
             </Link>
           </p>
         </div>

@@ -1,13 +1,12 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { IoCloseCircleOutline } from "react-icons/io5";
 import { BsEye, BsEyeSlash } from "react-icons/bs";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { CheckCircle2 } from "lucide-react";
-import { useTranslation } from "react-i18next";
+import { useLanguage } from "@/context/LanguageContext";
 import Header from "@/components/layout/Header";
 
 export default function ResetPassword() {
@@ -38,7 +37,7 @@ export default function ResetPassword() {
   });
   const navigate = useRouter();
   const location = usePathname();
-  const { t } = useTranslation();
+  const { dictionary, isReady } = useLanguage();
   const email = new URLSearchParams(window.location.search).get("email") || "";
 
   useEffect(() => {
@@ -106,7 +105,7 @@ export default function ResetPassword() {
     let error = "";
     if (name === "otp") {
       if (value && !validateOtp(value)) {
-        error = t("landingPage.toasts.otpMinimumLength");
+        error = dictionary.landingPage.toasts.otpMinimumLength;
       } else {
         error = "";
       }
@@ -115,7 +114,7 @@ export default function ResetPassword() {
 
     if (name === "newPassword") {
       if (value && !validatePassword(value)) {
-        error = t("landingPage.toasts.passwordStrength");
+        error = dictionary.landingPage.toasts.passwordStrength;
       } else {
         error = "";
       }
@@ -124,7 +123,7 @@ export default function ResetPassword() {
 
     if (name === "confirmPassword") {
       if (value && value !== formData.newPassword) {
-        error = t("landingPage.toasts.passwordsMismatch");
+        error = dictionary.landingPage.toasts.passwordsMismatch;
       } else {
         error = "";
       }
@@ -143,7 +142,7 @@ export default function ResetPassword() {
         // await resetPassword(email, formData.newPassword, formData.otp); // replace with actual API call
         setPasswordChanged(true);
       } catch (error: any) {
-        setApiError(error.message || t("landingPage.toasts.resetFailed"));
+        setApiError(error.message || dictionary.landingPage.toasts.resetFailed);
       } finally {
         setIsLoading(false);
       }
@@ -166,6 +165,10 @@ export default function ResetPassword() {
     !newPasswordError &&
     !confirmPasswordError;
 
+  if (!isReady) {
+    return null; // Wait until the language context is ready
+  }
+
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
@@ -177,10 +180,13 @@ export default function ResetPassword() {
           {!passwordChanged ? (
             <>
               <h1 className="text-3xl font-medium mb-4">
-                {t("landingPage.resetPasswordPage.createNewPassword")}
+                {dictionary.landingPage.resetPasswordPage.createNewPassword}
               </h1>
               <p className="text-base text-gray-700 mb-12">
-                {t("landingPage.resetPasswordPage.resetPasswordDescription")}
+                {
+                  dictionary.landingPage.resetPasswordPage
+                    .resetPasswordDescription
+                }
               </p>
 
               {/* Form Section */}
@@ -228,7 +234,9 @@ export default function ResetPassword() {
                       className={`w-full px-4 py-3 rounded-lg border ${
                         otpError ? "border-red-500" : "border-gray-300"
                       } focus:outline-none focus:border-[#FCA311] hover:border-[#FCA311]`}
-                      placeholder={t("landingPage.resetPasswordPage.enterOTP")}
+                      placeholder={
+                        dictionary.landingPage.resetPasswordPage.enterOTP
+                      }
                     />
                     {otpError && (
                       <p className="mt-1 text-red-500 text-xs">{otpError}</p>
@@ -237,7 +245,7 @@ export default function ResetPassword() {
 
                   <div>
                     <label className="block text-sm mb-2">
-                      {t("landingPage.resetPasswordPage.newPassword")}
+                      {dictionary.landingPage.resetPasswordPage.newPassword}
                     </label>
                     <div className="relative">
                       <input
@@ -250,9 +258,10 @@ export default function ResetPassword() {
                             ? "border-red-500"
                             : "border-gray-300"
                         } focus:outline-none focus:border-[#FCA311] hover:border-[#FCA311]`}
-                        placeholder={t(
-                          "landingPage.resetPasswordPage.enterNewPassword"
-                        )}
+                        placeholder={
+                          dictionary.landingPage.resetPasswordPage
+                            .enterNewPassword
+                        }
                       />
                       <button
                         type="button"
@@ -299,7 +308,7 @@ export default function ResetPassword() {
 
                   <div>
                     <label className="block text-sm mb-2">
-                      {t("landingPage.resetPasswordPage.confirmPassword")}
+                      {dictionary.landingPage.resetPasswordPage.confirmPassword}
                     </label>
                     <div className="relative">
                       <input
@@ -312,9 +321,10 @@ export default function ResetPassword() {
                             ? "border-red-500"
                             : "border-gray-300"
                         } focus:outline-none focus:border-[#FCA311] hover:border-[#FCA311]`}
-                        placeholder={t(
-                          "landingPage.resetPasswordPage.confirmNewPassword"
-                        )}
+                        placeholder={
+                          dictionary.landingPage.resetPasswordPage
+                            .confirmNewPassword
+                        }
                       />
                       <button
                         type="button"
@@ -347,8 +357,8 @@ export default function ResetPassword() {
                     disabled={!isFormValid || isLoading}
                   >
                     {isLoading
-                      ? t("landingPage.resetPasswordPage.processing")
-                      : t("landingPage.resetPasswordPage.resetPassword")}
+                      ? dictionary.landingPage.resetPasswordPage.processing
+                      : dictionary.landingPage.resetPasswordPage.resetPassword}
                   </button>
                 </form>
               </div>
@@ -356,17 +366,20 @@ export default function ResetPassword() {
           ) : (
             <div className="text-center">
               <h1 className="text-3xl font-medium mb-4">
-                {t("landingPage.resetPasswordPage.passwordChanged")}
+                {dictionary.landingPage.resetPasswordPage.passwordChanged}
               </h1>
               <p className="text-base text-gray-700 mb-8">
-                {t("landingPage.resetPasswordPage.passwordChangedDescription")}
+                {
+                  dictionary.landingPage.resetPasswordPage
+                    .passwordChangedDescription
+                }
               </p>
               <i className="fad fa-check-circle text-green-600 text-8xl mx-auto mb-8" />
               <button
                 onClick={handleContinue}
                 className="w-full py-3 rounded-lg bg-[#FCA311] hover:bg-[#e5940c] text-black text-center transition-colors cursor-pointer"
               >
-                {t("landingPage.resetPasswordPage.proceedToLogin")}
+                {dictionary.landingPage.resetPasswordPage.proceedToLogin}
               </button>
             </div>
           )}

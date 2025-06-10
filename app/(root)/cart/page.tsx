@@ -1,23 +1,29 @@
-// This is now a Server Component
-import React from "react";
+"use client";
+
+import React, { useState, useEffect } from "react";
 import Header from "@/components/layout/Header";
-import CartClientPage from "@/components/features/CartClientPage"; // Import the new Client Component
-import { fetchData, sampleCartItems, CartItemType } from "@/data/index";
+import CartClientPage from "@/components/features/CartClientPage";
+import { sampleCartItems, fetchData, CartItemType } from "@/data/index";
 
-// Simulate fetching cart data on the server
-async function getCartData(): Promise<{ cartItems: CartItemType[] }> {
-  // In a real app, this would fetch from your backend/API or a cart service
-  const items = await fetchData(sampleCartItems);
-  return { cartItems: items };
-}
+export default function CartPage() {
+  const [cartItems, setCartItems] = useState<CartItemType[] | null>(null);
 
-export default async function CartPage() {
-  const { cartItems } = await getCartData();
+  useEffect(() => {
+    async function loadCartData() {
+      const items = await fetchData(sampleCartItems);
+      setCartItems(items);
+    }
+    loadCartData();
+  }, []);
 
   return (
     <main className="min-h-screen flex flex-col w-full items-center">
       <Header />
-      <CartClientPage initialCartItems={cartItems} />
+      {cartItems === null ? (
+        <div className="py-10 text-gray-500 min-h-[100vh]">Loading cart...</div>
+      ) : (
+        <CartClientPage initialCartItems={cartItems} />
+      )}
     </main>
   );
 }

@@ -1,8 +1,26 @@
 "use client";
 
-import React, { createContext, useState, useContext, useEffect } from "react";
+import React, { createContext, useContext, useEffect, useState } from "react";
+import { getDictionary } from "../lib/getDictionary";
 
-const STORAGE_KEY = "selectedLanguage";
+type Dictionary = Record<string, any>;
+
+interface LanguageContextType {
+  locale: { code: string; name: string; country: string };
+  dictionary: Dictionary;
+  setLocale: (language: {
+    code: string;
+    name: string;
+    country: string;
+  }) => void;
+  isReady: boolean;
+}
+
+const LanguageContext = createContext<LanguageContextType | undefined>(
+  undefined
+);
+
+const LOCAL_STORAGE_KEY = "selectedLocale";
 
 const defaultLanguage = {
   code: "eng",
@@ -10,38 +28,49 @@ const defaultLanguage = {
   country: "US",
 };
 
-interface LanguageContextType {
-  selectedLanguage: { code: string; name: string; country: string };
-  updateLanguage: (language: {
-    code: string;
-    name: string;
-    country: string;
-  }) => void;
-}
+export const LanguageProvider = ({
+  children,
+}: {
+  children: React.ReactNode;
+}) => {
+  const [isReady, setIsReady] = useState(false);
+  const [locale, setLocaleState] = useState(defaultLanguage);
+  const [dictionary, setDictionary] = useState<Dictionary>({});
 
-export const LanguageContext = createContext<LanguageContextType | null>(null);
-
-export const LanguageProvider = ({ children }: React.PropsWithChildren<{}>) => {
-  const [selectedLanguage, setSelectedLanguage] = useState(defaultLanguage);
-
+  // Load locale from localStorage on first render
   useEffect(() => {
-    const savedLanguage = localStorage.getItem(STORAGE_KEY);
-    if (savedLanguage) {
-      setSelectedLanguage(JSON.parse(savedLanguage));
-    }
+    const savedLocale =
+      typeof window !== "undefined"
+        ? localStorage.getItem(LOCAL_STORAGE_KEY)
+        : null;
+    if (savedLocale) setLocaleState(JSON.parse(savedLocale));
   }, []);
 
-  const updateLanguage = (language: {
+  // Update dictionary whenever locale changes
+
+  useEffect(() => {
+    setIsReady(false);
+    getDictionary(locale).then((dict) => {
+      setDictionary(dict);
+      setIsReady(true);
+    });
+  }, [locale]);
+
+  const setLocale = (newLocale: {
     code: string;
     name: string;
     country: string;
   }) => {
-    setSelectedLanguage(language);
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(language));
+    setLocaleState(newLocale);
+    if (typeof window !== "undefined") {
+      localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(newLocale));
+    }
   };
 
   return (
-    <LanguageContext.Provider value={{ selectedLanguage, updateLanguage }}>
+    <LanguageContext.Provider
+      value={{ locale, dictionary, setLocale, isReady }}
+    >
       {children}
     </LanguageContext.Provider>
   );
@@ -49,8 +78,7 @@ export const LanguageProvider = ({ children }: React.PropsWithChildren<{}>) => {
 
 export const useLanguage = () => {
   const context = useContext(LanguageContext);
-  if (context === null) {
-    throw new Error("useLanguage must be used within a LanguageProvider");
-  }
+  if (!context)
+    throw new Error("useLanguage must be used within LanguageProvider");
   return context;
 };

@@ -22,7 +22,7 @@ import { cn } from "@/lib/utils";
 import { ChevronDown, ChevronsUpDown, CheckIcon, Globe } from "lucide-react";
 import { CircleFlag } from "react-circle-flags";
 import { countries } from "country-data-list";
-import { useTranslation } from "react-i18next";
+import { useLanguage } from "@/context/LanguageContext";
 
 type Country = {
   alpha2: string;
@@ -73,7 +73,7 @@ const CountryDropdownComponent = (
 ) => {
   const [open, setOpen] = useState(false);
   const [selectedCountries, setSelectedCountries] = useState<Country[]>([]);
-  const { t } = useTranslation();
+  const { dictionary, isReady } = useLanguage();
 
   const textSizeClass = textSizeClassMap[textSize] || "text-base";
 
@@ -136,6 +136,10 @@ const CountryDropdownComponent = (
     className
   );
 
+  if (!isReady) {
+    return null;
+  }
+
   return (
     <Popover open={open} onOpenChange={setOpen}>
       <PopoverTrigger
@@ -175,7 +179,7 @@ const CountryDropdownComponent = (
             {inline || slim ? (
               <Globe size={16} />
             ) : (
-              t("landingPage.signUpPage.selectCountryPlaceholder")
+              dictionary.landingPage.signUpPage.selectCountryPlaceholder
             )}
           </span>
         )}
@@ -195,14 +199,14 @@ const CountryDropdownComponent = (
           <CommandList>
             <div className="sticky top-0 z-10 bg-popover">
               <CommandInput
-                placeholder={t(
-                  "landingPage.signUpPage.searchCountryPlaceholder"
-                )}
+                placeholder={
+                  dictionary.landingPage.signUpPage.searchCountryPlaceholder
+                }
                 className={`h-12 ${textSizeClass} placeholder:text-gray-400 focus:placeholder:text-gray-400`}
               />
             </div>
             <CommandEmpty>
-              {t("landingPage.signUpPage.noCountryFound")}
+              {dictionary.landingPage.signUpPage.noCountryFound}
             </CommandEmpty>
             <CommandGroup>
               {options
