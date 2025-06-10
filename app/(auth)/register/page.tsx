@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Header from "@/components/layout/Header";
 import { useRouter } from "next/navigation";
-import { useTranslation } from "react-i18next";
 import RegisterForm from "@/components/forms/register-form";
 import { useLanguage } from "@/context/LanguageContext";
 
@@ -19,7 +18,6 @@ export default function SignUp() {
   const [loading, setLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
   const navigate = useRouter();
-  const { t } = useTranslation();
 
   const [formData, setFormData] = useState<{
     email: string;
@@ -58,27 +56,28 @@ export default function SignUp() {
     } = {};
 
     if (!formData.email) {
-      newErrors.email = t("landingPage.formErrors.emailRequired");
+      newErrors.email = dictionary.landingPage.formErrors.emailRequired;
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-      newErrors.email = t("landingPage.formErrors.invalidEmail");
+      newErrors.email = dictionary.landingPage.formErrors.invalidEmail;
     }
 
     if (!formData.fullName) {
-      newErrors.fullName = t("landingPage.formErrors.fullNameRequired");
+      newErrors.fullName = dictionary.landingPage.formErrors.fullNameRequired;
     }
 
     if (!formData.password) {
-      newErrors.password = t("landingPage.formErrors.passwordRequired");
+      newErrors.password = dictionary.landingPage.formErrors.passwordRequired;
     } else if (formData.password.length < 8) {
-      newErrors.password = t("landingPage.formErrors.minPassword");
+      newErrors.password = dictionary.landingPage.formErrors.minPassword;
     }
 
     if (formData.password !== formData.confirmPassword) {
-      newErrors.confirmPassword = t("landingPage.formErrors.passwordsMismatch");
+      newErrors.confirmPassword =
+        dictionary.landingPage.formErrors.passwordsMismatch;
     }
 
     if (!formData.country) {
-      newErrors.country = t("landingPage.formErrors.selectCountry");
+      newErrors.country = dictionary.landingPage.formErrors.selectCountry;
     }
 
     setErrors({
