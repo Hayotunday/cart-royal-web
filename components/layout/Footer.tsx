@@ -3,12 +3,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { Fragment, useState } from "react";
-import { useTranslation } from "react-i18next";
 import { showToast } from "../ui/toast";
 import { Input } from "../ui/input";
+import { useLanguage } from "@/context/LanguageContext";
 
 const Footer = () => {
-  const { t } = useTranslation();
+  const { dictionary, isReady } = useLanguage();
   const [email, setEmail] = useState("");
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -16,12 +16,14 @@ const Footer = () => {
     if (email) {
       // Here you should typically make an API call to subscribe the email
       showToast({
-        message: t("toast.thanksNewsletter"),
+        message: dictionary.toast.thanksNewsletter,
         type: "success",
       });
       setEmail("");
     }
   };
+
+  if (!isReady) return null; // Ensure the dictionary is ready before rendering
 
   return (
     <Fragment>
