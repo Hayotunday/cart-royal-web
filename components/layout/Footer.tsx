@@ -14,7 +14,7 @@ const Footer = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (email) {
-      // Here you would typically make an API call to subscribe the email
+      // Here you should typically make an API call to subscribe the email
       showToast({
         message: t("toast.thanksNewsletter"),
         type: "success",
