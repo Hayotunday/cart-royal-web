@@ -1,0 +1,123 @@
+{
+  "landingPage": {
+    "navbar": {
+      "viewProfile": "Lihat Profil",
+      "helpCenter": "Pusat Bantuan",
+      "giveFeedback": "Berikan masukan kepada kami",
+      "privacyPolicy": "Kebijakan Privasi",
+      "logIn": "Masuk",
+      "getStarted": "Mulai",
+      "logout": "Keluar"
+    },
+    "loginPage": {
+      "logIn": "Masuk",
+      "close": "Tutup",
+      "createAccount": "Buat Akun",
+      "logIntoAccount": "Masuk ke akun Anda",
+      "emailAddress": "Alamat email",
+      "enterEmailAddress": "Masukkan alamat email Anda",
+      "password": "Kata sandi",
+      "enterPassword": "Masukkan kata sandi Anda",
+      "continueWithGoogle": "Lanjutkan dengan Google",
+      "cantLogin": "Tidak bisa masuk?",
+      "tosDesc": "Dengan mengklik buat akun, Anda menyetujui ",
+      "tos": "Ketentuan Layanan",
+      "privacyPolicy": "Kebijakan Privasi",
+      "and": "dan",
+      "or": "ATAU",
+      "processing": "Memproses...",
+      "continue": "Lanjutkan",
+      "hidePassword": "Sembunyikan kata sandi",
+      "showPassword": "Tampilkan kata sandi"
+    },
+    "signUpPage": {
+      "letsCreateAccount": "Mari buat akun Anda",
+      "chooseAccountType": "Pilih jenis akun",
+      "createBuyerAccount": "Saya membuat akun pembeli",
+      "createSellerAccount": "Saya membuat akun penjual",
+      "continue": "Lanjutkan",
+      "chooseSignMethod": "Pilih metode pendaftaran",
+      "continueWithEmail": "Lanjutkan dengan email",
+      "alreadyHaveAccount": "Sudah punya akun?",
+      "fullName": "Nama Lengkap",
+      "chooseUsername": "Pilih nama pengguna",
+      "enterYourFullName": "Masukkan nama lengkap Anda",
+      "confirmPassword": "Konfirmasi kata sandi",
+      "country": "Negara",
+      "selectCountryPlaceholder": "Pilih negara Anda",
+      "searchCountryPlaceholder": "Cari negara...",
+      "noCountryFound": "Negara tidak ditemukan"
+    },
+    "welcomePage": {
+      "welcomeAboard": "Selamat datang",
+      "welcomeText": "Platform belanja No. 1 Anda untuk relokasi tanpa batas, panduan hukum, dan kehidupan global."
+    },
+    "forgotPasswordPage": {
+      "emailAddress": "Alamat email",
+      "forgotPassword": "Lupa Kata Sandi?",
+      "enterEmailToReset": "Masukkan email akun Anda dan kami akan mengirimkan OTP untuk mengatur ulang kata sandi Anda.",
+      "sendOTP": "Kirim OTP",
+      "verifyOTP": "Verifikasi OTP",
+      "resendOTP": "Kirim ulang OTP",
+      "backToLogin": "Kembali ke Login",
+      "sending": "Mengirim...",
+      "otpSent": "OTP telah dikirim ke",
+      "continue": "Lanjutkan",
+      "clickContinue": "Klik tombol lanjutkan di bawah ini untuk membuat kata sandi baru.",
+      "rememberedPassword": "Ingat kata sandi Anda?",
+      "login": "Masuk"
+    },
+    "resetPasswordPage": {
+      "resetPassword": "Atur Ulang Kata Sandi",
+      "resetPasswordDescription": "Kata sandi baru Anda harus unik dari yang sebelumnya digunakan.",
+      "enterOTP": "Masukkan OTP",
+      "newPassword": "Kata Sandi Baru",
+      "confirmPassword": "Konfirmasi Kata Sandi",
+      "createNewPassword": "Buat kata sandi baru",
+      "enterNewPassword": "Masukkan kata sandi baru Anda",
+      "confirmNewPassword": "Konfirmasi kata sandi baru Anda",
+      "reset": "Atur Ulang",
+      "passwordChanged": "Kata Sandi Diubah",
+      "passwordChangedDescription": "Kata sandi Anda telah berhasil diubah.",
+      "backToLogin": "Kembali ke Login",
+      "processing": "Memproses...",
+      "proceedToLogin": "Lanjutkan untuk masuk"
+    },
+    "drawers": {
+      "selectLanguages": {
+        "confirm": "Konfirmasi Perubahan"
+      }
+    },
+    "toasts": {
+      "accountCreated": "Akun berhasil dibuat",
+      "accountUpdated": "Akun berhasil diperbarui",
+      "passwordChanged": "Kata sandi berhasil diubah",
+      "passwordStrength": "Kata sandi harus minimal 8 karakter, termasuk huruf besar, huruf kecil, angka, dan simbol",
+      "passwordsMismatch": "Kata sandi tidak cocok",
+      "resetFailed": "Gagal mengatur ulang kata sandi, silakan coba lagi",
+      "emailSent": "Email berhasil dikirim",
+      "invalidEmail": "Alamat email tidak valid",
+      "otpMinimumLength": "OTP harus minimal 6 karakter",
+      "otpVerified": "OTP berhasil diverifikasi",
+      "otpResent": "OTP berhasil dikirim ulang",
+      "sendError": "Gagal mengirim OTP. Silakan coba lagi.",
+      "resendError": "Gagal mengirim ulang OTP. Silakan coba lagi.",
+      "errorOccurred": "Terjadi kesalahan, silakan coba lagi nanti",
+      "invalidCredentials": "Kredensial tidak valid, silakan coba lagi"
+    },
+    "formErrors": {
+      "invalidEmail": "Format email tidak valid",
+      "emailRequired": "Email diperlukan",
+      "fullNameRequired": "Nama lengkap diperlukan",
+      "enterFullName": "Silakan masukkan nama lengkap Anda",
+      "passwordRequired": "Kata sandi diperlukan",
+      "minPassword": "Kata sandi harus minimal 8 karakter",
+      "passwordsMismatch": "Kata sandi tidak cocok",
+      "weakPassword": "Kata sandi terlalu lemah",
+      "selectCountry": "Silakan pilih negara",
+      "usernameRequired": "Nama pengguna diperlukan",
+      "minUsername": "Nama pengguna harus minimal 3 karakter",
+      "cpasswordRequired": "Konfirmasi kata sandi diperlukan"
+    }
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "landingPage": {
+    "navbar": {
+      "viewProfile": "Näytä profiili",
+      "helpCenter": "Ohjekeskus",
+      "giveFeedback": "Anna palautetta",
+      "privacyPolicy": "Tietosuojakäytäntö",
+      "logIn": "Kirjaudu sisään",
+      "getStarted": "Aloita",
+      "logout": "Kirjaudu ulos"
+    },
+    "loginPage": {
+      "logIn": "Kirjaudu sisään",
+      "close": "Sulje",
+      "createAccount": "Luo tili",
+      "logIntoAccount": "Kirjaudu tilillesi",
+      "emailAddress": "Sähköpostiosoite",
+      "enterEmailAddress": "Syötä sähköpostiosoitteesi",
+      "password": "Salasana",
+      "enterPassword": "Syötä salasanasi",
+      "continueWithGoogle": "Jatka Googlella",
+      "cantLogin": "Etkö voi kirjautua sisään?",
+      "tosDesc": "Klikkaamalla luo tili, hyväksyt meidän ",
+      "tos": "Käyttöehdot",
+      "privacyPolicy": "Tietosuojakäytäntö",
+      "and": "ja",
+      "or": "TAI",
+      "processing": "Käsitellään...",
+      "continue": "Jatka",
+      "hidePassword": "Piilota salasana",
+      "showPassword": "Näytä salasana"
+    },
+    "signUpPage": {
+      "letsCreateAccount": "Luodaan tilisi",
+      "chooseAccountType": "Valitse tilityyppi",
+      "createBuyerAccount": "Olen luomassa ostajatiliä",
+      "createSellerAccount": "Olen luomassa myyjätiliä",
+      "continue": "Jatka",
+      "chooseSignMethod": "Valitse rekisteröintitapa",
+      "continueWithEmail": "Jatka sähköpostilla",
+      "alreadyHaveAccount": "Onko sinulla jo tili?",
+      "fullName": "Koko nimi",
+      "chooseUsername": "Valitse käyttäjätunnus",
+      "enterYourFullName": "Syötä koko nimesi",
+      "confirmPassword": "Vahvista salasana",
+      "country": "Maa",
+      "selectCountryPlaceholder": "Valitse maasi",
+      "searchCountryPlaceholder": "Etsi maata...",
+      "noCountryFound": "Maata ei löytynyt"
+    },
+    "welcomePage": {
+      "welcomeAboard": "Tervetuloa mukaan",
+      "welcomeText": "Ykkösostosalustasi saumattomaan muuttoon, oikeudelliseen neuvontaan ja globaaliin asumiseen."
+    },
+    "forgotPasswordPage": {
+      "emailAddress": "Sähköpostiosoite",
+      "forgotPassword": "Unohditko salasanasi?",
+      "enterEmailToReset": "Syötä tilisi sähköposti, niin lähetämme sinulle OTP:n salasanan nollaamiseksi.",
+      "sendOTP": "Lähetä OTP",
+      "verifyOTP": "Vahvista OTP",
+      "resendOTP": "Lähetä OTP uudelleen",
+      "backToLogin": "Takaisin kirjautumiseen",
+      "sending": "Lähetetään...",
+      "otpSent": "OTP on lähetetty osoitteeseen",
+      "continue": "Jatka",
+      "clickContinue": "Napsauta alla olevaa jatka-painiketta luodaksesi uuden salasanan.",
+      "rememberedPassword": "Muistitko salasanasi?",
+      "login": "Kirjaudu sisään"
+    },
+    "resetPasswordPage": {
+      "resetPassword": "Nollaa salasana",
+      "resetPasswordDescription": "Uuden salasanasi on oltava erilainen kuin aiemmin käytetyt.",
+      "enterOTP": "Syötä OTP",
+      "newPassword": "Uusi salasana",
+      "confirmPassword": "Vahvista salasana",
+      "createNewPassword": "Luo uusi salasana",
+      "enterNewPassword": "Syötä uusi salasanasi",
+      "confirmNewPassword": "Vahvista uusi salasanasi",
+      "reset": "Nollaa",
+      "passwordChanged": "Salasana vaihdettu",
+      "passwordChangedDescription": "Salasanasi on vaihdettu onnistuneesti.",
+      "backToLogin": "Takaisin kirjautumiseen",
+      "processing": "Käsitellään...",
+      "proceedToLogin": "Siirry kirjautumaan"
+    },
+    "drawers": {
+      "selectLanguages": {
+        "confirm": "Vahvista muutokset"
+      }
+    },
+    "toasts": {
+      "accountCreated": "Tili luotu onnistuneesti",
+      "accountUpdated": "Tili päivitetty onnistuneesti",
+      "passwordChanged": "Salasana vaihdettu onnistuneesti",
+      "passwordStrength": "Salasanan on oltava vähintään 8 merkkiä, sisällytettävä isoja kirjaimia, pieniä kirjaimia, numero ja symboli",
+      "passwordsMismatch": "Salasanat eivät täsmää",
+      "resetFailed": "Salasanan nollaaminen epäonnistui, yritä uudelleen",
+      "emailSent": "Sähköposti lähetetty onnistuneesti",
+      "invalidEmail": "Virheellinen sähköpostiosoite",
+      "otpMinimumLength": "OTP:n on oltava vähintään 6 merkkiä",
+      "otpVerified": "OTP vahvistettu onnistuneesti",
+      "otpResent": "OTP lähetetty uudelleen onnistuneesti",
+      "sendError": "OTP:n lähettäminen epäonnistui. Yritä uudelleen.",
+      "resendError": "OTP:n uudelleenlähetys epäonnistui. Yritä uudelleen.",
+      "errorOccurred": "Tapahtui virhe, yritä myöhemmin uudelleen",
+      "invalidCredentials": "Virheelliset tunnistetiedot, yritä uudelleen"
+    },
+    "formErrors": {
+      "invalidEmail": "Virheellinen sähköpostimuoto",
+      "emailRequired": "Sähköposti vaaditaan",
+      "fullNameRequired": "Koko nimi vaaditaan",
+      "enterFullName": "Syötä koko nimesi",
+      "passwordRequired": "Salasana vaaditaan",
+      "minPassword": "Salasanan on oltava vähintään 8 merkkiä",
+      "passwordsMismatch": "Salasanat eivät täsmää",
+      "weakPassword": "Salasana on liian heikko",
+      "selectCountry": "Valitse maa",
+      "usernameRequired": "Käyttäjätunnus vaaditaan",
+      "minUsername": "Käyttäjätunnuksen on oltava vähintään 3 merkkiä",
+      "cpasswordRequired": "Salasanan vahvistus vaaditaan"
+    }
+  }
+}

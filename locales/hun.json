@@ -1,0 +1,123 @@
+{
+  "landingPage": {
+    "navbar": {
+      "viewProfile": "Profil megtekintése",
+      "helpCenter": "Súgó",
+      "giveFeedback": "Visszajelzés küldése",
+      "privacyPolicy": "Adatvédelmi irányelvek",
+      "logIn": "Bejelentkezés",
+      "getStarted": "Kezdés",
+      "logout": "Kijelentkezés"
+    },
+    "loginPage": {
+      "logIn": "Bejelentkezés",
+      "close": "Bezár",
+      "createAccount": "Fiók létrehozása",
+      "logIntoAccount": "Jelentkezzen be fiókjába",
+      "emailAddress": "E-mail cím",
+      "enterEmailAddress": "Adja meg az e-mail címét",
+      "password": "Jelszó",
+      "enterPassword": "Adja meg a jelszavát",
+      "continueWithGoogle": "Folytatás a Google-lal",
+      "cantLogin": "Nem tud bejelentkezni?",
+      "tosDesc": "A fiók létrehozásával elfogadja a ",
+      "tos": "Szolgáltatási feltételeinket",
+      "privacyPolicy": "Adatvédelmi irányelveinket",
+      "and": "és",
+      "or": "VAGY",
+      "processing": "Feldolgozás...",
+      "continue": "Folytatás",
+      "hidePassword": "Jelszó elrejtése",
+      "showPassword": "Jelszó megjelenítése"
+    },
+    "signUpPage": {
+      "letsCreateAccount": "Hozzuk létre a fiókját",
+      "chooseAccountType": "Válasszon egy fióktípust",
+      "createBuyerAccount": "Vevői fiókot hozok létre",
+      "createSellerAccount": "Eladói fiókot hozok létre",
+      "continue": "Folytatás",
+      "chooseSignMethod": "Válasszon regisztrációs módot",
+      "continueWithEmail": "Folytatás e-mailben",
+      "alreadyHaveAccount": "Már van fiókja?",
+      "fullName": "Teljes név",
+      "chooseUsername": "Válasszon felhasználónevet",
+      "enterYourFullName": "Adja meg a teljes nevét",
+      "confirmPassword": "Jelszó megerősítése",
+      "country": "Ország",
+      "selectCountryPlaceholder": "Válassza ki az országot",
+      "searchCountryPlaceholder": "Ország keresése...",
+      "noCountryFound": "Nem található ország"
+    },
+    "welcomePage": {
+      "welcomeAboard": "Üdv a fedélzeten",
+      "welcomeText": "Az Ön első számú bevásárló platformja a zökkenőmentes költözéshez, jogi tanácsadáshoz és a globális élethez."
+    },
+    "forgotPasswordPage": {
+      "emailAddress": "E-mail cím",
+      "forgotPassword": "Elfelejtett jelszó?",
+      "enterEmailToReset": "Adja meg fiókja e-mail címét, és küldünk Önnek egy OTP-t a jelszó visszaállításához.",
+      "sendOTP": "OTP küldése",
+      "verifyOTP": "OTP ellenőrzése",
+      "resendOTP": "OTP újraküldése",
+      "backToLogin": "Vissza a bejelentkezéshez",
+      "sending": "Küldés...",
+      "otpSent": "Egy OTP-t küldtünk a következő címre:",
+      "continue": "Folytatás",
+      "clickContinue": "Kattintson az alábbi Folytatás gombra egy új jelszó létrehozásához.",
+      "rememberedPassword": "Emlékszik a jelszavára?",
+      "login": "Bejelentkezés"
+    },
+    "resetPasswordPage": {
+      "resetPassword": "Jelszó visszaállítása",
+      "resetPasswordDescription": "Az új jelszavának egyedinek kell lennie a korábban használtakhoz képest.",
+      "enterOTP": "Adja meg az OTP-t",
+      "newPassword": "Új jelszó",
+      "confirmPassword": "Jelszó megerősítése",
+      "createNewPassword": "Hozzon létre egy új jelszót",
+      "enterNewPassword": "Adja meg az új jelszavát",
+      "confirmNewPassword": "Erősítse meg az új jelszavát",
+      "reset": "Visszaállítás",
+      "passwordChanged": "Jelszó megváltoztatva",
+      "passwordChangedDescription": "A jelszava sikeresen megváltozott.",
+      "backToLogin": "Vissza a bejelentkezéshez",
+      "processing": "Feldolgozás...",
+      "proceedToLogin": "Folytatás a bejelentkezéshez"
+    },
+    "drawers": {
+      "selectLanguages": {
+        "confirm": "Változások megerősítése"
+      }
+    },
+    "toasts": {
+      "accountCreated": "Fiók sikeresen létrehozva",
+      "accountUpdated": "Fiók sikeresen frissítve",
+      "passwordChanged": "Jelszó sikeresen megváltoztatva",
+      "passwordStrength": "A jelszónak legalább 8 karakterből kell állnia, tartalmaznia kell nagybetűt, kisbetűt, számot és szimbólumot",
+      "passwordsMismatch": "A jelszavak nem egyeznek",
+      "resetFailed": "A jelszó visszaállítása sikertelen, kérjük, próbálja újra",
+      "emailSent": "E-mail sikeresen elküldve",
+      "invalidEmail": "Érvénytelen e-mail cím",
+      "otpMinimumLength": "Az OTP-nek legalább 6 karakterből kell állnia",
+      "otpVerified": "OTP sikeresen ellenőrizve",
+      "otpResent": "OTP sikeresen újraküldve",
+      "sendError": "Az OTP küldése sikertelen. Kérjük, próbálja újra.",
+      "resendError": "Az OTP újraküldése sikertelen. Kérjük, próbálja újra.",
+      "errorOccurred": "Hiba történt, kérjük, próbálja újra később",
+      "invalidCredentials": "Érvénytelen hitelesítő adatok, kérjük, próbálja újra"
+    },
+    "formErrors": {
+      "invalidEmail": "Érvénytelen e-mail formátum",
+      "emailRequired": "E-mail megadása kötelező",
+      "fullNameRequired": "A teljes név megadása kötelező",
+      "enterFullName": "Kérjük, adja meg a teljes nevét",
+      "passwordRequired": "Jelszó megadása kötelező",
+      "minPassword": "A jelszónak legalább 8 karakterből kell állnia",
+      "passwordsMismatch": "A jelszavak nem egyeznek",
+      "weakPassword": "A jelszó túl gyenge",
+      "selectCountry": "Kérjük, válasszon egy országot",
+      "usernameRequired": "Felhasználónév megadása kötelező",
+      "minUsername": "A felhasználónévnek legalább 3 karakterből kell állnia",
+      "cpasswordRequired": "Jelszó megerősítése kötelező"
+    }
+  }
+}

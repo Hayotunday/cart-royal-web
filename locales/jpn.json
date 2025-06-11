@@ -1,0 +1,123 @@
+{
+  "landingPage": {
+    "navbar": {
+      "viewProfile": "プロフィールを見る",
+      "helpCenter": "ヘルプセンター",
+      "giveFeedback": "フィードバックをお寄せください",
+      "privacyPolicy": "プライバシーポリシー",
+      "logIn": "ログイン",
+      "getStarted": "始める",
+      "logout": "ログアウト"
+    },
+    "loginPage": {
+      "logIn": "ログイン",
+      "close": "閉じる",
+      "createAccount": "アカウントを作成",
+      "logIntoAccount": "アカウントにログイン",
+      "emailAddress": "メールアドレス",
+      "enterEmailAddress": "メールアドレスを入力してください",
+      "password": "パスワード",
+      "enterPassword": "パスワードを入力してください",
+      "continueWithGoogle": "Googleで続行",
+      "cantLogin": "ログインできませんか？",
+      "tosDesc": "アカウントを作成すると、当社の",
+      "tos": "利用規約",
+      "privacyPolicy": "プライバシーポリシー",
+      "and": "と",
+      "or": "または",
+      "processing": "処理中...",
+      "continue": "続ける",
+      "hidePassword": "パスワードを隠す",
+      "showPassword": "パスワードを表示"
+    },
+    "signUpPage": {
+      "letsCreateAccount": "アカウントを作成しましょう",
+      "chooseAccountType": "アカウントの種類を選択",
+      "createBuyerAccount": "バイヤーアカウントを作成する",
+      "createSellerAccount": "セラーアカウントを作成する",
+      "continue": "続ける",
+      "chooseSignMethod": "サインアップ方法を選択",
+      "continueWithEmail": "メールで続行",
+      "alreadyHaveAccount": "すでにアカウントをお持ちですか？",
+      "fullName": "氏名",
+      "chooseUsername": "ユーザー名を選択",
+      "enterYourFullName": "氏名を入力してください",
+      "confirmPassword": "パスワードを認証",
+      "country": "国",
+      "selectCountryPlaceholder": "国を選択",
+      "searchCountryPlaceholder": "国を検索...",
+      "noCountryFound": "国が見つかりません"
+    },
+    "welcomePage": {
+      "welcomeAboard": "ようこそ",
+      "welcomeText": "シームレスな移転、法的ガイダンス、グローバルな生活のためのNo.1ショッピングプラットフォーム。"
+    },
+    "forgotPasswordPage": {
+      "emailAddress": "メールアドレス",
+      "forgotPassword": "パスワードを忘れましたか？",
+      "enterEmailToReset": "アカウントのメールアドレスを入力すると、パスワードをリセットするためのOTPが送信されます。",
+      "sendOTP": "OTPを送信",
+      "verifyOTP": "OTPを認証",
+      "resendOTP": "OTPを再送信",
+      "backToLogin": "ログインに戻る",
+      "sending": "送信中...",
+      "otpSent": "OTPが送信されました",
+      "continue": "続ける",
+      "clickContinue": "下の[続行]ボタンをクリックして、新しいパスワードを作成します。",
+      "rememberedPassword": "パスワードを覚えていますか？",
+      "login": "ログイン"
+    },
+    "resetPasswordPage": {
+      "resetPassword": "パスワードをリセット",
+      "resetPasswordDescription": "新しいパスワードは、以前に使用したものとは異なる必要があります。",
+      "enterOTP": "OTPを入力",
+      "newPassword": "新しいパスワード",
+      "confirmPassword": "パスワードを認証",
+      "createNewPassword": "新しいパスワードを作成する",
+      "enterNewPassword": "新しいパスワードを入力してください",
+      "confirmNewPassword": "新しいパスワードを認証",
+      "reset": "リセット",
+      "passwordChanged": "パスワードが変更されました",
+      "passwordChangedDescription": "パスワードが正常に変更されました。",
+      "backToLogin": "ログインに戻る",
+      "processing": "処理中...",
+      "proceedToLogin": "ログインに進む"
+    },
+    "drawers": {
+      "selectLanguages": {
+        "confirm": "変更を確定"
+      }
+    },
+    "toasts": {
+      "accountCreated": "アカウントが正常に作成されました",
+      "accountUpdated": "アカウントが正常に更新されました",
+      "passwordChanged": "パスワードが正常に変更されました",
+      "passwordStrength": "パスワードは8文字以上で、大文字、小文字、数字、記号を含める必要があります",
+      "passwordsMismatch": "パスワードが一致しません",
+      "resetFailed": "パスワードのリセットに失敗しました。もう一度お試しください",
+      "emailSent": "メールが正常に送信されました",
+      "invalidEmail": "無効なメールアドレス",
+      "otpMinimumLength": "OTPは6文字以上である必要があります",
+      "otpVerified": "OTPが正常に認証されました",
+      "otpResent": "OTPが正常に再送信されました",
+      "sendError": "OTPの送信に失敗しました。もう一度お試しください。",
+      "resendError": "OTPの再送信に失敗しました。もう一度お試しください。",
+      "errorOccurred": "エラーが発生しました。後でもう一度お試しください",
+      "invalidCredentials": "無効な認証情報です。もう一度お試しください"
+    },
+    "formErrors": {
+      "invalidEmail": "無効なメール形式",
+      "emailRequired": "メールアドレスが必要です",
+      "fullNameRequired": "氏名が必要です",
+      "enterFullName": "氏名を入力してください",
+      "passwordRequired": "パスワードが必要です",
+      "minPassword": "パスワードは8文字以上である必要があります",
+      "passwordsMismatch": "パスワードが一致しません",
+      "weakPassword": "パスワードが弱すぎます",
+      "selectCountry": "国を選択してください",
+      "usernameRequired": "ユーザー名が必要です",
+      "minUsername": "ユーザー名は3文字以上である必要があります",
+      "cpasswordRequired": "パスワードの確認が必要です"
+    }
+  }
+}

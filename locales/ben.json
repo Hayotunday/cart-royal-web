@@ -1,0 +1,123 @@
+{
+  "landingPage": {
+    "navbar": {
+      "viewProfile": "প্রোফাইল দেখুন",
+      "helpCenter": "সাহায্য কেন্দ্র",
+      "giveFeedback": "আমাদের মতামত দিন",
+      "privacyPolicy": "গোপনীয়তা নীতি",
+      "logIn": "লগ ইন",
+      "getStarted": "শুরু করুন",
+      "logout": "লগ আউট"
+    },
+    "loginPage": {
+      "logIn": "লগইন",
+      "close": "বন্ধ করুন",
+      "createAccount": "একাউন্ট তৈরি করুন",
+      "logIntoAccount": "আপনার অ্যাকাউন্টে লগইন করুন",
+      "emailAddress": "ই-মেইল ঠিকানা",
+      "enterEmailAddress": "আপনার ই-মেইল ঠিকানা প্রবেশ করুন",
+      "password": "পাসওয়ার্ড",
+      "enterPassword": "আপনার পাসওয়ার্ড প্রবেশ করুন",
+      "continueWithGoogle": "গুগল এর সাথে যুক্ত থাকুন",
+      "cantLogin": "লগইন করতে পারছেন না?",
+      "tosDesc": "একটি অ্যাকাউন্ট তৈরি করার মাধ্যমে, আপনি আমাদের সাথে সম্মত হন",
+      "tos": "পরিষেবার শর্তাবলী",
+      "privacyPolicy": "গোপনীয়তা নীতি",
+      "and": "এবং",
+      "or": "অথবা",
+      "processing": "প্রক্রিয়াকরণ...",
+      "continue": "চালিয়ে যান",
+      "hidePassword": "পাসওয়ার্ড লুকান",
+      "showPassword": "পাসওয়ার্ড দেখান"
+    },
+    "signUpPage": {
+      "letsCreateAccount": "চলুন আপনার অ্যাকাউন্ট তৈরি করি",
+      "chooseAccountType": "একটি অ্যাকাউন্ট ধরণ নির্বাচন করুন",
+      "createBuyerAccount": "আমি একটি ক্রেতা অ্যাকাউন্ট তৈরি করছি",
+      "createSellerAccount": "আমি একটি বিক্রেতা অ্যাকাউন্ট তৈরি করছি",
+      "continue": "চালিয়ে যান",
+      "chooseSignMethod": "সাইনআপ পদ্ধতি নির্বাচন করুন",
+      "continueWithEmail": "ই-মেইল এর সাথে চালিয়ে যান",
+      "alreadyHaveAccount": "ইতিমধ্যে একটি অ্যাকাউন্ট আছে?",
+      "fullName": "পুরো নাম",
+      "chooseUsername": "একটি ইউজারনেম নির্বাচন করুন",
+      "enterYourFullName": "আপনার পুরো নাম প্রবেশ করুন",
+      "confirmPassword": "পাসওয়ার্ড নিশ্চিত করুন",
+      "country": "দেশ",
+      "selectCountryPlaceholder": "আপনার দেশ নির্বাচন করুন",
+      "searchCountryPlaceholder": "দেশ খুঁজুন...",
+      "noCountryFound": "কোনো দেশ পাওয়া যায়নি"
+    },
+    "welcomePage": {
+      "welcomeAboard": "স্বাগতম",
+      "welcomeText": "আপনার নির্বিঘ্ন স্থানান্তর, আইনি সহায়তা, এবং বিশ্বব্যাপী বসবাসের জন্য ১ নম্বর শপিং প্ল্যাটফর্ম।"
+    },
+    "forgotPasswordPage": {
+      "emailAddress": "ই-মেইল ঠিকানা",
+      "forgotPassword": "পাসওয়ার্ড ভুলে গেছেন?",
+      "enterEmailToReset": "আপনার অ্যাকাউন্টের ইমেল প্রবেশ করুন এবং আমরা আপনাকে পাসওয়ার্ড রিসেট করার জন্য একটি ওটিপি পাঠাব।",
+      "sendOTP": "ওটিপি পাঠান",
+      "verifyOTP": "ওটিপি যাচাই করুন",
+      "resendOTP": "ওটিপি পুনরায় পাঠান",
+      "backToLogin": "লগইন এ ফিরে যান",
+      "sending": "পাঠানো হচ্ছে...",
+      "otpSent": "একটি ওটিপি পাঠানো হয়েছে",
+      "continue": "চালিয়ে যান",
+      "clickContinue": "নতুন পাসওয়ার্ড তৈরি করতে নিচের কন্টিনিউ বোতামে ক্লিক করুন।",
+      "rememberedPassword": "পাসওয়ার্ড মনে আছে?",
+      "login": "লগইন"
+    },
+    "resetPasswordPage": {
+      "resetPassword": "পাসওয়ার্ড রিসেট করুন",
+      "resetPasswordDescription": "আপনার নতুন পাসওয়ার্ড পূর্বে ব্যবহৃত পাসওয়ার্ড থেকে আলাদা হতে হবে।",
+      "enterOTP": "ওটিপি প্রবেশ করুন",
+      "newPassword": "নতুন পাসওয়ার্ড",
+      "confirmPassword": "পাসওয়ার্ড নিশ্চিত করুন",
+      "createNewPassword": "নতুন পাসওয়ার্ড তৈরি করুন",
+      "enterNewPassword": "আপনার নতুন পাসওয়ার্ড প্রবেশ করুন",
+      "confirmNewPassword": "আপনার নতুন পাসওয়ার্ড নিশ্চিত করুন",
+      "reset": "রিসেট",
+      "passwordChanged": "পাসওয়ার্ড পরিবর্তন করা হয়েছে",
+      "passwordChangedDescription": "আপনার পাসওয়ার্ড সফলভাবে পরিবর্তন করা হয়েছে।",
+      "backToLogin": "লগইন এ ফিরে যান",
+      "processing": "প্রক্রিয়াকরণ...",
+      "proceedToLogin": "লগইন করতে এগিয়ে যান"
+    },
+    "drawers": {
+      "selectLanguages": {
+        "confirm": "পরিবর্তন নিশ্চিত করুন"
+      }
+    },
+    "toasts": {
+      "accountCreated": "অ্যাকাউন্ট সফলভাবে তৈরি হয়েছে",
+      "accountUpdated": "অ্যাকাউন্ট সফলভাবে আপডেট করা হয়েছে",
+      "passwordChanged": "পাসওয়ার্ড সফলভাবে পরিবর্তন করা হয়েছে",
+      "passwordStrength": "পাসওয়ার্ড কমপক্ষে ৮ অক্ষরের হতে হবে, বড় অক্ষর, ছোট অক্ষর, সংখ্যা এবং প্রতীক অন্তর্ভুক্ত করুন",
+      "passwordsMismatch": "পাসওয়ার্ড মেলেনি",
+      "resetFailed": "পাসওয়ার্ড রিসেট করতে ব্যর্থ হয়েছে, আবার চেষ্টা করুন",
+      "emailSent": "ইমেইল সফলভাবে পাঠানো হয়েছে",
+      "invalidEmail": "ই-মেইল ঠিকানাটি বৈধ নয়",
+      "otpMinimumLength": "ওটিপি কমপক্ষে ৬ অক্ষরের হতে হবে",
+      "otpVerified": "ওটিপি সফলভাবে যাচাই করা হয়েছে",
+      "otpResent": "ওটিপি পুনরায় পাঠানো হয়েছে",
+      "sendError": "ওটিপি পাঠাতে ব্যর্থ হয়েছে। আবার চেষ্টা করুন।",
+      "resendError": "ওটিপি পুনরায় পাঠাতে ব্যর্থ হয়েছে। আবার চেষ্টা করুন।",
+      "errorOccurred": "একটি ত্রুটি ঘটেছে, পরে আবার চেষ্টা করুন",
+      "invalidCredentials": "অবৈধ প্রমাণপত্র, আবার চেষ্টা করুন"
+    },
+    "formErrors": {
+      "invalidEmail": "অবৈধ ইমেইল বিন্যাস",
+      "emailRequired": "ইমেইল প্রয়োজন",
+      "fullNameRequired": "পুরো নাম প্রয়োজন",
+      "enterFullName": "অনুগ্রহ করে আপনার পুরো নাম প্রবেশ করুন",
+      "passwordRequired": "পাসওয়ার্ড প্রয়োজন",
+      "minPassword": "পাসওয়ার্ড কমপক্ষে ৮ অক্ষরের হতে হবে",
+      "passwordsMismatch": "পাসওয়ার্ড মেলেনি",
+      "weakPassword": "পাসওয়ার্ড দুর্বল",
+      "selectCountry": "অনুগ্রহ করে একটি দেশ নির্বাচন করুন",
+      "usernameRequired": "ইউজারনেম প্রয়োজন",
+      "minUsername": "ইউজারনেম কমপক্ষে ৩ অক্ষরের হতে হবে",
+      "cpasswordRequired": "পাসওয়ার্ড নিশ্চিত করা প্রয়োজন"
+    }
+  }
+}

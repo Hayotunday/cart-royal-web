@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
   title: "CartRoyal",
@@ -11,10 +12,9 @@ export default function HomeLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className="font-raleway antialiased scroll-smooth w-full h-full">
-        {children}
-      </body>
-    </html>
+    <>
+      <main>{children}</main>
+      <Toaster />
+    </>
   );
 }

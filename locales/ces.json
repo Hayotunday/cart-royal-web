@@ -1,0 +1,123 @@
+{
+  "landingPage": {
+    "navbar": {
+      "viewProfile": "Zobrazit profil",
+      "helpCenter": "Centrum nápovědy",
+      "giveFeedback": "Poskytněte nám zpětnou vazbu",
+      "privacyPolicy": "Zásady ochrany osobních údajů",
+      "logIn": "Přihlásit se",
+      "getStarted": "Začít",
+      "logout": "Odhlásit se"
+    },
+    "loginPage": {
+      "logIn": "Přihlášení",
+      "close": "Zavřít",
+      "createAccount": "Vytvořit účet",
+      "logIntoAccount": "Přihlaste se ke svému účtu",
+      "emailAddress": "E-mailová adresa",
+      "enterEmailAddress": "Zadejte svou e-mailovou adresu",
+      "password": "Heslo",
+      "enterPassword": "Zadejte své heslo",
+      "continueWithGoogle": "Pokračovat s Google",
+      "cantLogin": "Nemůžete se přihlásit?",
+      "tosDesc": "Kliknutím na vytvoření účtu souhlasíte s našimi",
+      "tos": "Podmínkami služby",
+      "privacyPolicy": "Zásadami ochrany osobních údajů",
+      "and": "a",
+      "or": "NEBO",
+      "processing": "Zpracování...",
+      "continue": "Pokračovat",
+      "hidePassword": "Skrýt heslo",
+      "showPassword": "Zobrazit heslo"
+    },
+    "signUpPage": {
+      "letsCreateAccount": "Pojďme si vytvořit váš účet",
+      "chooseAccountType": "Vyberte typ účtu",
+      "createBuyerAccount": "Vytvářím účet kupujícího",
+      "createSellerAccount": "Vytvářím účet prodejce",
+      "continue": "Pokračovat",
+      "chooseSignMethod": "Vyberte způsob registrace",
+      "continueWithEmail": "Pokračovat s e-mailem",
+      "alreadyHaveAccount": "Již máte účet?",
+      "fullName": "Celé jméno",
+      "chooseUsername": "Vyberte si uživatelské jméno",
+      "enterYourFullName": "Zadejte své celé jméno",
+      "confirmPassword": "Potvrďte heslo",
+      "country": "Země",
+      "selectCountryPlaceholder": "Vyberte svou zemi",
+      "searchCountryPlaceholder": "Hledat zemi...",
+      "noCountryFound": "Žádná země nebyla nalezena"
+    },
+    "welcomePage": {
+      "welcomeAboard": "Vítejte na palubě",
+      "welcomeText": "Vaše nákupní platforma č. 1 pro bezproblémové stěhování, právní poradenství a globální život."
+    },
+    "forgotPasswordPage": {
+      "emailAddress": "E-mailová adresa",
+      "forgotPassword": "Zapomenuté heslo?",
+      "enterEmailToReset": "Zadejte e-mail svého účtu a my vám zašleme OTP pro resetování hesla.",
+      "sendOTP": "Odeslat OTP",
+      "verifyOTP": "Ověřit OTP",
+      "resendOTP": "Znovu odeslat OTP",
+      "backToLogin": "Zpět k přihlášení",
+      "sending": "Odesílání...",
+      "otpSent": "OTP byl odeslán na",
+      "continue": "Pokračovat",
+      "clickContinue": "Kliknutím na tlačítko Pokračovat níže vytvoříte nové heslo.",
+      "rememberedPassword": "Pamatujete si heslo?",
+      "login": "Přihlásit se"
+    },
+    "resetPasswordPage": {
+      "resetPassword": "Resetovat heslo",
+      "resetPasswordDescription": "Vaše nové heslo musí být jedinečné od dříve použitých.",
+      "enterOTP": "Zadejte OTP",
+      "newPassword": "Nové heslo",
+      "confirmPassword": "Potvrďte heslo",
+      "createNewPassword": "Vytvořte nové heslo",
+      "enterNewPassword": "Zadejte své nové heslo",
+      "confirmNewPassword": "Potvrďte své nové heslo",
+      "reset": "Resetovat",
+      "passwordChanged": "Heslo bylo změněno",
+      "passwordChangedDescription": "Vaše heslo bylo úspěšně změněno.",
+      "backToLogin": "Zpět k přihlášení",
+      "processing": "Zpracování...",
+      "proceedToLogin": "Přejít k přihlášení"
+    },
+    "drawers": {
+      "selectLanguages": {
+        "confirm": "Potvrdit změny"
+      }
+    },
+    "toasts": {
+      "accountCreated": "Účet byl úspěšně vytvořen",
+      "accountUpdated": "Účet byl úspěšně aktualizován",
+      "passwordChanged": "Heslo bylo úspěšně změněno",
+      "passwordStrength": "Heslo musí mít alespoň 8 znaků, obsahovat velká a malá písmena, číslo a symbol",
+      "passwordsMismatch": "Hesla se neshodují",
+      "resetFailed": "Nepodařilo se resetovat heslo, zkuste to prosím znovu",
+      "emailSent": "E-mail byl úspěšně odeslán",
+      "invalidEmail": "Neplatná e-mailová adresa",
+      "otpMinimumLength": "OTP musí mít alespoň 6 znaků",
+      "otpVerified": "OTP byl úspěšně ověřen",
+      "otpResent": "OTP byl úspěšně znovu odeslán",
+      "sendError": "Nepodařilo se odeslat OTP. Zkuste to prosím znovu.",
+      "resendError": "Nepodařilo se znovu odeslat OTP. Zkuste to prosím znovu.",
+      "errorOccurred": "Došlo k chybě, zkuste to prosím později",
+      "invalidCredentials": "Neplatné přihlašovací údaje, zkuste to prosím znovu"
+    },
+    "formErrors": {
+      "invalidEmail": "Neplatný formát e-mailu",
+      "emailRequired": "E-mail je povinný",
+      "fullNameRequired": "Celé jméno je povinné",
+      "enterFullName": "Zadejte prosím své celé jméno",
+      "passwordRequired": "Heslo je povinné",
+      "minPassword": "Heslo musí mít alespoň 8 znaků",
+      "passwordsMismatch": "Hesla se neshodují",
+      "weakPassword": "Heslo je příliš slabé",
+      "selectCountry": "Vyberte prosím zemi",
+      "usernameRequired": "Uživatelské jméno je povinné",
+      "minUsername": "Uživatelské jméno musí mít alespoň 3 znaky",
+      "cpasswordRequired": "Potvrzení hesla je povinné"
+    }
+  }
+}

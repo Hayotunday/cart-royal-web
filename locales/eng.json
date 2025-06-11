@@ -1,0 +1,123 @@
+{
+  "landingPage": {
+    "navbar": {
+      "viewProfile": "View Profile",
+      "helpCenter": "Help Center",
+      "giveFeedback": "Give us feedback",
+      "privacyPolicy": "Privacy Policy",
+      "logIn": "Log In",
+      "getStarted": "Get started",
+      "logout": "Logout"
+    },
+    "loginPage": {
+      "logIn": "Login",
+      "close": "Close",
+      "createAccount": "Create Account",
+      "logIntoAccount": "Log into your account",
+      "emailAddress": "E-mail address",
+      "enterEmailAddress": "Enter your e-mail address",
+      "password": "Password",
+      "enterPassword": "Enter your password",
+      "continueWithGoogle": "Continue with Google",
+      "cantLogin": "Can't log in?",
+      "tosDesc": "By clicking creating an account, you agree to our ",
+      "tos": "Terms Of Service",
+      "privacyPolicy": "Privacy Policy",
+      "and": "and",
+      "or": "OR",
+      "processing": "Processing...",
+      "continue": "Continue",
+      "hidePassword": "Hide password",
+      "showPassword": "Show password"
+    },
+    "signUpPage": {
+      "letsCreateAccount": "Let's create your account",
+      "chooseAccountType": "Choose an account type",
+      "createBuyerAccount": "I am creating a buyer account",
+      "createSellerAccount": "I am creating a seller account",
+      "continue": "Continue",
+      "chooseSignMethod": "Choose signup method",
+      "continueWithEmail": "Continue with e-mail",
+      "alreadyHaveAccount": "Already have an account?",
+      "fullName": "Full Name",
+      "chooseUsername": "Choose a username",
+      "enterYourFullName": "Enter your full name",
+      "confirmPassword": "Confirm password",
+      "country": "Country",
+      "selectCountryPlaceholder": "Select your country",
+      "searchCountryPlaceholder": "Search country...",
+      "noCountryFound": "No country found"
+    },
+    "welcomePage": {
+      "welcomeAboard": "Welcome on board",
+      "welcomeText": "Your No. 1 shopping platform for seamless relocation, legal guidance, and global living."
+    },
+    "forgotPasswordPage": {
+      "emailAddress": "E-mail address",
+      "forgotPassword": "Forgot Password?",
+      "enterEmailToReset": "Enter your account's email and we'll send you an OTP to reset your password.",
+      "sendOTP": "Send OTP",
+      "verifyOTP": "Verify OTP",
+      "resendOTP": "Resend OTP",
+      "backToLogin": "Back to Login",
+      "sending": "Sending...",
+      "otpSent": "An OTP has been sent to",
+      "continue": "Continue",
+      "clickContinue": "Click the continue button below to create a new password.",
+      "rememberedPassword": "Remembered your password?",
+      "login": "Login"
+    },
+    "resetPasswordPage": {
+      "resetPassword": "Reset Password",
+      "resetPasswordDescription": "Your new password must be unique from those previously used.",
+      "enterOTP": "Enter OTP",
+      "newPassword": "New Password",
+      "confirmPassword": "Confirm Password",
+      "createNewPassword": "Create a new password",
+      "enterNewPassword": "Enter your new password",
+      "confirmNewPassword": "Confirm your new password",
+      "reset": "Reset",
+      "passwordChanged": "Password Changed",
+      "passwordChangedDescription": "Your password has been changed successfully.",
+      "backToLogin": "Back to Login",
+      "processing": "Processing...",
+      "proceedToLogin": "Proceed to login"
+    },
+    "drawers": {
+      "selectLanguages": {
+        "confirm": "Confirm Changes"
+      }
+    },
+    "toasts": {
+      "accountCreated": "Account created successfully",
+      "accountUpdated": "Account updated successfully",
+      "passwordChanged": "Password changed successfully",
+      "passwordStrength": "Password must be at least 8 characters, include uppercase, lowercase, number, and symbol",
+      "passwordsMismatch": "Passwords do not match",
+      "resetFailed": "Failed to reset password, please try again",
+      "emailSent": "Email sent successfully",
+      "invalidEmail": "E-mail address not valid",
+      "otpMinimumLength": "OTP must be at least 6 characters",
+      "otpVerified": "OTP verified successfully",
+      "otpResent": "OTP resent successfully",
+      "sendError": "Failed to send OTP. Please try again.",
+      "resendError": "Failed to resend OTP. Please try again.",
+      "errorOccurred": "An error occurred, please try again later",
+      "invalidCredentials": "Invalid credentials, please try again"
+    },
+    "formErrors": {
+      "invalidEmail": "Invalid email format",
+      "emailRequired": "Email is required",
+      "fullNameRequired": "Full name is required",
+      "enterFullName": "Please enter your full name",
+      "passwordRequired": "Password is required",
+      "minPassword": "Password must be at least 8 characters",
+      "passwordsMismatch": "Passwords do not match",
+      "weakPassword": "Password is too weak",
+      "selectCountry": "Please select a country",
+      "usernameRequired": "Username is required",
+      "minUsername": "Username must be at least 3 characters",
+      "cpasswordRequired": "Confirm password is required"
+    }
+  }
+}

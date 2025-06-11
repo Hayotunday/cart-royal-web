@@ -1,0 +1,123 @@
+{
+  "landingPage": {
+    "navbar": {
+      "viewProfile": "프로필 보기",
+      "helpCenter": "고객 지원",
+      "giveFeedback": "피드백 제공",
+      "privacyPolicy": "개인 정보 정책",
+      "logIn": "로그인",
+      "getStarted": "시작하기",
+      "logout": "로그아웃"
+    },
+    "loginPage": {
+      "logIn": "로그인",
+      "close": "닫기",
+      "createAccount": "계정 생성",
+      "logIntoAccount": "계정에 로그인",
+      "emailAddress": "이메일 주소",
+      "enterEmailAddress": "이메일 주소를 입력하세요",
+      "password": "비밀번호",
+      "enterPassword": "비밀번호를 입력하세요",
+      "continueWithGoogle": "Google로 계속하기",
+      "cantLogin": "로그인할 수 없나요?",
+      "tosDesc": "계정 생성을 클릭하면 당사의 ",
+      "tos": "이용 약관",
+      "privacyPolicy": "개인 정보 정책",
+      "and": "및",
+      "or": "또는",
+      "processing": "처리 중...",
+      "continue": "계속",
+      "hidePassword": "비밀번호 숨기기",
+      "showPassword": "비밀번호 표시"
+    },
+    "signUpPage": {
+      "letsCreateAccount": "계정을 만들어 보세요",
+      "chooseAccountType": "계정 유형을 선택하세요",
+      "createBuyerAccount": "구매자 계정을 만들겠습니다",
+      "createSellerAccount": "판매자 계정을 만들겠습니다",
+      "continue": "계속",
+      "chooseSignMethod": "가입 방법을 선택하세요",
+      "continueWithEmail": "이메일로 계속하기",
+      "alreadyHaveAccount": "이미 계정이 있으신가요?",
+      "fullName": "성명",
+      "chooseUsername": "사용자 이름을 선택하세요",
+      "enterYourFullName": "성함을 입력하세요",
+      "confirmPassword": "비밀번호 확인",
+      "country": "국가",
+      "selectCountryPlaceholder": "국가를 선택하세요",
+      "searchCountryPlaceholder": "국가 검색...",
+      "noCountryFound": "국가를 찾을 수 없습니다"
+    },
+    "welcomePage": {
+      "welcomeAboard": "탑승을 환영합니다",
+      "welcomeText": "원활한 이전, 법률 자문 및 글로벌 생활을 위한 최고의 쇼핑 플랫폼입니다."
+    },
+    "forgotPasswordPage": {
+      "emailAddress": "이메일 주소",
+      "forgotPassword": "비밀번호를 잊으셨나요?",
+      "enterEmailToReset": "계정 이메일을 입력하시면 비밀번호 재설정을 위한 OTP를 보내드립니다.",
+      "sendOTP": "OTP 보내기",
+      "verifyOTP": "OTP 확인",
+      "resendOTP": "OTP 재전송",
+      "backToLogin": "로그인으로 돌아가기",
+      "sending": "보내는 중...",
+      "otpSent": "OTP가 전송되었습니다",
+      "continue": "계속",
+      "clickContinue": "아래 계속 버튼을 클릭하여 새 비밀번호를 만드세요.",
+      "rememberedPassword": "비밀번호가 기억나셨나요?",
+      "login": "로그인"
+    },
+    "resetPasswordPage": {
+      "resetPassword": "비밀번호 재설정",
+      "resetPasswordDescription": "새 비밀번호는 이전에 사용한 것과 달라야 합니다.",
+      "enterOTP": "OTP 입력",
+      "newPassword": "새 비밀번호",
+      "confirmPassword": "비밀번호 확인",
+      "createNewPassword": "새 비밀번호 만들기",
+      "enterNewPassword": "새 비밀번호를 입력하세요",
+      "confirmNewPassword": "새 비밀번호를 확인하세요",
+      "reset": "재설정",
+      "passwordChanged": "비밀번호가 변경되었습니다",
+      "passwordChangedDescription": "비밀번호가 성공적으로 변경되었습니다.",
+      "backToLogin": "로그인으로 돌아가기",
+      "processing": "처리 중...",
+      "proceedToLogin": "로그인 진행"
+    },
+    "drawers": {
+      "selectLanguages": {
+        "confirm": "변경 사항 확인"
+      }
+    },
+    "toasts": {
+      "accountCreated": "계정이 성공적으로 생성되었습니다",
+      "accountUpdated": "계정이 성공적으로 업데이트되었습니다",
+      "passwordChanged": "비밀번호가 성공적으로 변경되었습니다",
+      "passwordStrength": "비밀번호는 8자 이상이어야 하며, 대문자, 소문자, 숫자 및 기호를 포함해야 합니다.",
+      "passwordsMismatch": "비밀번호가 일치하지 않습니다",
+      "resetFailed": "비밀번호 재설정에 실패했습니다. 다시 시도해 주세요.",
+      "emailSent": "이메일이 성공적으로 전송되었습니다",
+      "invalidEmail": "유효하지 않은 이메일 주소입니다",
+      "otpMinimumLength": "OTP는 6자 이상이어야 합니다",
+      "otpVerified": "OTP가 성공적으로 확인되었습니다",
+      "otpResent": "OTP가 성공적으로 재전송되었습니다",
+      "sendError": "OTP 전송에 실패했습니다. 다시 시도해 주세요.",
+      "resendError": "OTP 재전송에 실패했습니다. 다시 시도해 주세요.",
+      "errorOccurred": "오류가 발생했습니다. 나중에 다시 시도해 주세요.",
+      "invalidCredentials": "유효하지 않은 자격 증명입니다. 다시 시도해 주세요."
+    },
+    "formErrors": {
+      "invalidEmail": "잘못된 이메일 형식입니다",
+      "emailRequired": "이메일은 필수 항목입니다",
+      "fullNameRequired": "성함은 필수 항목입니다",
+      "enterFullName": "성함을 입력하세요",
+      "passwordRequired": "비밀번호는 필수 항목입니다",
+      "minPassword": "비밀번호는 8자 이상이어야 합니다",
+      "passwordsMismatch": "비밀번호가 일치하지 않습니다",
+      "weakPassword": "비밀번호가 너무 약합니다",
+      "selectCountry": "국가를 선택하세요",
+      "usernameRequired": "사용자 이름은 필수 항목입니다",
+      "minUsername": "사용자 이름은 3자 이상이어야 합니다",
+      "cpasswordRequired": "비밀번호 확인은 필수 항목입니다"
+    }
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "landingPage": {
+    "navbar": {
+      "viewProfile": "Просмотреть профиль",
+      "helpCenter": "Центр помощи",
+      "giveFeedback": "Оставьте отзыв",
+      "privacyPolicy": "Политика конфиденциальности",
+      "logIn": "Войти",
+      "getStarted": "Начать",
+      "logout": "Выйти"
+    },
+    "loginPage": {
+      "logIn": "Войти",
+      "close": "Закрыть",
+      "createAccount": "Создать аккаунт",
+      "logIntoAccount": "Войдите в свой аккаунт",
+      "emailAddress": "Адрес электронной почты",
+      "enterEmailAddress": "Введите свой адрес электронной почты",
+      "password": "Пароль",
+      "enterPassword": "Введите свой пароль",
+      "continueWithGoogle": "Продолжить с Google",
+      "cantLogin": "Не можете войти?",
+      "tosDesc": "Нажимая «Создать аккаунт», вы соглашаетесь с нашими ",
+      "tos": "Условиями обслуживания",
+      "privacyPolicy": "Политикой конфиденциальности",
+      "and": "и",
+      "or": "ИЛИ",
+      "processing": "Обработка...",
+      "continue": "Продолжить",
+      "hidePassword": "Скрыть пароль",
+      "showPassword": "Показать пароль"
+    },
+    "signUpPage": {
+      "letsCreateAccount": "Давайте создадим ваш аккаунт",
+      "chooseAccountType": "Выберите тип аккаунта",
+      "createBuyerAccount": "Я создаю аккаунт покупателя",
+      "createSellerAccount": "Я создаю аккаунт продавца",
+      "continue": "Продолжить",
+      "chooseSignMethod": "Выберите способ регистрации",
+      "continueWithEmail": "Продолжить с электронной почтой",
+      "alreadyHaveAccount": "Уже есть аккаунт?",
+      "fullName": "Полное имя",
+      "chooseUsername": "Выберите имя пользователя",
+      "enterYourFullName": "Введите свое полное имя",
+      "confirmPassword": "Подтвердите пароль",
+      "country": "Страна",
+      "selectCountryPlaceholder": "Выберите страну",
+      "searchCountryPlaceholder": "Поиск страны...",
+      "noCountryFound": "Страна не найдена"
+    },
+    "welcomePage": {
+      "welcomeAboard": "Добро пожаловать на борт",
+      "welcomeText": "Ваша платформа №1 для удобного переезда, юридической поддержки и глобальной жизни."
+    },
+    "forgotPasswordPage": {
+      "emailAddress": "Адрес электронной почты",
+      "forgotPassword": "Забыли пароль?",
+      "enterEmailToReset": "Введите адрес электронной почты своей учетной записи, и мы отправим вам OTP для сброса пароля.",
+      "sendOTP": "Отправить OTP",
+      "verifyOTP": "Подтвердить OTP",
+      "resendOTP": "Отправить OTP повторно",
+      "backToLogin": "Вернуться к логину",
+      "sending": "Отправка...",
+      "otpSent": "OTP отправлен на",
+      "continue": "Продолжить",
+      "clickContinue": "Нажмите кнопку «Продолжить» ниже, чтобы создать новый пароль.",
+      "rememberedPassword": "Вспомнили свой пароль?",
+      "login": "Войти"
+    },
+    "resetPasswordPage": {
+      "resetPassword": "Сброс пароля",
+      "resetPasswordDescription": "Ваш новый пароль должен отличаться от ранее использованных.",
+      "enterOTP": "Введите OTP",
+      "newPassword": "Новый пароль",
+      "confirmPassword": "Подтвердите пароль",
+      "createNewPassword": "Создайте новый пароль",
+      "enterNewPassword": "Введите свой новый пароль",
+      "confirmNewPassword": "Подтвердите свой новый пароль",
+      "reset": "Сбросить",
+      "passwordChanged": "Пароль изменен",
+      "passwordChangedDescription": "Ваш пароль успешно изменен.",
+      "backToLogin": "Вернуться к логину",
+      "processing": "Обработка...",
+      "proceedToLogin": "Перейти к логину"
+    },
+    "drawers": {
+      "selectLanguages": {
+        "confirm": "Подтвердить изменения"
+      }
+    },
+    "toasts": {
+      "accountCreated": "Аккаунт успешно создан",
+      "accountUpdated": "Аккаунт успешно обновлен",
+      "passwordChanged": "Пароль успешно изменен",
+      "passwordStrength": "Пароль должен содержать не менее 8 символов, включать заглавные, строчные буквы, цифры и символы",
+      "passwordsMismatch": "Пароли не совпадают",
+      "resetFailed": "Не удалось сбросить пароль, попробуйте еще раз",
+      "emailSent": "Письмо успешно отправлено",
+      "invalidEmail": "Неверный адрес электронной почты",
+      "otpMinimumLength": "OTP должен содержать не менее 6 символов",
+      "otpVerified": "OTP успешно подтвержден",
+      "otpResent": "OTP успешно отправлен повторно",
+      "sendError": "Не удалось отправить OTP. Пожалуйста, попробуйте еще раз.",
+      "resendError": "Не удалось отправить OTP повторно. Пожалуйста, попробуйте еще раз.",
+      "errorOccurred": "Произошла ошибка, попробуйте еще раз позже",
+      "invalidCredentials": "Неверные учетные данные, попробуйте еще раз"
+    },
+    "formErrors": {
+      "invalidEmail": "Неверный формат электронной почты",
+      "emailRequired": "Требуется электронная почта",
+      "fullNameRequired": "Требуется полное имя",
+      "enterFullName": "Пожалуйста, введите свое полное имя",
+      "passwordRequired": "Требуется пароль",
+      "minPassword": "Пароль должен содержать не менее 8 символов",
+      "passwordsMismatch": "Пароли не совпадают",
+      "weakPassword": "Слишком слабый пароль",
+      "selectCountry": "Пожалуйста, выберите страну",
+      "usernameRequired": "Требуется имя пользователя",
+      "minUsername": "Имя пользователя должно содержать не менее 3 символов",
+      "cpasswordRequired": "Требуется подтверждение пароля"
+    }
+  }
+}

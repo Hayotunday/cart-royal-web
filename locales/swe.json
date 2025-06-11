@@ -1,0 +1,123 @@
+{
+  "landingPage": {
+    "navbar": {
+      "viewProfile": "Visa Profil",
+      "helpCenter": "Hjälpcenter",
+      "giveFeedback": "Ge oss feedback",
+      "privacyPolicy": "Integritetspolicy",
+      "logIn": "Logga In",
+      "getStarted": "Kom igång",
+      "logout": "Logga ut"
+    },
+    "loginPage": {
+      "logIn": "Logga in",
+      "close": "Stäng",
+      "createAccount": "Skapa konto",
+      "logIntoAccount": "Logga in på ditt konto",
+      "emailAddress": "E-postadress",
+      "enterEmailAddress": "Ange din e-postadress",
+      "password": "Lösenord",
+      "enterPassword": "Ange ditt lösenord",
+      "continueWithGoogle": "Fortsätt med Google",
+      "cantLogin": "Kan du inte logga in?",
+      "tosDesc": "Genom att klicka på skapa ett konto godkänner du våra ",
+      "tos": "Användarvillkor",
+      "privacyPolicy": "Integritetspolicy",
+      "and": "och",
+      "or": "ELLER",
+      "processing": "Bearbetar...",
+      "continue": "Fortsätt",
+      "hidePassword": "Dölj lösenord",
+      "showPassword": "Visa lösenord"
+    },
+    "signUpPage": {
+      "letsCreateAccount": "Låt oss skapa ditt konto",
+      "chooseAccountType": "Välj en kontotyp",
+      "createBuyerAccount": "Jag skapar ett köparkonto",
+      "createSellerAccount": "Jag skapar ett säljarkonto",
+      "continue": "Fortsätt",
+      "chooseSignMethod": "Välj registreringsmetod",
+      "continueWithEmail": "Fortsätt med e-post",
+      "alreadyHaveAccount": "Har du redan ett konto?",
+      "fullName": "Fullständigt namn",
+      "chooseUsername": "Välj ett användarnamn",
+      "enterYourFullName": "Ange ditt fullständiga namn",
+      "confirmPassword": "Bekräfta lösenord",
+      "country": "Land",
+      "selectCountryPlaceholder": "Välj ditt land",
+      "searchCountryPlaceholder": "Sök land...",
+      "noCountryFound": "Inget land hittades"
+    },
+    "welcomePage": {
+      "welcomeAboard": "Välkommen ombord",
+      "welcomeText": "Din främsta shoppingplattform för smidig flytt, juridisk vägledning och globalt boende."
+    },
+    "forgotPasswordPage": {
+      "emailAddress": "E-postadress",
+      "forgotPassword": "Glömt lösenord?",
+      "enterEmailToReset": "Ange din kontos e-postadress så skickar vi dig en OTP för att återställa ditt lösenord.",
+      "sendOTP": "Skicka OTP",
+      "verifyOTP": "Verifiera OTP",
+      "resendOTP": "Skicka OTP igen",
+      "backToLogin": "Tillbaka till inloggning",
+      "sending": "Skickar...",
+      "otpSent": "En OTP har skickats till",
+      "continue": "Fortsätt",
+      "clickContinue": "Klicka på Fortsätt-knappen nedan för att skapa ett nytt lösenord.",
+      "rememberedPassword": "Kom du ihåg ditt lösenord?",
+      "login": "Logga in"
+    },
+    "resetPasswordPage": {
+      "resetPassword": "Återställ lösenord",
+      "resetPasswordDescription": "Ditt nya lösenord måste vara unikt från tidigare använda.",
+      "enterOTP": "Ange OTP",
+      "newPassword": "Nytt lösenord",
+      "confirmPassword": "Bekräfta lösenord",
+      "createNewPassword": "Skapa ett nytt lösenord",
+      "enterNewPassword": "Ange ditt nya lösenord",
+      "confirmNewPassword": "Bekräfta ditt nya lösenord",
+      "reset": "Återställ",
+      "passwordChanged": "Lösenord ändrat",
+      "passwordChangedDescription": "Ditt lösenord har ändrats.",
+      "backToLogin": "Tillbaka till inloggning",
+      "processing": "Bearbetar...",
+      "proceedToLogin": "Fortsätt till inloggning"
+    },
+    "drawers": {
+      "selectLanguages": {
+        "confirm": "Bekräfta ändringar"
+      }
+    },
+    "toasts": {
+      "accountCreated": "Konto skapat",
+      "accountUpdated": "Konto uppdaterat",
+      "passwordChanged": "Lösenord ändrat",
+      "passwordStrength": "Lösenordet måste vara minst 8 tecken, innehålla versaler, gemener, siffror och symboler",
+      "passwordsMismatch": "Lösenorden matchar inte",
+      "resetFailed": "Det gick inte att återställa lösenordet, försök igen",
+      "emailSent": "E-post skickat",
+      "invalidEmail": "Ogiltig e-postadress",
+      "otpMinimumLength": "OTP måste vara minst 6 tecken",
+      "otpVerified": "OTP verifierad",
+      "otpResent": "OTP skickat igen",
+      "sendError": "Det gick inte att skicka OTP. Försök igen.",
+      "resendError": "Det gick inte att skicka OTP igen. Försök igen.",
+      "errorOccurred": "Ett fel inträffade, försök igen senare",
+      "invalidCredentials": "Ogiltiga inloggningsuppgifter, försök igen"
+    },
+    "formErrors": {
+      "invalidEmail": "Ogiltigt e-postformat",
+      "emailRequired": "E-post krävs",
+      "fullNameRequired": "Fullständigt namn krävs",
+      "enterFullName": "Ange ditt fullständiga namn",
+      "passwordRequired": "Lösenord krävs",
+      "minPassword": "Lösenordet måste vara minst 8 tecken",
+      "passwordsMismatch": "Lösenorden matchar inte",
+      "weakPassword": "Lösenordet är för svagt",
+      "selectCountry": "Välj ett land",
+      "usernameRequired": "Användarnamn krävs",
+      "minUsername": "Användarnamnet måste vara minst 3 tecken",
+      "cpasswordRequired": "Bekräfta lösenord krävs"
+    }
+  }
+}

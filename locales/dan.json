@@ -1,0 +1,123 @@
+{
+  "landingPage": {
+    "navbar": {
+      "viewProfile": "Se profil",
+      "helpCenter": "Hjælpecenter",
+      "giveFeedback": "Giv os feedback",
+      "privacyPolicy": "Privatlivspolitik",
+      "logIn": "Log ind",
+      "getStarted": "Kom i gang",
+      "logout": "Log ud"
+    },
+    "loginPage": {
+      "logIn": "Log ind",
+      "close": "Luk",
+      "createAccount": "Opret konto",
+      "logIntoAccount": "Log ind på din konto",
+      "emailAddress": "E-mailadresse",
+      "enterEmailAddress": "Indtast din e-mailadresse",
+      "password": "Adgangskode",
+      "enterPassword": "Indtast din adgangskode",
+      "continueWithGoogle": "Fortsæt med Google",
+      "cantLogin": "Kan du ikke logge ind?",
+      "tosDesc": "Ved at oprette en konto accepterer du vores ",
+      "tos": "Servicevilkår",
+      "privacyPolicy": "Privatlivspolitik",
+      "and": "og",
+      "or": "ELLER",
+      "processing": "Behandler...",
+      "continue": "Fortsæt",
+      "hidePassword": "Skjul adgangskode",
+      "showPassword": "Vis adgangskode"
+    },
+    "signUpPage": {
+      "letsCreateAccount": "Lad os oprette din konto",
+      "chooseAccountType": "Vælg en kontotype",
+      "createBuyerAccount": "Jeg opretter en køberkonto",
+      "createSellerAccount": "Jeg opretter en sælgerkonto",
+      "continue": "Fortsæt",
+      "chooseSignMethod": "Vælg tilmeldingsmetode",
+      "continueWithEmail": "Fortsæt med e-mail",
+      "alreadyHaveAccount": "Har du allerede en konto?",
+      "fullName": "Fulde navn",
+      "chooseUsername": "Vælg et brugernavn",
+      "enterYourFullName": "Indtast dit fulde navn",
+      "confirmPassword": "Bekræft adgangskode",
+      "country": "Land",
+      "selectCountryPlaceholder": "Vælg dit land",
+      "searchCountryPlaceholder": "Søg efter land...",
+      "noCountryFound": "Intet land fundet"
+    },
+    "welcomePage": {
+      "welcomeAboard": "Velkommen ombord",
+      "welcomeText": "Din foretrukne shoppingplatform for problemfri flytning, juridisk vejledning og globalt liv."
+    },
+    "forgotPasswordPage": {
+      "emailAddress": "E-mailadresse",
+      "forgotPassword": "Glemt adgangskode?",
+      "enterEmailToReset": "Indtast din kontos e-mail, og vi sender dig en OTP for at nulstille din adgangskode.",
+      "sendOTP": "Send OTP",
+      "verifyOTP": "Bekræft OTP",
+      "resendOTP": "Send OTP igen",
+      "backToLogin": "Tilbage til login",
+      "sending": "Sender...",
+      "otpSent": "En OTP er blevet sendt til",
+      "continue": "Fortsæt",
+      "clickContinue": "Klik på knappen Fortsæt nedenfor for at oprette en ny adgangskode.",
+      "rememberedPassword": "Kan du huske din adgangskode?",
+      "login": "Log ind"
+    },
+    "resetPasswordPage": {
+      "resetPassword": "Nulstil adgangskode",
+      "resetPasswordDescription": "Din nye adgangskode skal være unik fra dem, der tidligere er brugt.",
+      "enterOTP": "Indtast OTP",
+      "newPassword": "Ny adgangskode",
+      "confirmPassword": "Bekræft adgangskode",
+      "createNewPassword": "Opret en ny adgangskode",
+      "enterNewPassword": "Indtast din nye adgangskode",
+      "confirmNewPassword": "Bekræft din nye adgangskode",
+      "reset": "Nulstil",
+      "passwordChanged": "Adgangskode ændret",
+      "passwordChangedDescription": "Din adgangskode er blevet ændret.",
+      "backToLogin": "Tilbage til login",
+      "processing": "Behandler...",
+      "proceedToLogin": "Fortsæt til login"
+    },
+    "drawers": {
+      "selectLanguages": {
+        "confirm": "Bekræft ændringer"
+      }
+    },
+    "toasts": {
+      "accountCreated": "Konto oprettet",
+      "accountUpdated": "Konto opdateret",
+      "passwordChanged": "Adgangskode ændret",
+      "passwordStrength": "Adgangskoden skal være mindst 8 tegn, inklusive store, små, tal og symbol",
+      "passwordsMismatch": "Adgangskoderne stemmer ikke overens",
+      "resetFailed": "Kunne ikke nulstille adgangskoden, prøv igen",
+      "emailSent": "E-mail sendt",
+      "invalidEmail": "Ugyldig e-mailadresse",
+      "otpMinimumLength": "OTP skal være mindst 6 tegn",
+      "otpVerified": "OTP bekræftet",
+      "otpResent": "OTP sendt igen",
+      "sendError": "Kunne ikke sende OTP. Prøv igen.",
+      "resendError": "Kunne ikke sende OTP igen. Prøv igen.",
+      "errorOccurred": "Der opstod en fejl, prøv igen senere",
+      "invalidCredentials": "Ugyldige legitimationsoplysninger, prøv igen"
+    },
+    "formErrors": {
+      "invalidEmail": "Ugyldigt e-mailformat",
+      "emailRequired": "E-mail er påkrævet",
+      "fullNameRequired": "Fulde navn er påkrævet",
+      "enterFullName": "Indtast dit fulde navn",
+      "passwordRequired": "Adgangskode er påkrævet",
+      "minPassword": "Adgangskoden skal være mindst 8 tegn",
+      "passwordsMismatch": "Adgangskoderne stemmer ikke overens",
+      "weakPassword": "Adgangskoden er for svag",
+      "selectCountry": "Vælg et land",
+      "usernameRequired": "Brugernavn er påkrævet",
+      "minUsername": "Brugernavnet skal være mindst 3 tegn",
+      "cpasswordRequired": "Bekræft adgangskode er påkrævet"
+    }
+  }
+}

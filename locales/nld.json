@@ -1,0 +1,123 @@
+{
+  "landingPage": {
+    "navbar": {
+      "viewProfile": "Profiel bekijken",
+      "helpCenter": "Helpcentrum",
+      "giveFeedback": "Geef ons feedback",
+      "privacyPolicy": "Privacybeleid",
+      "logIn": "Inloggen",
+      "getStarted": "Aan de slag",
+      "logout": "Uitloggen"
+    },
+    "loginPage": {
+      "logIn": "Inloggen",
+      "close": "Sluiten",
+      "createAccount": "Account aanmaken",
+      "logIntoAccount": "Log in op uw account",
+      "emailAddress": "E-mailadres",
+      "enterEmailAddress": "Voer uw e-mailadres in",
+      "password": "Wachtwoord",
+      "enterPassword": "Voer uw wachtwoord in",
+      "continueWithGoogle": "Doorgaan met Google",
+      "cantLogin": "Kan niet inloggen?",
+      "tosDesc": "Door een account aan te maken, gaat u akkoord met onze ",
+      "tos": "Servicevoorwaarden",
+      "privacyPolicy": "Privacybeleid",
+      "and": "en",
+      "or": "OF",
+      "processing": "Verwerken...",
+      "continue": "Doorgaan",
+      "hidePassword": "Wachtwoord verbergen",
+      "showPassword": "Wachtwoord tonen"
+    },
+    "signUpPage": {
+      "letsCreateAccount": "Laten we uw account aanmaken",
+      "chooseAccountType": "Kies een accounttype",
+      "createBuyerAccount": "Ik maak een kopersaccount aan",
+      "createSellerAccount": "Ik maak een verkopersaccount aan",
+      "continue": "Doorgaan",
+      "chooseSignMethod": "Kies een aanmeldmethode",
+      "continueWithEmail": "Doorgaan met e-mail",
+      "alreadyHaveAccount": "Heeft u al een account?",
+      "fullName": "Volledige naam",
+      "chooseUsername": "Kies een gebruikersnaam",
+      "enterYourFullName": "Voer uw volledige naam in",
+      "confirmPassword": "Wachtwoord bevestigen",
+      "country": "Land",
+      "selectCountryPlaceholder": "Selecteer uw land",
+      "searchCountryPlaceholder": "Zoek land...",
+      "noCountryFound": "Geen land gevonden"
+    },
+    "welcomePage": {
+      "welcomeAboard": "Welkom aan boord",
+      "welcomeText": "Uw nummer 1 winkelplatform voor naadloze verhuizing, juridische begeleiding en wereldwijd wonen."
+    },
+    "forgotPasswordPage": {
+      "emailAddress": "E-mailadres",
+      "forgotPassword": "Wachtwoord vergeten?",
+      "enterEmailToReset": "Voer het e-mailadres van uw account in en we sturen u een OTP om uw wachtwoord opnieuw in te stellen.",
+      "sendOTP": "OTP verzenden",
+      "verifyOTP": "OTP verifiëren",
+      "resendOTP": "OTP opnieuw verzenden",
+      "backToLogin": "Terug naar inloggen",
+      "sending": "Verzenden...",
+      "otpSent": "Er is een OTP verzonden naar",
+      "continue": "Doorgaan",
+      "clickContinue": "Klik op de onderstaande knop Doorgaan om een nieuw wachtwoord aan te maken.",
+      "rememberedPassword": "Wachtwoord onthouden?",
+      "login": "Inloggen"
+    },
+    "resetPasswordPage": {
+      "resetPassword": "Wachtwoord opnieuw instellen",
+      "resetPasswordDescription": "Uw nieuwe wachtwoord moet uniek zijn ten opzichte van eerder gebruikte wachtwoorden.",
+      "enterOTP": "OTP invoeren",
+      "newPassword": "Nieuw wachtwoord",
+      "confirmPassword": "Wachtwoord bevestigen",
+      "createNewPassword": "Maak een nieuw wachtwoord",
+      "enterNewPassword": "Voer uw nieuwe wachtwoord in",
+      "confirmNewPassword": "Bevestig uw nieuwe wachtwoord",
+      "reset": "Resetten",
+      "passwordChanged": "Wachtwoord gewijzigd",
+      "passwordChangedDescription": "Uw wachtwoord is succesvol gewijzigd.",
+      "backToLogin": "Terug naar inloggen",
+      "processing": "Verwerken...",
+      "proceedToLogin": "Doorgaan naar inloggen"
+    },
+    "drawers": {
+      "selectLanguages": {
+        "confirm": "Wijzigingen bevestigen"
+      }
+    },
+    "toasts": {
+      "accountCreated": "Account succesvol aangemaakt",
+      "accountUpdated": "Account succesvol bijgewerkt",
+      "passwordChanged": "Wachtwoord succesvol gewijzigd",
+      "passwordStrength": "Wachtwoord moet minimaal 8 tekens lang zijn, inclusief hoofdletters, kleine letters, cijfers en symbolen",
+      "passwordsMismatch": "Wachtwoorden komen niet overeen",
+      "resetFailed": "Wachtwoord opnieuw instellen mislukt, probeer het opnieuw",
+      "emailSent": "E-mail succesvol verzonden",
+      "invalidEmail": "Ongeldig e-mailadres",
+      "otpMinimumLength": "OTP moet minimaal 6 tekens lang zijn",
+      "otpVerified": "OTP succesvol geverifieerd",
+      "otpResent": "OTP opnieuw verzonden",
+      "sendError": "Verzenden van OTP mislukt. Probeer het opnieuw.",
+      "resendError": "Opnieuw verzenden van OTP mislukt. Probeer het opnieuw.",
+      "errorOccurred": "Er is een fout opgetreden, probeer het later opnieuw",
+      "invalidCredentials": "Ongeldige inloggegevens, probeer het opnieuw"
+    },
+    "formErrors": {
+      "invalidEmail": "Ongeldige e-mailindeling",
+      "emailRequired": "E-mail is vereist",
+      "fullNameRequired": "Volledige naam is vereist",
+      "enterFullName": "Voer uw volledige naam in",
+      "passwordRequired": "Wachtwoord is vereist",
+      "minPassword": "Wachtwoord moet minimaal 8 tekens lang zijn",
+      "passwordsMismatch": "Wachtwoorden komen niet overeen",
+      "weakPassword": "Wachtwoord is te zwak",
+      "selectCountry": "Selecteer een land",
+      "usernameRequired": "Gebruikersnaam is vereist",
+      "minUsername": "Gebruikersnaam moet minimaal 3 tekens lang zijn",
+      "cpasswordRequired": "Wachtwoord bevestigen is vereist"
+    }
+  }
+}

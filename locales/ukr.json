@@ -1,0 +1,123 @@
+{
+  "landingPage": {
+    "navbar": {
+      "viewProfile": "Переглянути профіль",
+      "helpCenter": "Центр допомоги",
+      "giveFeedback": "Надішліть нам відгук",
+      "privacyPolicy": "Політика конфіденційності",
+      "logIn": "Увійти",
+      "getStarted": "Почати",
+      "logout": "Вийти"
+    },
+    "loginPage": {
+      "logIn": "Увійти",
+      "close": "Закрити",
+      "createAccount": "Створити обліковий запис",
+      "logIntoAccount": "Увійдіть у свій обліковий запис",
+      "emailAddress": "Електронна адреса",
+      "enterEmailAddress": "Введіть свою електронну адресу",
+      "password": "Пароль",
+      "enterPassword": "Введіть свій пароль",
+      "continueWithGoogle": "Продовжити з Google",
+      "cantLogin": "Не можете увійти?",
+      "tosDesc": "Натискаючи «Створити обліковий запис», ви погоджуєтеся з нашими ",
+      "tos": "Умовами використання",
+      "privacyPolicy": "Політикою конфіденційності",
+      "and": "та",
+      "or": "АБО",
+      "processing": "Обробка...",
+      "continue": "Продовжити",
+      "hidePassword": "Приховати пароль",
+      "showPassword": "Показати пароль"
+    },
+    "signUpPage": {
+      "letsCreateAccount": "Давайте створимо ваш обліковий запис",
+      "chooseAccountType": "Виберіть тип облікового запису",
+      "createBuyerAccount": "Я створюю обліковий запис покупця",
+      "createSellerAccount": "Я створюю обліковий запис продавця",
+      "continue": "Продовжити",
+      "chooseSignMethod": "Виберіть спосіб реєстрації",
+      "continueWithEmail": "Продовжити з електронною поштою",
+      "alreadyHaveAccount": "Вже маєте обліковий запис?",
+      "fullName": "Повне ім'я",
+      "chooseUsername": "Виберіть ім'я користувача",
+      "enterYourFullName": "Введіть своє повне ім'я",
+      "confirmPassword": "Підтвердіть пароль",
+      "country": "Країна",
+      "selectCountryPlaceholder": "Виберіть свою країну",
+      "searchCountryPlaceholder": "Пошук країни...",
+      "noCountryFound": "Країну не знайдено"
+    },
+    "welcomePage": {
+      "welcomeAboard": "Ласкаво просимо на борт",
+      "welcomeText": "Ваша платформа №1 для безперебійного переїзду, юридичних консультацій та глобального життя."
+    },
+    "forgotPasswordPage": {
+      "emailAddress": "Електронна адреса",
+      "forgotPassword": "Забули пароль?",
+      "enterEmailToReset": "Введіть електронну пошту свого облікового запису, і ми надішлемо вам OTP для скидання пароля.",
+      "sendOTP": "Надіслати OTP",
+      "verifyOTP": "Підтвердити OTP",
+      "resendOTP": "Повторно надіслати OTP",
+      "backToLogin": "Повернутися до входу",
+      "sending": "Надсилання...",
+      "otpSent": "OTP надіслано на",
+      "continue": "Продовжити",
+      "clickContinue": "Натисніть кнопку «Продовжити» нижче, щоб створити новий пароль.",
+      "rememberedPassword": "Згадали свій пароль?",
+      "login": "Увійти"
+    },
+    "resetPasswordPage": {
+      "resetPassword": "Скинути пароль",
+      "resetPasswordDescription": "Ваш новий пароль має відрізнятися від тих, що використовувалися раніше.",
+      "enterOTP": "Введіть OTP",
+      "newPassword": "Новий пароль",
+      "confirmPassword": "Підтвердіть пароль",
+      "createNewPassword": "Створити новий пароль",
+      "enterNewPassword": "Введіть свій новий пароль",
+      "confirmNewPassword": "Підтвердіть свій новий пароль",
+      "reset": "Скинути",
+      "passwordChanged": "Пароль змінено",
+      "passwordChangedDescription": "Ваш пароль успішно змінено.",
+      "backToLogin": "Повернутися до входу",
+      "processing": "Обробка...",
+      "proceedToLogin": "Перейти до входу"
+    },
+    "drawers": {
+      "selectLanguages": {
+        "confirm": "Підтвердити зміни"
+      }
+    },
+    "toasts": {
+      "accountCreated": "Обліковий запис успішно створено",
+      "accountUpdated": "Обліковий запис успішно оновлено",
+      "passwordChanged": "Пароль успішно змінено",
+      "passwordStrength": "Пароль має містити щонайменше 8 символів, включати великі, малі літери, цифри та символи",
+      "passwordsMismatch": "Паролі не збігаються",
+      "resetFailed": "Не вдалося скинути пароль, спробуйте ще раз",
+      "emailSent": "Електронний лист успішно надіслано",
+      "invalidEmail": "Недійсна електронна адреса",
+      "otpMinimumLength": "OTP має містити щонайменше 6 символів",
+      "otpVerified": "OTP успішно підтверджено",
+      "otpResent": "OTP повторно надіслано",
+      "sendError": "Не вдалося надіслати OTP. Спробуйте ще раз.",
+      "resendError": "Не вдалося повторно надіслати OTP. Спробуйте ще раз.",
+      "errorOccurred": "Сталася помилка, спробуйте ще раз пізніше",
+      "invalidCredentials": "Недійсні облікові дані, спробуйте ще раз"
+    },
+    "formErrors": {
+      "invalidEmail": "Недійсний формат електронної пошти",
+      "emailRequired": "Електронна пошта обов'язкова",
+      "fullNameRequired": "Повне ім'я обов'язкове",
+      "enterFullName": "Будь ласка, введіть своє повне ім'я",
+      "passwordRequired": "Пароль обов'язковий",
+      "minPassword": "Пароль має містити щонайменше 8 символів",
+      "passwordsMismatch": "Паролі не збігаються",
+      "weakPassword": "Пароль занадто слабкий",
+      "selectCountry": "Будь ласка, виберіть країну",
+      "usernameRequired": "Ім'я користувача обов'язкове",
+      "minUsername": "Ім'я користувача має містити щонайменше 3 символи",
+      "cpasswordRequired": "Підтвердження пароля обов'язкове"
+    }
+  }
+}

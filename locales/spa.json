@@ -1,0 +1,123 @@
+{
+  "landingPage": {
+    "navbar": {
+      "viewProfile": "Ver perfil",
+      "helpCenter": "Centro de ayuda",
+      "giveFeedback": "Danos tu opinión",
+      "privacyPolicy": "Política de privacidad",
+      "logIn": "Iniciar sesión",
+      "getStarted": "Comenzar",
+      "logout": "Cerrar sesión"
+    },
+    "loginPage": {
+      "logIn": "Iniciar sesión",
+      "close": "Cerrar",
+      "createAccount": "Crear cuenta",
+      "logIntoAccount": "Inicia sesión en tu cuenta",
+      "emailAddress": "Correo electrónico",
+      "enterEmailAddress": "Ingresa tu correo electrónico",
+      "password": "Contraseña",
+      "enterPassword": "Ingresa tu contraseña",
+      "continueWithGoogle": "Continuar con Google",
+      "cantLogin": "¿No puedes iniciar sesión?",
+      "tosDesc": "Al crear una cuenta, aceptas nuestros ",
+      "tos": "Términos de servicio",
+      "privacyPolicy": "Política de privacidad",
+      "and": "y",
+      "or": "O",
+      "processing": "Procesando...",
+      "continue": "Continuar",
+      "hidePassword": "Ocultar contraseña",
+      "showPassword": "Mostrar contraseña"
+    },
+    "signUpPage": {
+      "letsCreateAccount": "Creemos tu cuenta",
+      "chooseAccountType": "Elige un tipo de cuenta",
+      "createBuyerAccount": "Estoy creando una cuenta de comprador",
+      "createSellerAccount": "Estoy creando una cuenta de vendedor",
+      "continue": "Continuar",
+      "chooseSignMethod": "Elige un método de registro",
+      "continueWithEmail": "Continuar con correo electrónico",
+      "alreadyHaveAccount": "¿Ya tienes una cuenta?",
+      "fullName": "Nombre completo",
+      "chooseUsername": "Elige un nombre de usuario",
+      "enterYourFullName": "Ingresa tu nombre completo",
+      "confirmPassword": "Confirmar contraseña",
+      "country": "País",
+      "selectCountryPlaceholder": "Selecciona tu país",
+      "searchCountryPlaceholder": "Buscar país...",
+      "noCountryFound": "No se encontró ningún país"
+    },
+    "welcomePage": {
+      "welcomeAboard": "Bienvenido a bordo",
+      "welcomeText": "Tu plataforma de compras No. 1 para mudanzas sin problemas, orientación legal y vida global."
+    },
+    "forgotPasswordPage": {
+      "emailAddress": "Correo electrónico",
+      "forgotPassword": "¿Olvidaste tu contraseña?",
+      "enterEmailToReset": "Ingresa el correo de tu cuenta y te enviaremos un OTP para restablecer tu contraseña.",
+      "sendOTP": "Enviar OTP",
+      "verifyOTP": "Verificar OTP",
+      "resendOTP": "Reenviar OTP",
+      "backToLogin": "Volver a iniciar sesión",
+      "sending": "Enviando...",
+      "otpSent": "Se ha enviado un OTP a",
+      "continue": "Continuar",
+      "clickContinue": "Haz clic en el botón continuar para crear una nueva contraseña.",
+      "rememberedPassword": "¿Recordaste tu contraseña?",
+      "login": "Iniciar sesión"
+    },
+    "resetPasswordPage": {
+      "resetPassword": "Restablecer contraseña",
+      "resetPasswordDescription": "Tu nueva contraseña debe ser única y diferente a las usadas anteriormente.",
+      "enterOTP": "Ingresa OTP",
+      "newPassword": "Nueva contraseña",
+      "confirmPassword": "Confirmar contraseña",
+      "createNewPassword": "Crear una nueva contraseña",
+      "enterNewPassword": "Ingresa tu nueva contraseña",
+      "confirmNewPassword": "Confirma tu nueva contraseña",
+      "reset": "Restablecer",
+      "passwordChanged": "Contraseña cambiada",
+      "passwordChangedDescription": "Tu contraseña se ha cambiado exitosamente.",
+      "backToLogin": "Volver a iniciar sesión",
+      "processing": "Procesando...",
+      "proceedToLogin": "Proceder a iniciar sesión"
+    },
+    "drawers": {
+      "selectLanguages": {
+        "confirm": "Confirmar cambios"
+      }
+    },
+    "toasts": {
+      "accountCreated": "Cuenta creada exitosamente",
+      "accountUpdated": "Cuenta actualizada exitosamente",
+      "passwordChanged": "Contraseña cambiada exitosamente",
+      "passwordStrength": "La contraseña debe tener al menos 8 caracteres, incluir mayúsculas, minúsculas, números y símbolos",
+      "passwordsMismatch": "Las contraseñas no coinciden",
+      "resetFailed": "Error al restablecer la contraseña, por favor inténtalo de nuevo",
+      "emailSent": "Correo enviado exitosamente",
+      "invalidEmail": "Dirección de correo no válida",
+      "otpMinimumLength": "El OTP debe tener al menos 6 caracteres",
+      "otpVerified": "OTP verificado exitosamente",
+      "otpResent": "OTP reenviado exitosamente",
+      "sendError": "Error al enviar OTP. Por favor inténtalo de nuevo.",
+      "resendError": "Error al reenviar OTP. Por favor inténtalo de nuevo.",
+      "errorOccurred": "Ocurrió un error, por favor inténtalo más tarde",
+      "invalidCredentials": "Credenciales inválidas, por favor inténtalo de nuevo"
+    },
+    "formErrors": {
+      "invalidEmail": "Formato de correo electrónico inválido",
+      "emailRequired": "El correo electrónico es obligatorio",
+      "fullNameRequired": "El nombre completo es obligatorio",
+      "enterFullName": "Por favor ingresa tu nombre completo",
+      "passwordRequired": "La contraseña es obligatoria",
+      "minPassword": "La contraseña debe tener al menos 8 caracteres",
+      "passwordsMismatch": "Las contraseñas no coinciden",
+      "weakPassword": "La contraseña es demasiado débil",
+      "selectCountry": "Por favor selecciona un país",
+      "usernameRequired": "El nombre de usuario es obligatorio",
+      "minUsername": "El nombre de usuario debe tener al menos 3 caracteres",
+      "cpasswordRequired": "Confirmar contraseña es obligatorio"
+    }
+  }
+}

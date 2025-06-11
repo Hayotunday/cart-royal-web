@@ -1,0 +1,123 @@
+{
+  "landingPage": {
+    "navbar": {
+      "viewProfile": "Tingnan ang Profile",
+      "helpCenter": "Sentro ng Tulong",
+      "giveFeedback": "Magbigay ng feedback",
+      "privacyPolicy": "Patakaran sa Pagkapribado",
+      "logIn": "Mag-log In",
+      "getStarted": "Magsimula",
+      "logout": "Mag-logout"
+    },
+    "loginPage": {
+      "logIn": "Mag-login",
+      "close": "Isara",
+      "createAccount": "Lumikha ng Account",
+      "logIntoAccount": "Mag-log in sa iyong account",
+      "emailAddress": "E-mail address",
+      "enterEmailAddress": "Ipasok ang iyong e-mail address",
+      "password": "Password",
+      "enterPassword": "Ipasok ang iyong password",
+      "continueWithGoogle": "Magpatuloy sa Google",
+      "cantLogin": "Hindi maka-log in?",
+      "tosDesc": "Sa pag-click sa paglikha ng account, sumasang-ayon ka sa aming ",
+      "tos": "Mga Tuntunin ng Serbisyo",
+      "privacyPolicy": "Patakaran sa Pagkapribado",
+      "and": "at",
+      "or": "O",
+      "processing": "Pinoproseso...",
+      "continue": "Magpatuloy",
+      "hidePassword": "Itago ang password",
+      "showPassword": "Ipakita ang password"
+    },
+    "signUpPage": {
+      "letsCreateAccount": "Likha tayo ng iyong account",
+      "chooseAccountType": "Pumili ng uri ng account",
+      "createBuyerAccount": "Lilikha ako ng isang buyer account",
+      "createSellerAccount": "Lilikha ako ng isang seller account",
+      "continue": "Magpatuloy",
+      "chooseSignMethod": "Pumili ng paraan ng pag-signup",
+      "continueWithEmail": "Magpatuloy sa e-mail",
+      "alreadyHaveAccount": "Mayroon ka nang account?",
+      "fullName": "Buong Pangalan",
+      "chooseUsername": "Pumili ng username",
+      "enterYourFullName": "Ipasok ang iyong buong pangalan",
+      "confirmPassword": "Kumpirmahin ang password",
+      "country": "Bansa",
+      "selectCountryPlaceholder": "Piliin ang iyong bansa",
+      "searchCountryPlaceholder": "Maghanap ng bansa...",
+      "noCountryFound": "Walang natagpuang bansa"
+    },
+    "welcomePage": {
+      "welcomeAboard": "Maligayang pagdating",
+      "welcomeText": "Ang iyong No. 1 shopping platform para sa walang problemang paglipat, legal na gabay, at pandaigdigang pamumuhay."
+    },
+    "forgotPasswordPage": {
+      "emailAddress": "E-mail address",
+      "forgotPassword": "Nakalimutan ang Password?",
+      "enterEmailToReset": "Ipasok ang email ng iyong account at padadalhan ka namin ng OTP upang i-reset ang iyong password.",
+      "sendOTP": "Magpadala ng OTP",
+      "verifyOTP": "I-verify ang OTP",
+      "resendOTP": "Ipadala muli ang OTP",
+      "backToLogin": "Bumalik sa Login",
+      "sending": "Nagpapadala...",
+      "otpSent": "Isang OTP ang ipinadala sa",
+      "continue": "Magpatuloy",
+      "clickContinue": "I-click ang button na magpatuloy sa ibaba upang lumikha ng isang bagong password.",
+      "rememberedPassword": "Naalala ang iyong password?",
+      "login": "Mag-login"
+    },
+    "resetPasswordPage": {
+      "resetPassword": "I-reset ang Password",
+      "resetPasswordDescription": "Ang iyong bagong password ay dapat na natatangi mula sa mga dating ginamit.",
+      "enterOTP": "Ipasok ang OTP",
+      "newPassword": "Bagong Password",
+      "confirmPassword": "Kumpirmahin ang Password",
+      "createNewPassword": "Lumikha ng isang bagong password",
+      "enterNewPassword": "Ipasok ang iyong bagong password",
+      "confirmNewPassword": "Kumpirmahin ang iyong bagong password",
+      "reset": "I-reset",
+      "passwordChanged": "Password Nabago",
+      "passwordChangedDescription": "Matagumpay na nabago ang iyong password.",
+      "backToLogin": "Bumalik sa Login",
+      "processing": "Pinoproseso...",
+      "proceedToLogin": "Magpatuloy sa pag-login"
+    },
+    "drawers": {
+      "selectLanguages": {
+        "confirm": "Kumpirmahin ang mga Pagbabago"
+      }
+    },
+    "toasts": {
+      "accountCreated": "Matagumpay na nalikha ang account",
+      "accountUpdated": "Matagumpay na na-update ang account",
+      "passwordChanged": "Matagumpay na nabago ang password",
+      "passwordStrength": "Ang password ay dapat na hindi bababa sa 8 character, isama ang uppercase, lowercase, numero, at simbolo",
+      "passwordsMismatch": "Hindi magkatugma ang mga password",
+      "resetFailed": "Nabigo upang i-reset ang password, mangyaring subukan muli",
+      "emailSent": "Matagumpay na naipadala ang email",
+      "invalidEmail": "Hindi wasto ang e-mail address",
+      "otpMinimumLength": "Ang OTP ay dapat na hindi bababa sa 6 na character",
+      "otpVerified": "Matagumpay na na-verify ang OTP",
+      "otpResent": "Matagumpay na naipadala muli ang OTP",
+      "sendError": "Nabigo upang magpadala ng OTP. Mangyaring subukan muli.",
+      "resendError": "Nabigo upang ipadala muli ang OTP. Mangyaring subukan muli.",
+      "errorOccurred": "Nagkaroon ng error, mangyaring subukan muli mamaya",
+      "invalidCredentials": "Hindi wasto ang mga credentials, mangyaring subukan muli"
+    },
+    "formErrors": {
+      "invalidEmail": "Hindi wasto ang format ng email",
+      "emailRequired": "Kinakailangan ang email",
+      "fullNameRequired": "Kinakailangan ang buong pangalan",
+      "enterFullName": "Mangyaring ipasok ang iyong buong pangalan",
+      "passwordRequired": "Kinakailangan ang password",
+      "minPassword": "Ang password ay dapat na hindi bababa sa 8 character",
+      "passwordsMismatch": "Hindi magkatugma ang mga password",
+      "weakPassword": "Masyadong mahina ang password",
+      "selectCountry": "Mangyaring pumili ng isang bansa",
+      "usernameRequired": "Kinakailangan ang username",
+      "minUsername": "Ang username ay dapat na hindi bababa sa 3 character",
+      "cpasswordRequired": "Kinakailangan ang kumpirmasyon ng password"
+    }
+  }
+}

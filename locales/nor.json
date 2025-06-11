@@ -1,0 +1,123 @@
+{
+  "landingPage": {
+    "navbar": {
+      "viewProfile": "Se profil",
+      "helpCenter": "Hjelpesenter",
+      "giveFeedback": "Gi oss tilbakemelding",
+      "privacyPolicy": "Personvernregler",
+      "logIn": "Logg inn",
+      "getStarted": "Kom i gang",
+      "logout": "Logg ut"
+    },
+    "loginPage": {
+      "logIn": "Logg inn",
+      "close": "Lukk",
+      "createAccount": "Opprett konto",
+      "logIntoAccount": "Logg inn på din konto",
+      "emailAddress": "E-postadresse",
+      "enterEmailAddress": "Skriv inn din e-postadresse",
+      "password": "Passord",
+      "enterPassword": "Skriv inn passordet ditt",
+      "continueWithGoogle": "Fortsett med Google",
+      "cantLogin": "Kan du ikke logge inn?",
+      "tosDesc": "Ved å opprette en konto godtar du våre ",
+      "tos": "Bruksvilkår",
+      "privacyPolicy": "Personvernregler",
+      "and": "og",
+      "or": "ELLER",
+      "processing": "Behandler...",
+      "continue": "Fortsett",
+      "hidePassword": "Skjul passord",
+      "showPassword": "Vis passord"
+    },
+    "signUpPage": {
+      "letsCreateAccount": "La oss opprette din konto",
+      "chooseAccountType": "Velg en kontotype",
+      "createBuyerAccount": "Jeg oppretter en kjøperkonto",
+      "createSellerAccount": "Jeg oppretter en selgerkonto",
+      "continue": "Fortsett",
+      "chooseSignMethod": "Velg registreringsmetode",
+      "continueWithEmail": "Fortsett med e-post",
+      "alreadyHaveAccount": "Har du allerede en konto?",
+      "fullName": "Fullt navn",
+      "chooseUsername": "Velg et brukernavn",
+      "enterYourFullName": "Skriv inn ditt fulle navn",
+      "confirmPassword": "Bekreft passord",
+      "country": "Land",
+      "selectCountryPlaceholder": "Velg ditt land",
+      "searchCountryPlaceholder": "Søk land...",
+      "noCountryFound": "Ingen land funnet"
+    },
+    "welcomePage": {
+      "welcomeAboard": "Velkommen om bord",
+      "welcomeText": "Din nr. 1 shoppingplattform for sømløs flytting, juridisk veiledning og global livsstil."
+    },
+    "forgotPasswordPage": {
+      "emailAddress": "E-postadresse",
+      "forgotPassword": "Glemt passord?",
+      "enterEmailToReset": "Skriv inn e-postadressen til kontoen din, så sender vi deg en OTP for å tilbakestille passordet ditt.",
+      "sendOTP": "Send OTP",
+      "verifyOTP": "Bekreft OTP",
+      "resendOTP": "Send OTP på nytt",
+      "backToLogin": "Tilbake til innlogging",
+      "sending": "Sender...",
+      "otpSent": "En OTP har blitt sendt til",
+      "continue": "Fortsett",
+      "clickContinue": "Klikk på fortsett-knappen nedenfor for å opprette et nytt passord.",
+      "rememberedPassword": "Husket passordet ditt?",
+      "login": "Logg inn"
+    },
+    "resetPasswordPage": {
+      "resetPassword": "Tilbakestill passord",
+      "resetPasswordDescription": "Ditt nye passord må være unikt fra de som er brukt tidligere.",
+      "enterOTP": "Skriv inn OTP",
+      "newPassword": "Nytt passord",
+      "confirmPassword": "Bekreft passord",
+      "createNewPassword": "Opprett et nytt passord",
+      "enterNewPassword": "Skriv inn ditt nye passord",
+      "confirmNewPassword": "Bekreft ditt nye passord",
+      "reset": "Tilbakestill",
+      "passwordChanged": "Passord endret",
+      "passwordChangedDescription": "Passordet ditt er endret.",
+      "backToLogin": "Tilbake til innlogging",
+      "processing": "Behandler...",
+      "proceedToLogin": "Fortsett til innlogging"
+    },
+    "drawers": {
+      "selectLanguages": {
+        "confirm": "Bekreft endringer"
+      }
+    },
+    "toasts": {
+      "accountCreated": "Konto opprettet",
+      "accountUpdated": "Konto oppdatert",
+      "passwordChanged": "Passord endret",
+      "passwordStrength": "Passordet må være minst 8 tegn, inkludere store bokstaver, små bokstaver, tall og symbol",
+      "passwordsMismatch": "Passordene stemmer ikke overens",
+      "resetFailed": "Kunne ikke tilbakestille passordet, vennligst prøv igjen",
+      "emailSent": "E-post sendt",
+      "invalidEmail": "Ugyldig e-postadresse",
+      "otpMinimumLength": "OTP må være minst 6 tegn",
+      "otpVerified": "OTP bekreftet",
+      "otpResent": "OTP sendt på nytt",
+      "sendError": "Kunne ikke sende OTP. Vennligst prøv igjen.",
+      "resendError": "Kunne ikke sende OTP på nytt. Vennligst prøv igjen.",
+      "errorOccurred": "Det oppsto en feil, vennligst prøv igjen senere",
+      "invalidCredentials": "Ugyldige legitimasjonsbeskrivelser, vennligst prøv igjen"
+    },
+    "formErrors": {
+      "invalidEmail": "Ugyldig e-postformat",
+      "emailRequired": "E-post er påkrevd",
+      "fullNameRequired": "Fullt navn er påkrevd",
+      "enterFullName": "Vennligst skriv inn ditt fulle navn",
+      "passwordRequired": "Passord er påkrevd",
+      "minPassword": "Passordet må være minst 8 tegn",
+      "passwordsMismatch": "Passordene stemmer ikke overens",
+      "weakPassword": "Passordet er for svakt",
+      "selectCountry": "Vennligst velg et land",
+      "usernameRequired": "Brukernavn er påkrevd",
+      "minUsername": "Brukernavnet må være minst 3 tegn",
+      "cpasswordRequired": "Bekreft passord er påkrevd"
+    }
+  }
+}

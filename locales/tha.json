@@ -1,0 +1,123 @@
+{
+  "landingPage": {
+    "navbar": {
+      "viewProfile": "ดูโปรไฟล์",
+      "helpCenter": "ศูนย์ช่วยเหลือ",
+      "giveFeedback": "ให้ข้อเสนอแนะแก่เรา",
+      "privacyPolicy": "นโยบายความเป็นส่วนตัว",
+      "logIn": "เข้าสู่ระบบ",
+      "getStarted": "เริ่มต้น",
+      "logout": "ออกจากระบบ"
+    },
+    "loginPage": {
+      "logIn": "เข้าสู่ระบบ",
+      "close": "ปิด",
+      "createAccount": "สร้างบัญชี",
+      "logIntoAccount": "เข้าสู่บัญชีของคุณ",
+      "emailAddress": "ที่อยู่อีเมล",
+      "enterEmailAddress": "กรอกที่อยู่อีเมลของคุณ",
+      "password": "รหัสผ่าน",
+      "enterPassword": "ใส่รหัสผ่านของคุณ",
+      "continueWithGoogle": "ดำเนินการต่อด้วย Google",
+      "cantLogin": "ไม่สามารถเข้าสู่ระบบ?",
+      "tosDesc": "เมื่อคลิกสร้างบัญชี แสดงว่าคุณยอมรับ",
+      "tos": "ข้อกำหนดในการให้บริการ",
+      "privacyPolicy": "นโยบายความเป็นส่วนตัว",
+      "and": "และ",
+      "or": "หรือ",
+      "processing": "กำลังดำเนินการ...",
+      "continue": "ดำเนินการต่อ",
+      "hidePassword": "ซ่อนรหัสผ่าน",
+      "showPassword": "แสดงรหัสผ่าน"
+    },
+    "signUpPage": {
+      "letsCreateAccount": "มาสร้างบัญชีของคุณกัน",
+      "chooseAccountType": "เลือกประเภทบัญชี",
+      "createBuyerAccount": "ฉันกำลังสร้างบัญชีผู้ซื้อ",
+      "createSellerAccount": "ฉันกำลังสร้างบัญชีผู้ขาย",
+      "continue": "ดำเนินการต่อ",
+      "chooseSignMethod": "เลือกวิธีการสมัคร",
+      "continueWithEmail": "ดำเนินการต่อด้วยอีเมล",
+      "alreadyHaveAccount": "มีบัญชีอยู่แล้ว?",
+      "fullName": "ชื่อเต็ม",
+      "chooseUsername": "เลือกชื่อผู้ใช้",
+      "enterYourFullName": "ใส่ชื่อเต็มของคุณ",
+      "confirmPassword": "ยืนยันรหัสผ่าน",
+      "country": "ประเทศ",
+      "selectCountryPlaceholder": "เลือกประเทศของคุณ",
+      "searchCountryPlaceholder": "ค้นหาประเทศ...",
+      "noCountryFound": "ไม่พบประเทศ"
+    },
+    "welcomePage": {
+      "welcomeAboard": "ยินดีต้อนรับ",
+      "welcomeText": "แพลตฟอร์มการช็อปปิ้งอันดับ 1 ของคุณสำหรับการย้ายถิ่นฐาน คำแนะนำทางกฎหมาย และการใช้ชีวิตระดับโลกที่ราบรื่น"
+    },
+    "forgotPasswordPage": {
+      "emailAddress": "ที่อยู่อีเมล",
+      "forgotPassword": "ลืมรหัสผ่าน?",
+      "enterEmailToReset": "ป้อนอีเมลของบัญชีของคุณ แล้วเราจะส่ง OTP เพื่อรีเซ็ตรหัสผ่านของคุณ",
+      "sendOTP": "ส่ง OTP",
+      "verifyOTP": "ยืนยัน OTP",
+      "resendOTP": "ส่ง OTP อีกครั้ง",
+      "backToLogin": "กลับไปที่หน้าล็อกอิน",
+      "sending": "กำลังส่ง...",
+      "otpSent": "OTP ถูกส่งไปที่",
+      "continue": "ดำเนินการต่อ",
+      "clickContinue": "คลิกปุ่มดำเนินการต่อด้านล่างเพื่อสร้างรหัสผ่านใหม่",
+      "rememberedPassword": "จำรหัสผ่านได้?",
+      "login": "เข้าสู่ระบบ"
+    },
+    "resetPasswordPage": {
+      "resetPassword": "รีเซ็ตรหัสผ่าน",
+      "resetPasswordDescription": "รหัสผ่านใหม่ของคุณต้องไม่ซ้ำกับรหัสผ่านที่เคยใช้ก่อนหน้านี้",
+      "enterOTP": "ใส่ OTP",
+      "newPassword": "รหัสผ่านใหม่",
+      "confirmPassword": "ยืนยันรหัสผ่าน",
+      "createNewPassword": "สร้างรหัสผ่านใหม่",
+      "enterNewPassword": "ใส่รหัสผ่านใหม่ของคุณ",
+      "confirmNewPassword": "ยืนยันรหัสผ่านใหม่ของคุณ",
+      "reset": "รีเซ็ต",
+      "passwordChanged": "เปลี่ยนรหัสผ่านแล้ว",
+      "passwordChangedDescription": "รหัสผ่านของคุณถูกเปลี่ยนเรียบร้อยแล้ว",
+      "backToLogin": "กลับไปที่หน้าล็อกอิน",
+      "processing": "กำลังดำเนินการ...",
+      "proceedToLogin": "ดำเนินการต่อเพื่อเข้าสู่ระบบ"
+    },
+    "drawers": {
+      "selectLanguages": {
+        "confirm": "ยืนยันการเปลี่ยนแปลง"
+      }
+    },
+    "toasts": {
+      "accountCreated": "สร้างบัญชีสำเร็จแล้ว",
+      "accountUpdated": "อัปเดตบัญชีสำเร็จแล้ว",
+      "passwordChanged": "เปลี่ยนรหัสผ่านสำเร็จแล้ว",
+      "passwordStrength": "รหัสผ่านต้องมีความยาวอย่างน้อย 8 ตัวอักษร ประกอบด้วยตัวพิมพ์ใหญ่ ตัวพิมพ์เล็ก ตัวเลข และสัญลักษณ์",
+      "passwordsMismatch": "รหัสผ่านไม่ตรงกัน",
+      "resetFailed": "รีเซ็ตรหัสผ่านล้มเหลว โปรดลองอีกครั้ง",
+      "emailSent": "ส่งอีเมลสำเร็จแล้ว",
+      "invalidEmail": "ที่อยู่อีเมลไม่ถูกต้อง",
+      "otpMinimumLength": "OTP ต้องมีความยาวอย่างน้อย 6 ตัวอักษร",
+      "otpVerified": "ยืนยัน OTP สำเร็จแล้ว",
+      "otpResent": "ส่ง OTP อีกครั้งสำเร็จแล้ว",
+      "sendError": "ไม่สามารถส่ง OTP ได้ โปรดลองอีกครั้ง",
+      "resendError": "ไม่สามารถส่ง OTP อีกครั้งได้ โปรดลองอีกครั้ง",
+      "errorOccurred": "เกิดข้อผิดพลาด โปรดลองอีกครั้งในภายหลัง",
+      "invalidCredentials": "ข้อมูลรับรองไม่ถูกต้อง โปรดลองอีกครั้ง"
+    },
+    "formErrors": {
+      "invalidEmail": "รูปแบบอีเมลไม่ถูกต้อง",
+      "emailRequired": "ต้องมีอีเมล",
+      "fullNameRequired": "ต้องมีชื่อเต็ม",
+      "enterFullName": "โปรดใส่ชื่อเต็มของคุณ",
+      "passwordRequired": "ต้องมีรหัสผ่าน",
+      "minPassword": "รหัสผ่านต้องมีความยาวอย่างน้อย 8 ตัวอักษร",
+      "passwordsMismatch": "รหัสผ่านไม่ตรงกัน",
+      "weakPassword": "รหัสผ่านอ่อนเกินไป",
+      "selectCountry": "โปรดเลือกประเทศ",
+      "usernameRequired": "ต้องมีชื่อผู้ใช้",
+      "minUsername": "ชื่อผู้ใช้ต้องมีความยาวอย่างน้อย 3 ตัวอักษร",
+      "cpasswordRequired": "ต้องยืนยันรหัสผ่าน"
+    }
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "landingPage": {
+    "navbar": {
+      "viewProfile": "प्रोफ़ाइल देखें",
+      "helpCenter": "सहायता केंद्र",
+      "giveFeedback": "हमें प्रतिक्रिया दें",
+      "privacyPolicy": "गोपनीयता नीति",
+      "logIn": "लॉग इन",
+      "getStarted": "शुरू हो जाओ",
+      "logout": "लॉग आउट"
+    },
+    "loginPage": {
+      "logIn": "लॉग इन",
+      "close": "बंद करें",
+      "createAccount": "खाता बनाएं",
+      "logIntoAccount": "अपने खाते में लॉग इन करें",
+      "emailAddress": "ईमेल पता",
+      "enterEmailAddress": "अपना ई-मेल पता दर्ज करें",
+      "password": "पासवर्ड",
+      "enterPassword": "अपना पासवर्ड दर्ज करें",
+      "continueWithGoogle": "गूगल के साथ जारी रखें",
+      "cantLogin": "लॉग इन नहीं कर सकते?",
+      "tosDesc": "खाता बनाने पर क्लिक करके, आप हमारी शर्तों से सहमत होते हैं",
+      "tos": "सेवा की शर्तें",
+      "privacyPolicy": "गोपनीयता नीति",
+      "and": "और",
+      "or": "या",
+      "processing": "प्रसंस्करण...",
+      "continue": "जारी रखें",
+      "hidePassword": "पासवर्ड छुपाएं",
+      "showPassword": "पासवर्ड दिखाएं"
+    },
+    "signUpPage": {
+      "letsCreateAccount": "आइए आपका खाता बनाएं",
+      "chooseAccountType": "एक खाता प्रकार चुनें",
+      "createBuyerAccount": "मैं एक क्रेता खाता बना रहा हूँ",
+      "createSellerAccount": "मैं एक विक्रेता खाता बना रहा हूँ",
+      "continue": "जारी रखें",
+      "chooseSignMethod": "साइनअप विधि चुनें",
+      "continueWithEmail": "ई-मेल के साथ जारी रखें",
+      "alreadyHaveAccount": "क्या पहले से ही एक खाता है?",
+      "fullName": "पूरा नाम",
+      "chooseUsername": "एक उपयोगकर्ता नाम चुनें",
+      "enterYourFullName": "अपना पूरा नाम दर्ज करें",
+      "confirmPassword": "पासवर्ड की पुष्टि करें",
+      "country": "देश",
+      "selectCountryPlaceholder": "अपना देश चुनें",
+      "searchCountryPlaceholder": "देश खोजें...",
+      "noCountryFound": "कोई देश नहीं मिला"
+    },
+    "welcomePage": {
+      "welcomeAboard": "बोर्ड पर आपका स्वागत है",
+      "welcomeText": "निर्बाध स्थानांतरण, कानूनी मार्गदर्शन और वैश्विक जीवन के लिए आपका नंबर 1 शॉपिंग प्लेटफॉर्म।"
+    },
+    "forgotPasswordPage": {
+      "emailAddress": "ईमेल पता",
+      "forgotPassword": "पासवर्ड भूल गए?",
+      "enterEmailToReset": "अपने खाते का ईमेल दर्ज करें और हम आपको अपना पासवर्ड रीसेट करने के लिए एक ओटीपी भेजेंगे।",
+      "sendOTP": "ओटीपी भेजें",
+      "verifyOTP": "ओटीपी सत्यापित करें",
+      "resendOTP": "ओटीपी पुनः भेजें",
+      "backToLogin": "लॉगिन पर वापस जाएं",
+      "sending": "भेजा जा रहा है...",
+      "otpSent": "एक ओटीपी भेजा गया है",
+      "continue": "जारी रखें",
+      "clickContinue": "नया पासवर्ड बनाने के लिए नीचे दिए गए जारी रखें बटन पर क्लिक करें।",
+      "rememberedPassword": "अपना पासवर्ड याद आया?",
+      "login": "लॉग इन"
+    },
+    "resetPasswordPage": {
+      "resetPassword": "पासवर्ड रीसेट करें",
+      "resetPasswordDescription": "आपका नया पासवर्ड पहले इस्तेमाल किए गए पासवर्ड से अलग होना चाहिए।",
+      "enterOTP": "ओटीपी दर्ज करें",
+      "newPassword": "नया पासवर्ड",
+      "confirmPassword": "पासवर्ड की पुष्टि करें",
+      "createNewPassword": "एक नया पासवर्ड बनाएं",
+      "enterNewPassword": "अपना नया पासवर्ड दर्ज करें",
+      "confirmNewPassword": "अपने नए पासवर्ड की पुष्टि करें",
+      "reset": "रीसेट",
+      "passwordChanged": "पासवर्ड बदल गया",
+      "passwordChangedDescription": "आपका पासवर्ड सफलतापूर्वक बदल दिया गया है।",
+      "backToLogin": "लॉगिन पर वापस जाएं",
+      "processing": "प्रसंस्करण...",
+      "proceedToLogin": "लॉगिन करने के लिए आगे बढ़ें"
+    },
+    "drawers": {
+      "selectLanguages": {
+        "confirm": "परिवर्तनों की पुष्टि करें"
+      }
+    },
+    "toasts": {
+      "accountCreated": "खाता सफलतापूर्वक बनाया गया",
+      "accountUpdated": "खाता सफलतापूर्वक अपडेट किया गया",
+      "passwordChanged": "पासवर्ड सफलतापूर्वक बदल दिया गया",
+      "passwordStrength": "पासवर्ड कम से कम 8 अक्षरों का होना चाहिए, जिसमें अपरकेस, लोअरकेस, नंबर और प्रतीक शामिल हों",
+      "passwordsMismatch": "पासवर्ड मेल नहीं खाते",
+      "resetFailed": "पासवर्ड रीसेट करने में विफल, कृपया पुनः प्रयास करें",
+      "emailSent": "ईमेल सफलतापूर्वक भेजा गया",
+      "invalidEmail": "अमान्य ई-मेल पता",
+      "otpMinimumLength": "ओटीपी कम से कम 6 अक्षरों का होना चाहिए",
+      "otpVerified": "ओटीपी सफलतापूर्वक सत्यापित",
+      "otpResent": "ओटीपी सफलतापूर्वक पुनः भेजा गया",
+      "sendError": "ओटीपी भेजने में विफल। कृपया पुन: प्रयास करें।",
+      "resendError": "ओटीपी पुनः भेजने में विफल। कृपया पुन: प्रयास करें।",
+      "errorOccurred": "एक त्रुटि हुई, कृपया बाद में पुन: प्रयास करें",
+      "invalidCredentials": "अमान्य क्रेडेंशियल, कृपया पुन: प्रयास करें"
+    },
+    "formErrors": {
+      "invalidEmail": "अमान्य ईमेल प्रारूप",
+      "emailRequired": "ईमेल आवश्यक है",
+      "fullNameRequired": "पूरा नाम आवश्यक है",
+      "enterFullName": "कृपया अपना पूरा नाम दर्ज करें",
+      "passwordRequired": "पासवर्ड आवश्यक है",
+      "minPassword": "पासवर्ड कम से कम 8 अक्षरों का होना चाहिए",
+      "passwordsMismatch": "पासवर्ड मेल नहीं खाते",
+      "weakPassword": "पासवर्ड बहुत कमजोर है",
+      "selectCountry": "कृपया एक देश का चयन करें",
+      "usernameRequired": "उपयोगकर्ता नाम आवश्यक है",
+      "minUsername": "उपयोगकर्ता नाम कम से कम 3 अक्षरों का होना चाहिए",
+      "cpasswordRequired": "पासवर्ड की पुष्टि आवश्यक है"
+    }
+  }
+}

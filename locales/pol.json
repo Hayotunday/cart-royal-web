@@ -1,0 +1,123 @@
+{
+  "landingPage": {
+    "navbar": {
+      "viewProfile": "Wyświetl profil",
+      "helpCenter": "Centrum Pomocy",
+      "giveFeedback": "Przekaż opinię",
+      "privacyPolicy": "Polityka Prywatności",
+      "logIn": "Zaloguj się",
+      "getStarted": "Zacznij",
+      "logout": "Wyloguj się"
+    },
+    "loginPage": {
+      "logIn": "Zaloguj się",
+      "close": "Zamknij",
+      "createAccount": "Utwórz konto",
+      "logIntoAccount": "Zaloguj się na swoje konto",
+      "emailAddress": "Adres e-mail",
+      "enterEmailAddress": "Wprowadź swój adres e-mail",
+      "password": "Hasło",
+      "enterPassword": "Wprowadź swoje hasło",
+      "continueWithGoogle": "Kontynuuj z Google",
+      "cantLogin": "Nie możesz się zalogować?",
+      "tosDesc": "Klikając „Utwórz konto”, zgadzasz się na nasze",
+      "tos": "Warunki korzystania z usługi",
+      "privacyPolicy": "Polityka Prywatności",
+      "and": "i",
+      "or": "LUB",
+      "processing": "Przetwarzanie...",
+      "continue": "Kontynuuj",
+      "hidePassword": "Ukryj hasło",
+      "showPassword": "Pokaż hasło"
+    },
+    "signUpPage": {
+      "letsCreateAccount": "Utwórzmy Twoje konto",
+      "chooseAccountType": "Wybierz typ konta",
+      "createBuyerAccount": "Tworzę konto kupującego",
+      "createSellerAccount": "Tworzę konto sprzedawcy",
+      "continue": "Kontynuuj",
+      "chooseSignMethod": "Wybierz metodę rejestracji",
+      "continueWithEmail": "Kontynuuj przez e-mail",
+      "alreadyHaveAccount": "Masz już konto?",
+      "fullName": "Imię i nazwisko",
+      "chooseUsername": "Wybierz nazwę użytkownika",
+      "enterYourFullName": "Wprowadź swoje imię i nazwisko",
+      "confirmPassword": "Potwierdź hasło",
+      "country": "Kraj",
+      "selectCountryPlaceholder": "Wybierz swój kraj",
+      "searchCountryPlaceholder": "Szukaj kraju...",
+      "noCountryFound": "Nie znaleziono kraju"
+    },
+    "welcomePage": {
+      "welcomeAboard": "Witamy na pokładzie",
+      "welcomeText": "Twoja platforma zakupowa nr 1 zapewniająca bezproblemową relokację, doradztwo prawne i globalne życie."
+    },
+    "forgotPasswordPage": {
+      "emailAddress": "Adres e-mail",
+      "forgotPassword": "Zapomniałeś hasła?",
+      "enterEmailToReset": "Wprowadź adres e-mail swojego konta, a wyślemy Ci OTP, aby zresetować hasło.",
+      "sendOTP": "Wyślij OTP",
+      "verifyOTP": "Zweryfikuj OTP",
+      "resendOTP": "Wyślij ponownie OTP",
+      "backToLogin": "Powrót do logowania",
+      "sending": "Wysyłanie...",
+      "otpSent": "OTP został wysłany na",
+      "continue": "Kontynuuj",
+      "clickContinue": "Kliknij przycisk Kontynuuj poniżej, aby utworzyć nowe hasło.",
+      "rememberedPassword": "Przypomniałeś sobie hasło?",
+      "login": "Zaloguj się"
+    },
+    "resetPasswordPage": {
+      "resetPassword": "Zresetuj hasło",
+      "resetPasswordDescription": "Twoje nowe hasło musi różnić się od wcześniej używanych.",
+      "enterOTP": "Wprowadź OTP",
+      "newPassword": "Nowe hasło",
+      "confirmPassword": "Potwierdź hasło",
+      "createNewPassword": "Utwórz nowe hasło",
+      "enterNewPassword": "Wprowadź nowe hasło",
+      "confirmNewPassword": "Potwierdź nowe hasło",
+      "reset": "Zresetuj",
+      "passwordChanged": "Hasło zostało zmienione",
+      "passwordChangedDescription": "Twoje hasło zostało pomyślnie zmienione.",
+      "backToLogin": "Powrót do logowania",
+      "processing": "Przetwarzanie...",
+      "proceedToLogin": "Przejdź do logowania"
+    },
+    "drawers": {
+      "selectLanguages": {
+        "confirm": "Potwierdź zmiany"
+      }
+    },
+    "toasts": {
+      "accountCreated": "Konto utworzone pomyślnie",
+      "accountUpdated": "Konto zaktualizowane pomyślnie",
+      "passwordChanged": "Hasło zmienione pomyślnie",
+      "passwordStrength": "Hasło musi mieć co najmniej 8 znaków, zawierać wielkie i małe litery, cyfrę i symbol",
+      "passwordsMismatch": "Hasła nie pasują do siebie",
+      "resetFailed": "Nie udało się zresetować hasła, spróbuj ponownie",
+      "emailSent": "E-mail wysłany pomyślnie",
+      "invalidEmail": "Nieprawidłowy adres e-mail",
+      "otpMinimumLength": "OTP musi mieć co najmniej 6 znaków",
+      "otpVerified": "OTP zweryfikowany pomyślnie",
+      "otpResent": "OTP wysłany ponownie pomyślnie",
+      "sendError": "Nie udało się wysłać OTP. Spróbuj ponownie.",
+      "resendError": "Nie udało się ponownie wysłać OTP. Spróbuj ponownie.",
+      "errorOccurred": "Wystąpił błąd, spróbuj ponownie później",
+      "invalidCredentials": "Nieprawidłowe dane uwierzytelniające, spróbuj ponownie"
+    },
+    "formErrors": {
+      "invalidEmail": "Nieprawidłowy format e-mail",
+      "emailRequired": "E-mail jest wymagany",
+      "fullNameRequired": "Imię i nazwisko jest wymagane",
+      "enterFullName": "Wprowadź swoje imię i nazwisko",
+      "passwordRequired": "Hasło jest wymagane",
+      "minPassword": "Hasło musi mieć co najmniej 8 znaków",
+      "passwordsMismatch": "Hasła nie pasują do siebie",
+      "weakPassword": "Hasło jest zbyt słabe",
+      "selectCountry": "Wybierz kraj",
+      "usernameRequired": "Nazwa użytkownika jest wymagana",
+      "minUsername": "Nazwa użytkownika musi mieć co najmniej 3 znaki",
+      "cpasswordRequired": "Potwierdzenie hasła jest wymagane"
+    }
+  }
+}

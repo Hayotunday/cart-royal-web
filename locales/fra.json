@@ -1,0 +1,123 @@
+{
+  "landingPage": {
+    "navbar": {
+      "viewProfile": "Voir le profil",
+      "helpCenter": "Centre d'aide",
+      "giveFeedback": "Donnez-nous votre avis",
+      "privacyPolicy": "Politique de confidentialité",
+      "logIn": "Se connecter",
+      "getStarted": "Commencer",
+      "logout": "Se déconnecter"
+    },
+    "loginPage": {
+      "logIn": "Connexion",
+      "close": "Fermer",
+      "createAccount": "Créer un compte",
+      "logIntoAccount": "Connectez-vous à votre compte",
+      "emailAddress": "Adresse e-mail",
+      "enterEmailAddress": "Entrez votre adresse e-mail",
+      "password": "Mot de passe",
+      "enterPassword": "Entrez votre mot de passe",
+      "continueWithGoogle": "Continuer avec Google",
+      "cantLogin": "Impossible de se connecter ?",
+      "tosDesc": "En cliquant sur créer un compte, vous acceptez nos ",
+      "tos": "Conditions d'utilisation",
+      "privacyPolicy": "Politique de confidentialité",
+      "and": "et",
+      "or": "OU",
+      "processing": "Traitement...",
+      "continue": "Continuer",
+      "hidePassword": "Masquer le mot de passe",
+      "showPassword": "Afficher le mot de passe"
+    },
+    "signUpPage": {
+      "letsCreateAccount": "Créons votre compte",
+      "chooseAccountType": "Choisissez un type de compte",
+      "createBuyerAccount": "Je crée un compte acheteur",
+      "createSellerAccount": "Je crée un compte vendeur",
+      "continue": "Continuer",
+      "chooseSignMethod": "Choisissez une méthode d'inscription",
+      "continueWithEmail": "Continuer avec l'e-mail",
+      "alreadyHaveAccount": "Vous avez déjà un compte ?",
+      "fullName": "Nom complet",
+      "chooseUsername": "Choisissez un nom d'utilisateur",
+      "enterYourFullName": "Entrez votre nom complet",
+      "confirmPassword": "Confirmez le mot de passe",
+      "country": "Pays",
+      "selectCountryPlaceholder": "Sélectionnez votre pays",
+      "searchCountryPlaceholder": "Rechercher un pays...",
+      "noCountryFound": "Aucun pays trouvé"
+    },
+    "welcomePage": {
+      "welcomeAboard": "Bienvenue à bord",
+      "welcomeText": "Votre plateforme de shopping n°1 pour une relocalisation sans faille, des conseils juridiques et une vie globale."
+    },
+    "forgotPasswordPage": {
+      "emailAddress": "Adresse e-mail",
+      "forgotPassword": "Mot de passe oublié ?",
+      "enterEmailToReset": "Entrez l'e-mail de votre compte et nous vous enverrons un OTP pour réinitialiser votre mot de passe.",
+      "sendOTP": "Envoyer OTP",
+      "verifyOTP": "Vérifier OTP",
+      "resendOTP": "Renvoyer OTP",
+      "backToLogin": "Retour à la connexion",
+      "sending": "Envoi...",
+      "otpSent": "Un OTP a été envoyé à",
+      "continue": "Continuer",
+      "clickContinue": "Cliquez sur le bouton continuer ci-dessous pour créer un nouveau mot de passe.",
+      "rememberedPassword": "Vous vous souvenez de votre mot de passe ?",
+      "login": "Connexion"
+    },
+    "resetPasswordPage": {
+      "resetPassword": "Réinitialiser le mot de passe",
+      "resetPasswordDescription": "Votre nouveau mot de passe doit être unique par rapport à ceux précédemment utilisés.",
+      "enterOTP": "Entrez OTP",
+      "newPassword": "Nouveau mot de passe",
+      "confirmPassword": "Confirmez le mot de passe",
+      "createNewPassword": "Créez un nouveau mot de passe",
+      "enterNewPassword": "Entrez votre nouveau mot de passe",
+      "confirmNewPassword": "Confirmez votre nouveau mot de passe",
+      "reset": "Réinitialiser",
+      "passwordChanged": "Mot de passe modifié",
+      "passwordChangedDescription": "Votre mot de passe a été modifié avec succès.",
+      "backToLogin": "Retour à la connexion",
+      "processing": "Traitement...",
+      "proceedToLogin": "Procéder à la connexion"
+    },
+    "drawers": {
+      "selectLanguages": {
+        "confirm": "Confirmer les modifications"
+      }
+    },
+    "toasts": {
+      "accountCreated": "Compte créé avec succès",
+      "accountUpdated": "Compte mis à jour avec succès",
+      "passwordChanged": "Mot de passe modifié avec succès",
+      "passwordStrength": "Le mot de passe doit comporter au moins 8 caractères, inclure des majuscules, des minuscules, un chiffre et un symbole",
+      "passwordsMismatch": "Les mots de passe ne correspondent pas",
+      "resetFailed": "Échec de la réinitialisation du mot de passe, veuillez réessayer",
+      "emailSent": "E-mail envoyé avec succès",
+      "invalidEmail": "Adresse e-mail non valide",
+      "otpMinimumLength": "L'OTP doit comporter au moins 6 caractères",
+      "otpVerified": "OTP vérifié avec succès",
+      "otpResent": "OTP renvoyé avec succès",
+      "sendError": "Échec de l'envoi de l'OTP. Veuillez réessayer.",
+      "resendError": "Échec du renvoi de l'OTP. Veuillez réessayer.",
+      "errorOccurred": "Une erreur s'est produite, veuillez réessayer plus tard",
+      "invalidCredentials": "Identifiants invalides, veuillez réessayer"
+    },
+    "formErrors": {
+      "invalidEmail": "Format d'e-mail invalide",
+      "emailRequired": "L'e-mail est requis",
+      "fullNameRequired": "Le nom complet est requis",
+      "enterFullName": "Veuillez entrer votre nom complet",
+      "passwordRequired": "Le mot de passe est requis",
+      "minPassword": "Le mot de passe doit comporter au moins 8 caractères",
+      "passwordsMismatch": "Les mots de passe ne correspondent pas",
+      "weakPassword": "Le mot de passe est trop faible",
+      "selectCountry": "Veuillez sélectionner un pays",
+      "usernameRequired": "Le nom d'utilisateur est requis",
+      "minUsername": "Le nom d'utilisateur doit comporter au moins 3 caractères",
+      "cpasswordRequired": "La confirmation du mot de passe est requise"
+    }
+  }
+}

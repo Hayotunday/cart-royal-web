@@ -1,0 +1,123 @@
+{
+  "landingPage": {
+    "navbar": {
+      "viewProfile": "Vezi Profilul",
+      "helpCenter": "Centru de Ajutor",
+      "giveFeedback": "Trimite-ne feedback",
+      "privacyPolicy": "Politica de Confidențialitate",
+      "logIn": "Autentificare",
+      "getStarted": "Începe",
+      "logout": "Deconectare"
+    },
+    "loginPage": {
+      "logIn": "Autentificare",
+      "close": "Închide",
+      "createAccount": "Creează Cont",
+      "logIntoAccount": "Autentifică-te în contul tău",
+      "emailAddress": "Adresă de e-mail",
+      "enterEmailAddress": "Introdu adresa ta de e-mail",
+      "password": "Parolă",
+      "enterPassword": "Introdu parola ta",
+      "continueWithGoogle": "Continuă cu Google",
+      "cantLogin": "Nu te poți autentifica?",
+      "tosDesc": "Făcând clic pe crearea unui cont, ești de acord cu ",
+      "tos": "Termenii și Condițiile noastre",
+      "privacyPolicy": "Politica de Confidențialitate",
+      "and": "și",
+      "or": "SAU",
+      "processing": "Se procesează...",
+      "continue": "Continuă",
+      "hidePassword": "Ascunde parola",
+      "showPassword": "Arată parola"
+    },
+    "signUpPage": {
+      "letsCreateAccount": "Să-ți creăm contul",
+      "chooseAccountType": "Alege un tip de cont",
+      "createBuyerAccount": "Creez un cont de cumpărător",
+      "createSellerAccount": "Creez un cont de vânzător",
+      "continue": "Continuă",
+      "chooseSignMethod": "Alege metoda de înregistrare",
+      "continueWithEmail": "Continuă cu e-mailul",
+      "alreadyHaveAccount": "Ai deja un cont?",
+      "fullName": "Numele complet",
+      "chooseUsername": "Alege un nume de utilizator",
+      "enterYourFullName": "Introdu numele tău complet",
+      "confirmPassword": "Confirmă parola",
+      "country": "Țară",
+      "selectCountryPlaceholder": "Selectează țara ta",
+      "searchCountryPlaceholder": "Caută țara...",
+      "noCountryFound": "Nicio țară găsită"
+    },
+    "welcomePage": {
+      "welcomeAboard": "Bun venit la bord",
+      "welcomeText": "Platforma ta de cumpărături numărul 1 pentru relocare fără probleme, îndrumare juridică și viață globală."
+    },
+    "forgotPasswordPage": {
+      "emailAddress": "Adresă de e-mail",
+      "forgotPassword": "Ai uitat parola?",
+      "enterEmailToReset": "Introdu adresa de e-mail a contului tău și îți vom trimite un OTP pentru a reseta parola.",
+      "sendOTP": "Trimite OTP",
+      "verifyOTP": "Verifică OTP",
+      "resendOTP": "Retrimite OTP",
+      "backToLogin": "Înapoi la Autentificare",
+      "sending": "Se trimite...",
+      "otpSent": "Un OTP a fost trimis către",
+      "continue": "Continuă",
+      "clickContinue": "Fă clic pe butonul Continuă de mai jos pentru a crea o parolă nouă.",
+      "rememberedPassword": "Ți-ai amintit parola?",
+      "login": "Autentificare"
+    },
+    "resetPasswordPage": {
+      "resetPassword": "Resetează Parola",
+      "resetPasswordDescription": "Noua ta parolă trebuie să fie unică față de cele utilizate anterior.",
+      "enterOTP": "Introdu OTP",
+      "newPassword": "Parolă Nouă",
+      "confirmPassword": "Confirmă Parola",
+      "createNewPassword": "Creează o parolă nouă",
+      "enterNewPassword": "Introdu noua ta parolă",
+      "confirmNewPassword": "Confirmă noua ta parolă",
+      "reset": "Resetează",
+      "passwordChanged": "Parola a fost schimbată",
+      "passwordChangedDescription": "Parola ta a fost schimbată cu succes.",
+      "backToLogin": "Înapoi la Autentificare",
+      "processing": "Se procesează...",
+      "proceedToLogin": "Mergi la autentificare"
+    },
+    "drawers": {
+      "selectLanguages": {
+        "confirm": "Confirmă Schimbările"
+      }
+    },
+    "toasts": {
+      "accountCreated": "Cont creat cu succes",
+      "accountUpdated": "Cont actualizat cu succes",
+      "passwordChanged": "Parola schimbată cu succes",
+      "passwordStrength": "Parola trebuie să aibă cel puțin 8 caractere, să includă majuscule, minuscule, numere și simboluri",
+      "passwordsMismatch": "Parolele nu se potrivesc",
+      "resetFailed": "Nu s-a putut reseta parola, te rugăm să încerci din nou",
+      "emailSent": "E-mail trimis cu succes",
+      "invalidEmail": "Adresă de e-mail nevalidă",
+      "otpMinimumLength": "OTP-ul trebuie să aibă cel puțin 6 caractere",
+      "otpVerified": "OTP verificat cu succes",
+      "otpResent": "OTP retrimis cu succes",
+      "sendError": "Nu s-a putut trimite OTP. Te rugăm să încerci din nou.",
+      "resendError": "Nu s-a putut retrimite OTP. Te rugăm să încerci din nou.",
+      "errorOccurred": "A apărut o eroare, te rugăm să încerci din nou mai târziu",
+      "invalidCredentials": "Credențiale invalide, te rugăm să încerci din nou"
+    },
+    "formErrors": {
+      "invalidEmail": "Format de e-mail nevalid",
+      "emailRequired": "E-mailul este obligatoriu",
+      "fullNameRequired": "Numele complet este obligatoriu",
+      "enterFullName": "Te rugăm să introduci numele tău complet",
+      "passwordRequired": "Parola este obligatorie",
+      "minPassword": "Parola trebuie să aibă cel puțin 8 caractere",
+      "passwordsMismatch": "Parolele nu se potrivesc",
+      "weakPassword": "Parola este prea slabă",
+      "selectCountry": "Te rugăm să selectezi o țară",
+      "usernameRequired": "Numele de utilizator este obligatoriu",
+      "minUsername": "Numele de utilizator trebuie să aibă cel puțin 3 caractere",
+      "cpasswordRequired": "Confirmarea parolei este obligatorie"
+    }
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "landingPage": {
+    "navbar": {
+      "viewProfile": "Profili Görüntüle",
+      "helpCenter": "Yardım Merkezi",
+      "giveFeedback": "Bize geri bildirimde bulunun",
+      "privacyPolicy": "Gizlilik Politikası",
+      "logIn": "Giriş Yap",
+      "getStarted": "Başla",
+      "logout": "Çıkış Yap"
+    },
+    "loginPage": {
+      "logIn": "Giriş",
+      "close": "Kapat",
+      "createAccount": "Hesap Oluştur",
+      "logIntoAccount": "Hesabınıza giriş yapın",
+      "emailAddress": "E-posta adresi",
+      "enterEmailAddress": "E-posta adresinizi girin",
+      "password": "Şifre",
+      "enterPassword": "Şifrenizi girin",
+      "continueWithGoogle": "Google ile Devam Et",
+      "cantLogin": "Giriş yapamıyor musunuz?",
+      "tosDesc": "Hesap oluşturarak, ",
+      "tos": "Hizmet Şartlarımızı",
+      "privacyPolicy": "Gizlilik Politikamızı",
+      "and": "ve",
+      "or": "VEYA",
+      "processing": "İşleniyor...",
+      "continue": "Devam Et",
+      "hidePassword": "Şifreyi gizle",
+      "showPassword": "Şifreyi göster"
+    },
+    "signUpPage": {
+      "letsCreateAccount": "Hesabınızı oluşturalım",
+      "chooseAccountType": "Bir hesap türü seçin",
+      "createBuyerAccount": "Alıcı hesabı oluşturuyorum",
+      "createSellerAccount": "Satıcı hesabı oluşturuyorum",
+      "continue": "Devam Et",
+      "chooseSignMethod": "Kayıt yöntemini seçin",
+      "continueWithEmail": "E-posta ile devam et",
+      "alreadyHaveAccount": "Zaten bir hesabınız var mı?",
+      "fullName": "Ad Soyad",
+      "chooseUsername": "Bir kullanıcı adı seçin",
+      "enterYourFullName": "Adınızı ve soyadınızı girin",
+      "confirmPassword": "Şifreyi onayla",
+      "country": "Ülke",
+      "selectCountryPlaceholder": "Ülkenizi seçin",
+      "searchCountryPlaceholder": "Ülke arayın...",
+      "noCountryFound": "Ülke bulunamadı"
+    },
+    "welcomePage": {
+      "welcomeAboard": "Hoş geldiniz",
+      "welcomeText": "Sorunsuz taşınma, hukuki rehberlik ve küresel yaşam için 1 numaralı alışveriş platformunuz."
+    },
+    "forgotPasswordPage": {
+      "emailAddress": "E-posta adresi",
+      "forgotPassword": "Şifremi Unuttum?",
+      "enterEmailToReset": "Hesabınızın e-postasını girin, şifrenizi sıfırlamanız için size bir OTP göndereceğiz.",
+      "sendOTP": "OTP Gönder",
+      "verifyOTP": "OTP'yi Doğrula",
+      "resendOTP": "OTP'yi Yeniden Gönder",
+      "backToLogin": "Girişe Geri Dön",
+      "sending": "Gönderiliyor...",
+      "otpSent": "Bir OTP gönderildi:",
+      "continue": "Devam Et",
+      "clickContinue": "Yeni bir şifre oluşturmak için aşağıdaki devam et düğmesini tıklayın.",
+      "rememberedPassword": "Şifreni hatırladın mı?",
+      "login": "Giriş"
+    },
+    "resetPasswordPage": {
+      "resetPassword": "Şifreyi Sıfırla",
+      "resetPasswordDescription": "Yeni şifreniz daha önce kullandıklarınızdan farklı olmalıdır.",
+      "enterOTP": "OTP'yi Girin",
+      "newPassword": "Yeni Şifre",
+      "confirmPassword": "Şifreyi Onayla",
+      "createNewPassword": "Yeni bir şifre oluşturun",
+      "enterNewPassword": "Yeni şifrenizi girin",
+      "confirmNewPassword": "Yeni şifrenizi onaylayın",
+      "reset": "Sıfırla",
+      "passwordChanged": "Şifre Değiştirildi",
+      "passwordChangedDescription": "Şifreniz başarıyla değiştirildi.",
+      "backToLogin": "Girişe Geri Dön",
+      "processing": "İşleniyor...",
+      "proceedToLogin": "Girişe Devam Et"
+    },
+    "drawers": {
+      "selectLanguages": {
+        "confirm": "Değişiklikleri Onayla"
+      }
+    },
+    "toasts": {
+      "accountCreated": "Hesap başarıyla oluşturuldu",
+      "accountUpdated": "Hesap başarıyla güncellendi",
+      "passwordChanged": "Şifre başarıyla değiştirildi",
+      "passwordStrength": "Şifre en az 8 karakter olmalı, büyük harf, küçük harf, sayı ve sembol içermelidir",
+      "passwordsMismatch": "Şifreler eşleşmiyor",
+      "resetFailed": "Şifre sıfırlanamadı, lütfen tekrar deneyin",
+      "emailSent": "E-posta başarıyla gönderildi",
+      "invalidEmail": "Geçersiz e-posta adresi",
+      "otpMinimumLength": "OTP en az 6 karakter olmalıdır",
+      "otpVerified": "OTP başarıyla doğrulandı",
+      "otpResent": "OTP başarıyla tekrar gönderildi",
+      "sendError": "OTP gönderme başarısız oldu. Lütfen tekrar deneyin.",
+      "resendError": "OTP'yi yeniden gönderme başarısız oldu. Lütfen tekrar deneyin.",
+      "errorOccurred": "Bir hata oluştu, lütfen daha sonra tekrar deneyin",
+      "invalidCredentials": "Geçersiz kimlik bilgileri, lütfen tekrar deneyin"
+    },
+    "formErrors": {
+      "invalidEmail": "Geçersiz e-posta biçimi",
+      "emailRequired": "E-posta gerekli",
+      "fullNameRequired": "Ad soyad gerekli",
+      "enterFullName": "Lütfen adınızı ve soyadınızı girin",
+      "passwordRequired": "Şifre gerekli",
+      "minPassword": "Şifre en az 8 karakter olmalıdır",
+      "passwordsMismatch": "Şifreler eşleşmiyor",
+      "weakPassword": "Şifre çok zayıf",
+      "selectCountry": "Lütfen bir ülke seçin",
+      "usernameRequired": "Kullanıcı adı gerekli",
+      "minUsername": "Kullanıcı adı en az 3 karakter olmalıdır",
+      "cpasswordRequired": "Şifreyi onayla gerekli"
+    }
+  }
+}

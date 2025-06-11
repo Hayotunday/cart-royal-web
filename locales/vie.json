@@ -1,0 +1,123 @@
+{
+  "landingPage": {
+    "navbar": {
+      "viewProfile": "Xem Trang cá nhân",
+      "helpCenter": "Trung Tâm Trợ Giúp",
+      "giveFeedback": "Gửi Phản Hồi",
+      "privacyPolicy": "Chính Sách Bảo Mật",
+      "logIn": "Đăng Nhập",
+      "getStarted": "Bắt Đầu",
+      "logout": "Đăng Xuất"
+    },
+    "loginPage": {
+      "logIn": "Đăng Nhập",
+      "close": "Đóng",
+      "createAccount": "Tạo Tài Khoản",
+      "logIntoAccount": "Đăng nhập vào tài khoản của bạn",
+      "emailAddress": "Địa chỉ E-mail",
+      "enterEmailAddress": "Nhập địa chỉ e-mail của bạn",
+      "password": "Mật Khẩu",
+      "enterPassword": "Nhập mật khẩu của bạn",
+      "continueWithGoogle": "Tiếp tục với Google",
+      "cantLogin": "Không thể đăng nhập?",
+      "tosDesc": "Bằng cách nhấp vào tạo tài khoản, bạn đồng ý với ",
+      "tos": "Điều Khoản Dịch Vụ",
+      "privacyPolicy": "Chính Sách Bảo Mật",
+      "and": "và",
+      "or": "HOẶC",
+      "processing": "Đang Xử Lý...",
+      "continue": "Tiếp Tục",
+      "hidePassword": "Ẩn mật khẩu",
+      "showPassword": "Hiện mật khẩu"
+    },
+    "signUpPage": {
+      "letsCreateAccount": "Hãy tạo tài khoản của bạn",
+      "chooseAccountType": "Chọn loại tài khoản",
+      "createBuyerAccount": "Tôi đang tạo tài khoản người mua",
+      "createSellerAccount": "Tôi đang tạo tài khoản người bán",
+      "continue": "Tiếp Tục",
+      "chooseSignMethod": "Chọn phương thức đăng ký",
+      "continueWithEmail": "Tiếp tục với e-mail",
+      "alreadyHaveAccount": "Đã có tài khoản?",
+      "fullName": "Họ và Tên",
+      "chooseUsername": "Chọn tên người dùng",
+      "enterYourFullName": "Nhập họ và tên của bạn",
+      "confirmPassword": "Xác nhận mật khẩu",
+      "country": "Quốc Gia",
+      "selectCountryPlaceholder": "Chọn quốc gia của bạn",
+      "searchCountryPlaceholder": "Tìm kiếm quốc gia...",
+      "noCountryFound": "Không tìm thấy quốc gia"
+    },
+    "welcomePage": {
+      "welcomeAboard": "Chào mừng bạn đến với",
+      "welcomeText": "Nền tảng mua sắm số 1 của bạn để chuyển địa điểm liền mạch, hướng dẫn pháp lý và cuộc sống toàn cầu."
+    },
+    "forgotPasswordPage": {
+      "emailAddress": "Địa chỉ E-mail",
+      "forgotPassword": "Quên Mật Khẩu?",
+      "enterEmailToReset": "Nhập email tài khoản của bạn và chúng tôi sẽ gửi cho bạn OTP để đặt lại mật khẩu.",
+      "sendOTP": "Gửi OTP",
+      "verifyOTP": "Xác Minh OTP",
+      "resendOTP": "Gửi Lại OTP",
+      "backToLogin": "Quay Lại Đăng Nhập",
+      "sending": "Đang Gửi...",
+      "otpSent": "Một OTP đã được gửi đến",
+      "continue": "Tiếp Tục",
+      "clickContinue": "Nhấp vào nút tiếp tục bên dưới để tạo mật khẩu mới.",
+      "rememberedPassword": "Nhớ mật khẩu của bạn?",
+      "login": "Đăng nhập"
+    },
+    "resetPasswordPage": {
+      "resetPassword": "Đặt Lại Mật Khẩu",
+      "resetPasswordDescription": "Mật khẩu mới của bạn phải khác với những mật khẩu đã sử dụng trước đó.",
+      "enterOTP": "Nhập OTP",
+      "newPassword": "Mật Khẩu Mới",
+      "confirmPassword": "Xác Nhận Mật Khẩu",
+      "createNewPassword": "Tạo mật khẩu mới",
+      "enterNewPassword": "Nhập mật khẩu mới của bạn",
+      "confirmNewPassword": "Xác nhận mật khẩu mới của bạn",
+      "reset": "Đặt Lại",
+      "passwordChanged": "Đã Thay Đổi Mật Khẩu",
+      "passwordChangedDescription": "Mật khẩu của bạn đã được thay đổi thành công.",
+      "backToLogin": "Quay Lại Đăng Nhập",
+      "processing": "Đang Xử Lý...",
+      "proceedToLogin": "Tiến hành đăng nhập"
+    },
+    "drawers": {
+      "selectLanguages": {
+        "confirm": "Xác Nhận Thay Đổi"
+      }
+    },
+    "toasts": {
+      "accountCreated": "Tài khoản được tạo thành công",
+      "accountUpdated": "Tài khoản được cập nhật thành công",
+      "passwordChanged": "Mật khẩu đã thay đổi thành công",
+      "passwordStrength": "Mật khẩu phải có ít nhất 8 ký tự, bao gồm chữ hoa, chữ thường, số và ký hiệu",
+      "passwordsMismatch": "Mật khẩu không khớp",
+      "resetFailed": "Không thể đặt lại mật khẩu, vui lòng thử lại",
+      "emailSent": "Email đã được gửi thành công",
+      "invalidEmail": "Địa chỉ e-mail không hợp lệ",
+      "otpMinimumLength": "OTP phải có ít nhất 6 ký tự",
+      "otpVerified": "OTP đã được xác minh thành công",
+      "otpResent": "OTP đã được gửi lại thành công",
+      "sendError": "Không gửi được OTP. Vui lòng thử lại.",
+      "resendError": "Không gửi lại được OTP. Vui lòng thử lại.",
+      "errorOccurred": "Đã xảy ra lỗi, vui lòng thử lại sau",
+      "invalidCredentials": "Thông tin đăng nhập không hợp lệ, vui lòng thử lại"
+    },
+    "formErrors": {
+      "invalidEmail": "Định dạng email không hợp lệ",
+      "emailRequired": "Yêu cầu email",
+      "fullNameRequired": "Yêu cầu đầy đủ tên",
+      "enterFullName": "Vui lòng nhập tên đầy đủ của bạn",
+      "passwordRequired": "Yêu cầu mật khẩu",
+      "minPassword": "Mật khẩu phải có ít nhất 8 ký tự",
+      "passwordsMismatch": "Mật khẩu không khớp",
+      "weakPassword": "Mật khẩu quá yếu",
+      "selectCountry": "Vui lòng chọn một quốc gia",
+      "usernameRequired": "Yêu cầu tên người dùng",
+      "minUsername": "Tên người dùng phải có ít nhất 3 ký tự",
+      "cpasswordRequired": "Yêu cầu xác nhận mật khẩu"
+    }
+  }
+}

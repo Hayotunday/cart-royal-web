@@ -1,0 +1,123 @@
+{
+  "landingPage": {
+    "navbar": {
+      "viewProfile": "Lihat Profil",
+      "helpCenter": "Pusat Bantuan",
+      "giveFeedback": "Berikan maklum balas kepada kami",
+      "privacyPolicy": "Dasar Privasi",
+      "logIn": "Log Masuk",
+      "getStarted": "Mulakan",
+      "logout": "Log Keluar"
+    },
+    "loginPage": {
+      "logIn": "Log Masuk",
+      "close": "Tutup",
+      "createAccount": "Buat Akaun",
+      "logIntoAccount": "Log masuk ke akaun anda",
+      "emailAddress": "Alamat e-mel",
+      "enterEmailAddress": "Masukkan alamat e-mel anda",
+      "password": "Kata Laluan",
+      "enterPassword": "Masukkan kata laluan anda",
+      "continueWithGoogle": "Teruskan dengan Google",
+      "cantLogin": "Tidak boleh log masuk?",
+      "tosDesc": "Dengan mengklik membuat akaun, anda bersetuju dengan",
+      "tos": "Terma Perkhidmatan",
+      "privacyPolicy": "Dasar Privasi",
+      "and": "dan",
+      "or": "ATAU",
+      "processing": "Memproses...",
+      "continue": "Teruskan",
+      "hidePassword": "Sembunyikan kata laluan",
+      "showPassword": "Tunjukkan kata laluan"
+    },
+    "signUpPage": {
+      "letsCreateAccount": "Mari buat akaun anda",
+      "chooseAccountType": "Pilih jenis akaun",
+      "createBuyerAccount": "Saya membuat akaun pembeli",
+      "createSellerAccount": "Saya membuat akaun penjual",
+      "continue": "Teruskan",
+      "chooseSignMethod": "Pilih kaedah pendaftaran",
+      "continueWithEmail": "Teruskan dengan e-mel",
+      "alreadyHaveAccount": "Sudah mempunyai akaun?",
+      "fullName": "Nama Penuh",
+      "chooseUsername": "Pilih nama pengguna",
+      "enterYourFullName": "Masukkan nama penuh anda",
+      "confirmPassword": "Sahkan kata laluan",
+      "country": "Negara",
+      "selectCountryPlaceholder": "Pilih negara anda",
+      "searchCountryPlaceholder": "Cari negara...",
+      "noCountryFound": "Tiada negara ditemui"
+    },
+    "welcomePage": {
+      "welcomeAboard": "Selamat datang",
+      "welcomeText": "Platform membeli-belah No. 1 anda untuk penempatan semula yang lancar, bimbingan undang-undang dan kehidupan global."
+    },
+    "forgotPasswordPage": {
+      "emailAddress": "Alamat e-mel",
+      "forgotPassword": "Lupa Kata Laluan?",
+      "enterEmailToReset": "Masukkan e-mel akaun anda dan kami akan menghantar OTP untuk menetapkan semula kata laluan anda.",
+      "sendOTP": "Hantar OTP",
+      "verifyOTP": "Sahkan OTP",
+      "resendOTP": "Hantar semula OTP",
+      "backToLogin": "Kembali ke Log Masuk",
+      "sending": "Menghantar...",
+      "otpSent": "OTP telah dihantar ke",
+      "continue": "Teruskan",
+      "clickContinue": "Klik butang teruskan di bawah untuk membuat kata laluan baharu.",
+      "rememberedPassword": "Ingat kata laluan anda?",
+      "login": "Log masuk"
+    },
+    "resetPasswordPage": {
+      "resetPassword": "Tetapkan Semula Kata Laluan",
+      "resetPasswordDescription": "Kata laluan baharu anda mestilah unik daripada yang pernah digunakan sebelum ini.",
+      "enterOTP": "Masukkan OTP",
+      "newPassword": "Kata Laluan Baharu",
+      "confirmPassword": "Sahkan Kata Laluan",
+      "createNewPassword": "Buat kata laluan baharu",
+      "enterNewPassword": "Masukkan kata laluan baharu anda",
+      "confirmNewPassword": "Sahkan kata laluan baharu anda",
+      "reset": "Tetapkan Semula",
+      "passwordChanged": "Kata Laluan Ditukar",
+      "passwordChangedDescription": "Kata laluan anda telah berjaya ditukar.",
+      "backToLogin": "Kembali ke Log Masuk",
+      "processing": "Memproses...",
+      "proceedToLogin": "Teruskan untuk log masuk"
+    },
+    "drawers": {
+      "selectLanguages": {
+        "confirm": "Sahkan Perubahan"
+      }
+    },
+    "toasts": {
+      "accountCreated": "Akaun berjaya dibuat",
+      "accountUpdated": "Akaun berjaya dikemas kini",
+      "passwordChanged": "Kata laluan berjaya ditukar",
+      "passwordStrength": "Kata laluan mestilah sekurang-kurangnya 8 aksara, termasuk huruf besar, huruf kecil, nombor dan simbol",
+      "passwordsMismatch": "Kata laluan tidak sepadan",
+      "resetFailed": "Gagal menetapkan semula kata laluan, sila cuba lagi",
+      "emailSent": "E-mel berjaya dihantar",
+      "invalidEmail": "Alamat e-mel tidak sah",
+      "otpMinimumLength": "OTP mestilah sekurang-kurangnya 6 aksara",
+      "otpVerified": "OTP berjaya disahkan",
+      "otpResent": "OTP berjaya dihantar semula",
+      "sendError": "Gagal menghantar OTP. Sila cuba lagi.",
+      "resendError": "Gagal menghantar semula OTP. Sila cuba lagi.",
+      "errorOccurred": "Ralat berlaku, sila cuba lagi kemudian",
+      "invalidCredentials": "Kelayakan tidak sah, sila cuba lagi"
+    },
+    "formErrors": {
+      "invalidEmail": "Format e-mel tidak sah",
+      "emailRequired": "E-mel diperlukan",
+      "fullNameRequired": "Nama penuh diperlukan",
+      "enterFullName": "Sila masukkan nama penuh anda",
+      "passwordRequired": "Kata laluan diperlukan",
+      "minPassword": "Kata laluan mestilah sekurang-kurangnya 8 aksara",
+      "passwordsMismatch": "Kata laluan tidak sepadan",
+      "weakPassword": "Kata laluan terlalu lemah",
+      "selectCountry": "Sila pilih negara",
+      "usernameRequired": "Nama pengguna diperlukan",
+      "minUsername": "Nama pengguna mestilah sekurang-kurangnya 3 aksara",
+      "cpasswordRequired": "Sahkan kata laluan diperlukan"
+    }
+  }
+}
