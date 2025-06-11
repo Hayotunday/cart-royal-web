@@ -50,7 +50,7 @@ const ProfileHandler = () => {
               </DropdownMenuItem>
               <DropdownMenuItem>
                 <Link
-                  href="/profile/gift-card"
+                  href="/gift-card"
                   className="flex flex-row items-center gap-2 w-full"
                 >
                   <MdCardGiftcard className="text-lg" />
