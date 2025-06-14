@@ -1,146 +1,146 @@
-'use client';
+"use client";
 
-import React, { useState } from 'react';
-import { Header } from '@/components/layout/Header';
-import { CategoryNav } from '@/components/layout/CategoryNav';
-import { Button } from '@/components/ui/button';
-import Link from 'next/link';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import React, { useState } from "react";
+import Header from "@/components/layout/header";
+import CategoryNav from "@/components/layout/category-nav";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 // Sample activity data - in a real app, this would come from an API
 const activityData = [
   {
-    id: 'act-1',
-    type: 'order',
-    title: 'Order Placed',
-    description: 'You placed an order for ₦25,000',
-    date: '2025-06-14T14:30:00',
+    id: "act-1",
+    type: "order",
+    title: "Order Placed",
+    description: "You placed an order for ₦25,000",
+    date: "2025-06-14T14:30:00",
     details: {
-      orderId: 'ORD-12345',
+      orderId: "ORD-12345",
       items: 3,
       total: 25000,
     },
   },
   {
-    id: 'act-2',
-    type: 'points',
-    title: 'Points Earned',
-    description: 'You earned 250 Cart Royal points',
-    date: '2025-06-14T14:30:00',
+    id: "act-2",
+    type: "points",
+    title: "Points Earned",
+    description: "You earned 250 Cart Royal points",
+    date: "2025-06-14T14:30:00",
     details: {
       points: 250,
-      reason: 'Purchase',
-      orderId: 'ORD-12345',
+      reason: "Purchase",
+      orderId: "ORD-12345",
     },
   },
   {
-    id: 'act-3',
-    type: 'store',
-    title: 'Store Followed',
-    description: 'You followed Electronics Hub',
-    date: '2025-06-13T10:15:00',
+    id: "act-3",
+    type: "store",
+    title: "Store Followed",
+    description: "You followed Electronics Hub",
+    date: "2025-06-13T10:15:00",
     details: {
-      storeId: 'store-2',
-      storeName: 'Electronics Hub',
+      storeId: "store-2",
+      storeName: "Electronics Hub",
     },
   },
   {
-    id: 'act-4',
-    type: 'wishlist',
-    title: 'Wishlist Request',
-    description: 'You requested a Vintage Record Player',
-    date: '2025-06-12T09:20:00',
+    id: "act-4",
+    type: "wishlist",
+    title: "Wishlist Request",
+    description: "You requested a Vintage Record Player",
+    date: "2025-06-12T09:20:00",
     details: {
-      requestId: 'wish-2',
-      productName: 'Vintage Record Player',
+      requestId: "wish-2",
+      productName: "Vintage Record Player",
       budget: 50000,
     },
   },
   {
-    id: 'act-5',
-    type: 'review',
-    title: 'Review Posted',
-    description: 'You reviewed Wireless Headphones',
-    date: '2025-06-11T16:45:00',
+    id: "act-5",
+    type: "review",
+    title: "Review Posted",
+    description: "You reviewed Wireless Headphones",
+    date: "2025-06-11T16:45:00",
     details: {
-      productId: 'prod-123',
-      productName: 'Wireless Headphones',
+      productId: "prod-123",
+      productName: "Wireless Headphones",
       rating: 4,
     },
   },
   {
-    id: 'act-6',
-    type: 'account',
-    title: 'Password Changed',
-    description: 'You changed your account password',
-    date: '2025-06-10T11:30:00',
+    id: "act-6",
+    type: "account",
+    title: "Password Changed",
+    description: "You changed your account password",
+    date: "2025-06-10T11:30:00",
     details: {
-      ipAddress: '192.168.1.1',
-      device: 'Chrome on Windows',
+      ipAddress: "192.168.1.1",
+      device: "Chrome on Windows",
     },
   },
   {
-    id: 'act-7',
-    type: 'gift',
-    title: 'Gift Card Purchased',
-    description: 'You purchased a ₦10,000 gift card',
-    date: '2025-06-09T13:20:00',
+    id: "act-7",
+    type: "gift",
+    title: "Gift Card Purchased",
+    description: "You purchased a ₦10,000 gift card",
+    date: "2025-06-09T13:20:00",
     details: {
-      cardId: 'gift-123',
+      cardId: "gift-123",
       amount: 10000,
-      recipient: 'Self',
+      recipient: "Self",
     },
   },
   {
-    id: 'act-8',
-    type: 'favorite',
-    title: 'Product Favorited',
-    description: 'You added Smart Watch to favorites',
-    date: '2025-06-08T09:15:00',
+    id: "act-8",
+    type: "favorite",
+    title: "Product Favorited",
+    description: "You added Smart Watch to favorites",
+    date: "2025-06-08T09:15:00",
     details: {
-      productId: 'prod-456',
-      productName: 'Smart Watch',
+      productId: "prod-456",
+      productName: "Smart Watch",
     },
   },
   {
-    id: 'act-9',
-    type: 'login',
-    title: 'Account Login',
-    description: 'You logged in from a new device',
-    date: '2025-06-07T08:30:00',
+    id: "act-9",
+    type: "login",
+    title: "Account Login",
+    description: "You logged in from a new device",
+    date: "2025-06-07T08:30:00",
     details: {
-      ipAddress: '192.168.1.2',
-      device: 'Safari on iPhone',
-      location: 'Lagos, Nigeria',
+      ipAddress: "192.168.1.2",
+      device: "Safari on iPhone",
+      location: "Lagos, Nigeria",
     },
   },
   {
-    id: 'act-10',
-    type: 'referral',
-    title: 'Referral Successful',
-    description: 'Your friend John signed up using your referral',
-    date: '2025-06-06T14:45:00',
+    id: "act-10",
+    type: "referral",
+    title: "Referral Successful",
+    description: "Your friend John signed up using your referral",
+    date: "2025-06-06T14:45:00",
     details: {
-      referralId: 'ref-123',
-      friendName: 'John Doe',
+      referralId: "ref-123",
+      friendName: "John Doe",
       reward: 500,
     },
   },
 ];
 
 export default function ActivityPage() {
-  const [activeTab, setActiveTab] = useState('all');
-  const [dateFilter, setDateFilter] = useState('all');
-  
+  const [activeTab, setActiveTab] = useState("all");
+  const [dateFilter, setDateFilter] = useState("all");
+
   // Filter activities based on active tab and date filter
-  const filteredActivities = activityData.filter(activity => {
+  const filteredActivities = activityData.filter((activity) => {
     // Filter by type
-    if (activeTab !== 'all' && activity.type !== activeTab) {
+    if (activeTab !== "all" && activity.type !== activeTab) {
       return false;
     }
-    
+
     // Filter by date
-    if (dateFilter !== 'all') {
+    if (dateFilter !== "all") {
       const activityDate = new Date(activity.date);
       const today = new Date();
       const yesterday = new Date(today);
@@ -149,46 +149,60 @@ export default function ActivityPage() {
       lastWeek.setDate(lastWeek.getDate() - 7);
       const lastMonth = new Date(today);
       lastMonth.setMonth(lastMonth.getMonth() - 1);
-      
-      if (dateFilter === 'today' && activityDate.toDateString() !== today.toDateString()) {
+
+      if (
+        dateFilter === "today" &&
+        activityDate.toDateString() !== today.toDateString()
+      ) {
         return false;
-      } else if (dateFilter === 'yesterday' && activityDate.toDateString() !== yesterday.toDateString()) {
+      } else if (
+        dateFilter === "yesterday" &&
+        activityDate.toDateString() !== yesterday.toDateString()
+      ) {
         return false;
-      } else if (dateFilter === 'week' && activityDate < lastWeek) {
+      } else if (dateFilter === "week" && activityDate < lastWeek) {
         return false;
-      } else if (dateFilter === 'month' && activityDate < lastMonth) {
+      } else if (dateFilter === "month" && activityDate < lastMonth) {
         return false;
       }
     }
-    
+
     return true;
   });
-  
+
   const formatDate = (dateString: string) => {
     const date = new Date(dateString);
     const today = new Date();
     const yesterday = new Date(today);
     yesterday.setDate(yesterday.getDate() - 1);
-    
+
     if (date.toDateString() === today.toDateString()) {
-      return `Today, ${date.toLocaleTimeString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })}`;
+      return `Today, ${date.toLocaleTimeString("en-US", {
+        hour: "numeric",
+        minute: "numeric",
+        hour12: true,
+      })}`;
     } else if (date.toDateString() === yesterday.toDateString()) {
-      return `Yesterday, ${date.toLocaleTimeString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })}`;
+      return `Yesterday, ${date.toLocaleTimeString("en-US", {
+        hour: "numeric",
+        minute: "numeric",
+        hour12: true,
+      })}`;
     } else {
-      return date.toLocaleDateString('en-US', {
-        month: 'short',
-        day: 'numeric',
-        year: 'numeric',
-        hour: 'numeric',
-        minute: 'numeric',
+      return date.toLocaleDateString("en-US", {
+        month: "short",
+        day: "numeric",
+        year: "numeric",
+        hour: "numeric",
+        minute: "numeric",
         hour12: true,
       });
     }
   };
-  
+
   const getActivityIcon = (type: string) => {
     switch (type) {
-      case 'order':
+      case "order":
         return (
           <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center">
             <svg
@@ -210,7 +224,7 @@ export default function ActivityPage() {
             </svg>
           </div>
         );
-      case 'points':
+      case "points":
         return (
           <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center">
             <svg
@@ -231,7 +245,7 @@ export default function ActivityPage() {
             </svg>
           </div>
         );
-      case 'store':
+      case "store":
         return (
           <div className="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center">
             <svg
@@ -251,7 +265,7 @@ export default function ActivityPage() {
             </svg>
           </div>
         );
-      case 'wishlist':
+      case "wishlist":
         return (
           <div className="w-10 h-10 rounded-full bg-yellow-100 flex items-center justify-center">
             <svg
@@ -271,7 +285,7 @@ export default function ActivityPage() {
             </svg>
           </div>
         );
-      case 'review':
+      case "review":
         return (
           <div className="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center">
             <svg
@@ -291,7 +305,7 @@ export default function ActivityPage() {
             </svg>
           </div>
         );
-      case 'account':
+      case "account":
         return (
           <div className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center">
             <svg
@@ -312,7 +326,7 @@ export default function ActivityPage() {
             </svg>
           </div>
         );
-      case 'gift':
+      case "gift":
         return (
           <div className="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center">
             <svg
@@ -335,7 +349,7 @@ export default function ActivityPage() {
             </svg>
           </div>
         );
-      case 'favorite':
+      case "favorite":
         return (
           <div className="w-10 h-10 rounded-full bg-pink-100 flex items-center justify-center">
             <svg
@@ -355,7 +369,7 @@ export default function ActivityPage() {
             </svg>
           </div>
         );
-      case 'login':
+      case "login":
         return (
           <div className="w-10 h-10 rounded-full bg-teal-100 flex items-center justify-center">
             <svg
@@ -377,7 +391,7 @@ export default function ActivityPage() {
             </svg>
           </div>
         );
-      case 'referral':
+      case "referral":
         return (
           <div className="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center">
             <svg
@@ -424,10 +438,10 @@ export default function ActivityPage() {
         );
     }
   };
-  
+
   const renderActivityDetails = (activity: any) => {
     switch (activity.type) {
-      case 'order':
+      case "order":
         return (
           <div className="mt-2 text-sm">
             <div className="flex items-center text-gray-600">
@@ -440,7 +454,9 @@ export default function ActivityPage() {
             </div>
             <div className="flex items-center text-gray-600">
               <span className="font-medium">Total:</span>
-              <span className="ml-2">₦{activity.details.total.toLocaleString()}</span>
+              <span className="ml-2">
+                ₦{activity.details.total.toLocaleString()}
+              </span>
             </div>
             <div className="mt-2">
               <Link href={`/purchases`}>
@@ -451,7 +467,7 @@ export default function ActivityPage() {
             </div>
           </div>
         );
-      case 'points':
+      case "points":
         return (
           <div className="mt-2 text-sm">
             <div className="flex items-center text-gray-600">
@@ -477,7 +493,7 @@ export default function ActivityPage() {
             </div>
           </div>
         );
-      case 'store':
+      case "store":
         return (
           <div className="mt-2 text-sm">
             <div className="flex items-center text-gray-600">
@@ -493,7 +509,7 @@ export default function ActivityPage() {
             </div>
           </div>
         );
-      case 'wishlist':
+      case "wishlist":
         return (
           <div className="mt-2 text-sm">
             <div className="flex items-center text-gray-600">
@@ -502,7 +518,9 @@ export default function ActivityPage() {
             </div>
             <div className="flex items-center text-gray-600">
               <span className="font-medium">Budget:</span>
-              <span className="ml-2">₦{activity.details.budget.toLocaleString()}</span>
+              <span className="ml-2">
+                ₦{activity.details.budget.toLocaleString()}
+              </span>
             </div>
             <div className="mt-2">
               <Link href={`/wishlist`}>
@@ -513,7 +531,7 @@ export default function ActivityPage() {
             </div>
           </div>
         );
-      case 'review':
+      case "review":
         return (
           <div className="mt-2 text-sm">
             <div className="flex items-center text-gray-600">
@@ -523,12 +541,20 @@ export default function ActivityPage() {
             <div className="flex items-center text-gray-600">
               <span className="font-medium">Rating:</span>
               <span className="ml-2">
-                {Array(activity.details.rating).fill(0).map((_, i) => (
-                  <span key={i} className="text-yellow-500">★</span>
-                ))}
-                {Array(5 - activity.details.rating).fill(0).map((_, i) => (
-                  <span key={i} className="text-gray-300">★</span>
-                ))}
+                {Array(activity.details.rating)
+                  .fill(0)
+                  .map((_, i) => (
+                    <span key={i} className="text-yellow-500">
+                      ★
+                    </span>
+                  ))}
+                {Array(5 - activity.details.rating)
+                  .fill(0)
+                  .map((_, i) => (
+                    <span key={i} className="text-gray-300">
+                      ★
+                    </span>
+                  ))}
               </span>
             </div>
             <div className="mt-2">
@@ -540,7 +566,7 @@ export default function ActivityPage() {
             </div>
           </div>
         );
-      case 'account':
+      case "account":
         return (
           <div className="mt-2 text-sm">
             <div className="flex items-center text-gray-600">
@@ -560,12 +586,14 @@ export default function ActivityPage() {
             </div>
           </div>
         );
-      case 'gift':
+      case "gift":
         return (
           <div className="mt-2 text-sm">
             <div className="flex items-center text-gray-600">
               <span className="font-medium">Amount:</span>
-              <span className="ml-2">₦{activity.details.amount.toLocaleString()}</span>
+              <span className="ml-2">
+                ₦{activity.details.amount.toLocaleString()}
+              </span>
             </div>
             <div className="flex items-center text-gray-600">
               <span className="font-medium">Recipient:</span>
@@ -580,7 +608,7 @@ export default function ActivityPage() {
             </div>
           </div>
         );
-      case 'favorite':
+      case "favorite":
         return (
           <div className="mt-2 text-sm">
             <div className="flex items-center text-gray-600">
@@ -596,7 +624,7 @@ export default function ActivityPage() {
             </div>
           </div>
         );
-      case 'login':
+      case "login":
         return (
           <div className="mt-2 text-sm">
             <div className="flex items-center text-gray-600">
@@ -620,7 +648,7 @@ export default function ActivityPage() {
             </div>
           </div>
         );
-      case 'referral':
+      case "referral":
         return (
           <div className="mt-2 text-sm">
             <div className="flex items-center text-gray-600">
@@ -629,7 +657,9 @@ export default function ActivityPage() {
             </div>
             <div className="flex items-center text-gray-600">
               <span className="font-medium">Reward:</span>
-              <span className="ml-2">₦{activity.details.reward.toLocaleString()}</span>
+              <span className="ml-2">
+                ₦{activity.details.reward.toLocaleString()}
+              </span>
             </div>
             <div className="mt-2">
               <Link href={`/profile`}>
@@ -644,19 +674,21 @@ export default function ActivityPage() {
         return null;
     }
   };
-  
+
   return (
     <main className="min-h-screen flex flex-col">
-      <Header isLoggedIn={true} />
+      <Header viewOnly />
       <CategoryNav />
-      
+
       <div className="container px-4 py-8">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
           <div>
             <h1 className="text-2xl font-bold">Activity Log</h1>
-            <p className="text-gray-600">Track your recent activities on Cart Royal</p>
+            <p className="text-gray-600">
+              Track your recent activities on Cart Royal
+            </p>
           </div>
-          
+
           <div className="mt-4 md:mt-0">
             <select
               value={dateFilter}
@@ -672,56 +704,61 @@ export default function ActivityPage() {
             </select>
           </div>
         </div>
-        
+
         <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
-          <Tabs defaultValue="all" value={activeTab} onValueChange={setActiveTab} className="w-full">
+          <Tabs
+            defaultValue="all"
+            value={activeTab}
+            onValueChange={setActiveTab}
+            className="w-full"
+          >
             <div className="overflow-x-auto">
               <TabsList className="flex border-b border-gray-200 px-6 pt-4">
-                <TabsTrigger 
-                  value="all" 
+                <TabsTrigger
+                  value="all"
                   className="px-4 py-2 -mb-px data-[state=active]:border-b-2 data-[state=active]:border-primary rounded-none whitespace-nowrap"
                 >
                   All Activities
                 </TabsTrigger>
-                <TabsTrigger 
-                  value="order" 
+                <TabsTrigger
+                  value="order"
                   className="px-4 py-2 -mb-px data-[state=active]:border-b-2 data-[state=active]:border-primary rounded-none whitespace-nowrap"
                 >
                   Orders
                 </TabsTrigger>
-                <TabsTrigger 
-                  value="points" 
+                <TabsTrigger
+                  value="points"
                   className="px-4 py-2 -mb-px data-[state=active]:border-b-2 data-[state=active]:border-primary rounded-none whitespace-nowrap"
                 >
                   Points
                 </TabsTrigger>
-                <TabsTrigger 
-                  value="review" 
+                <TabsTrigger
+                  value="review"
                   className="px-4 py-2 -mb-px data-[state=active]:border-b-2 data-[state=active]:border-primary rounded-none whitespace-nowrap"
                 >
                   Reviews
                 </TabsTrigger>
-                <TabsTrigger 
-                  value="account" 
+                <TabsTrigger
+                  value="account"
                   className="px-4 py-2 -mb-px data-[state=active]:border-b-2 data-[state=active]:border-primary rounded-none whitespace-nowrap"
                 >
                   Account
                 </TabsTrigger>
-                <TabsTrigger 
-                  value="login" 
+                <TabsTrigger
+                  value="login"
                   className="px-4 py-2 -mb-px data-[state=active]:border-b-2 data-[state=active]:border-primary rounded-none whitespace-nowrap"
                 >
                   Logins
                 </TabsTrigger>
               </TabsList>
             </div>
-            
+
             <TabsContent value={activeTab} className="p-6 focus:outline-none">
               {filteredActivities.length > 0 ? (
                 <div className="space-y-6">
                   {filteredActivities.map((activity) => (
-                    <div 
-                      key={activity.id} 
+                    <div
+                      key={activity.id}
                       className="border rounded-lg p-4 hover:shadow-sm transition-shadow"
                     >
                       <div className="flex items-start">
@@ -729,7 +766,9 @@ export default function ActivityPage() {
                         <div className="ml-3 flex-1">
                           <div className="flex justify-between items-start">
                             <div>
-                              <div className="font-medium">{activity.title}</div>
+                              <div className="font-medium">
+                                {activity.title}
+                              </div>
                               <div className="text-sm text-gray-600 mt-1">
                                 {activity.description}
                               </div>
@@ -738,7 +777,7 @@ export default function ActivityPage() {
                               {formatDate(activity.date)}
                             </div>
                           </div>
-                          
+
                           {renderActivityDetails(activity)}
                         </div>
                       </div>
@@ -764,10 +803,12 @@ export default function ActivityPage() {
                       <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" />
                     </svg>
                   </div>
-                  <h3 className="text-lg font-medium mb-2">No activities found</h3>
+                  <h3 className="text-lg font-medium mb-2">
+                    No activities found
+                  </h3>
                   <p className="text-gray-600">
-                    {activeTab === 'all' 
-                      ? 'You don\'t have any activities in the selected time period.' 
+                    {activeTab === "all"
+                      ? "You don't have any activities in the selected time period."
                       : `You don't have any ${activeTab} activities in the selected time period.`}
                   </p>
                 </div>
@@ -775,13 +816,15 @@ export default function ActivityPage() {
             </TabsContent>
           </Tabs>
         </div>
-        
+
         <div className="mt-6 text-center text-sm text-gray-600">
           <p>
-            This activity log shows your interactions with Cart Royal. For privacy information, please see our{' '}
+            This activity log shows your interactions with Cart Royal. For
+            privacy information, please see our{" "}
             <Link href="/info/privacy" className="text-primary hover:underline">
               Privacy Policy
-            </Link>.
+            </Link>
+            .
           </p>
         </div>
       </div>
