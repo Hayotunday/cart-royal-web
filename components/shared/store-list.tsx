@@ -1,5 +1,5 @@
 import React from "react";
-import StoreItem from "@/components/shared/StoreItem";
+import StoreItem from "@/components/shared/store-item";
 import Link from "next/link";
 
 const StoresList = () => {

@@ -5,7 +5,7 @@ import Link from "next/link";
 import { IoCloseCircleOutline } from "react-icons/io5";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { CheckCircle2 } from "lucide-react";
-import Header from "@/components/layout/Header";
+import Header from "@/components/layout/header";
 import { useRouter } from "next/navigation";
 import { useLanguage } from "@/context/LanguageContext";
 

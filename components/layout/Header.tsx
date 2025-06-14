@@ -2,10 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { MdFavoriteBorder } from "react-icons/md";
-import SearchBar from "@/components/shared/SearchBar";
-import CartSheet from "@/components/shared/CartSheet";
-import ProfileHandler from "@/components/shared/ProfileHandler";
-import SelectLanguages from "../drawers/select-language";
+import SearchBar from "@/components/shared/search-bar";
+import CartSheet from "@/components/shared/cart-sheet";
+import ProfileHandler from "@/components/shared/profile-handler";
+import SelectLanguages from "./select-language";
 
 const Header = ({ viewOnly = false }: { viewOnly?: boolean }) => {
   return !viewOnly ? (
@@ -34,15 +34,13 @@ const Header = ({ viewOnly = false }: { viewOnly?: boolean }) => {
     </header>
   ) : (
     <header className="w-full h-fit py-0.5 px-10 flex items-center justify-between">
-      <Link href="/">
-        <Image
-          className="mt-2"
-          alt="Cart Royal Logo"
-          src={"/logo.png"}
-          height={200}
-          width={200}
-        />
-      </Link>
+      <Image
+        className="mt-2"
+        alt="Cart Royal Logo"
+        src={"/logo.png"}
+        height={200}
+        width={200}
+      />
       <SelectLanguages />
     </header>
   );

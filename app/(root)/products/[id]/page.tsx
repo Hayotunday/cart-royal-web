@@ -3,10 +3,10 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Header from "@/components/layout/Header";
-import CategoryNav from "@/components/layout/CategoryNav";
+import Header from "@/components/layout/header";
+import CategoryNav from "@/components/layout/category-nav";
 import { Button } from "@/components/ui/button";
-import ProductCard from "@/components/shared/ProductCard";
+import ProductCard from "@/components/shared/product-card";
 import { useParams } from "next/navigation";
 
 // Sample product data - in a real app, this would come from an API

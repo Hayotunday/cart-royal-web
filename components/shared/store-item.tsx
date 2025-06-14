@@ -11,7 +11,7 @@ const StoreItems = ({ title, img }: StoreCardProps) => {
   const imageUrl = img ? img : "/catalogue/img.jpg";
 
   return (
-    <Link href={`/stores/${title}`} className="group cursor-pointer block">
+    <Link href={`/store/${title}`} className="group cursor-pointer block">
       <div className="relative my-1 w-[200px] h-[125px] overflow-hidden rounded-md shadow-lg">
         <img
           src={imageUrl}

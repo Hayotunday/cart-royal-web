@@ -2,11 +2,15 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import Header from "@/components/layout/Header";
-import CategoryNav from "@/components/layout/CategoryNav";
+import Header from "@/components/layout/header";
+import CategoryNav from "@/components/layout/category-nav";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { FiShoppingBag } from "react-icons/fi";
+import { FaRegCircleCheck, FaRegHeart } from "react-icons/fa6";
+import { PiWarningBold } from "react-icons/pi";
+import { LuSettings } from "react-icons/lu";
 
 // Sample user data - in a real app, this would come from an API
 const userData = {
@@ -18,7 +22,7 @@ const userData = {
   profileImage: "/catalogue/img.jpg",
   points: 2500,
   referralCode: "JOHNDOE25",
-  referralLink: "https://cartroyal.com/ref/JOHNDOE25",
+  referralLink: "https://cartroyal.com/register?ref=JOHNDOE25",
   referralCount: 8,
   referralEarnings: 4000,
 };
@@ -117,63 +121,19 @@ export default function Profile() {
       case "order":
         return (
           <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="text-blue-600"
-            >
-              <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" />
-              <path d="M3 6h18" />
-              <path d="M16 10a4 4 0 0 1-8 0" />
-            </svg>
+            <FiShoppingBag className="text-blue-600" />
           </div>
         );
       case "promotion":
         return (
           <div className="w-10 h-10 rounded-full bg-yellow-100 flex items-center justify-center">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="text-yellow-600"
-            >
-              <path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
-              <line x1="12" y1="9" x2="12" y2="13" />
-              <line x1="12" y1="17" x2="12.01" y2="17" />
-            </svg>
+            <PiWarningBold className="text-yellow-600" />
           </div>
         );
       case "system":
         return (
           <div className="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="text-purple-600"
-            >
-              <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z" />
-              <circle cx="12" cy="12" r="3" />
-            </svg>
+            <LuSettings className="text-purple-600" />
           </div>
         );
       default:
@@ -252,29 +212,29 @@ export default function Profile() {
 
           {/* Main Content */}
           <div className="md:col-span-3">
-            <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
+            <div className="bg-white rounded-lg overflow-hidden">
               <Tabs
                 defaultValue="overview"
                 value={activeTab}
                 onValueChange={setActiveTab}
                 className="w-full"
               >
-                <TabsList className="flex border-b border-gray-200 px-6 w-full">
+                <TabsList className="flex w-full">
                   <TabsTrigger
                     value="overview"
-                    className="px-4 data-[state=active]:border-b-2 data-[state=active]:border-primary rounded-none flex items-center justify-center"
+                    className="px-4 rounded-md flex items-center justify-center"
                   >
                     Overview
                   </TabsTrigger>
                   <TabsTrigger
                     value="followed-stores"
-                    className="px-4 data-[state=active]:border-b-2 data-[state=active]:border-primary rounded-none flex items-center justify-center"
+                    className="px-4 rounded-md flex items-center justify-center"
                   >
                     Followed Stores
                   </TabsTrigger>
                   <TabsTrigger
                     value="notifications"
-                    className="px-4 data-[state=active]:border-b-2 data-[state=active]:border-primary rounded-none flex items-center justify-center"
+                    className="px-4 rounded-md flex items-center justify-center"
                   >
                     Notifications
                     {unreadCount > 0 && (
@@ -285,13 +245,13 @@ export default function Profile() {
                   </TabsTrigger>
                   <TabsTrigger
                     value="wishlist"
-                    className="px-4 data-[state=active]:border-b-2 data-[state=active]:border-primary rounded-none flex items-center justify-center"
+                    className="px-4 rounded-md flex items-center justify-center"
                   >
                     Wishlist
                   </TabsTrigger>
                   <TabsTrigger
                     value="point-history"
-                    className="px-4 data-[state=active]:border-b-2 data-[state=active]:border-primary rounded-none flex items-center justify-center"
+                    className="px-4 rounded-md flex items-center justify-center"
                   >
                     Point History
                   </TabsTrigger>
@@ -410,7 +370,7 @@ export default function Profile() {
                           <h3 className="text-lg font-medium">
                             Recent Activity
                           </h3>
-                          <Link href="/activity">
+                          <Link href="/profile/activity">
                             <Button variant="link" size="sm">
                               View All
                             </Button>
@@ -420,22 +380,7 @@ export default function Profile() {
                         <div className="space-y-4">
                           <div className="flex items-start">
                             <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-3">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="20"
-                                height="20"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                strokeWidth="2"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                className="text-blue-600"
-                              >
-                                <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" />
-                                <path d="M3 6h18" />
-                                <path d="M16 10a4 4 0 0 1-8 0" />
-                              </svg>
+                              <FiShoppingBag className="text-blue-600" />
                             </div>
                             <div>
                               <div className="font-medium">Order Placed</div>
@@ -450,21 +395,7 @@ export default function Profile() {
 
                           <div className="flex items-start">
                             <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center mr-3">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="20"
-                                height="20"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                strokeWidth="2"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                className="text-green-600"
-                              >
-                                <circle cx="12" cy="12" r="10" />
-                                <path d="m9 12 2 2 4-4" />
-                              </svg>
+                              <FaRegCircleCheck className="text-green-600" />
                             </div>
                             <div>
                               <div className="font-medium">Points Earned</div>
@@ -479,20 +410,7 @@ export default function Profile() {
 
                           <div className="flex items-start">
                             <div className="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mr-3">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="20"
-                                height="20"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                strokeWidth="2"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                className="text-purple-600"
-                              >
-                                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
-                              </svg>
+                              <FaRegHeart className="text-purple-600" />
                             </div>
                             <div>
                               <div className="font-medium">Store Followed</div>
@@ -696,20 +614,7 @@ export default function Profile() {
 
                       <div className="text-center py-8">
                         <div className="w-16 h-16 mx-auto bg-gray-100 rounded-full flex items-center justify-center mb-4">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            className="text-gray-400"
-                          >
-                            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
-                          </svg>
+                          <FaRegHeart className="text-gray-400 size-6" />
                         </div>
                         <h3 className="text-lg font-medium mb-2">
                           Your wishlist is empty
@@ -721,6 +626,20 @@ export default function Profile() {
                           <Button>Start Shopping</Button>
                         </Link>
                       </div>
+                    </div>
+                  </div>
+                </TabsContent>
+
+                {/* Point History Tab */}
+                <TabsContent
+                  value="point-history"
+                  className="p-6 focus:outline-none"
+                >
+                  <div className="space-y-6">
+                    <div>
+                      <h2 className="text-xl font-semibold mb-4">
+                        Points History
+                      </h2>
                     </div>
                   </div>
                 </TabsContent>

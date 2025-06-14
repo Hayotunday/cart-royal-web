@@ -1,7 +1,7 @@
 import React from "react";
-import Welcome from "@/components/layout/Welcome";
-import Shop from "@/components/shared/Shop";
-import Footer from "@/components/layout/Footer";
+import Shop from "@/components/shared/shop";
+import Welcome from "@/components/layout/welcome";
+import Footer from "@/components/layout/footer";
 
 export default function Home() {
   return (

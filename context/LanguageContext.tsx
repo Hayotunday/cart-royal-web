@@ -1,7 +1,7 @@
 "use client";
 
 import React, { createContext, useContext, useEffect, useState } from "react";
-import { getDictionary } from "../lib/getDictionary";
+import { getDictionary } from "@/lib/getDictionary";
 
 type Dictionary = Record<string, any>;
 

@@ -2,9 +2,9 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import Header from "@/components/layout/Header";
-import CategoryNav from "@/components/layout/CategoryNav";
-import ProductCard from "@/components/shared/ProductCard";
+import Header from "@/components/layout/header";
+import CategoryNav from "@/components/layout/category-nav";
+import ProductCard from "@/components/shared/product-card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useParams } from "next/navigation";

@@ -7,7 +7,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import ProductCard from "./ProductCard";
+import ProductCard from "./product-card";
 import { Product } from "@/data/index";
 
 interface ProductListProps {

@@ -2,7 +2,7 @@
 
 import React, { useState, useMemo } from "react";
 import Link from "next/link";
-import CartItem from "@/components/shared/CartItem"; // Assuming CartItem is appropriately typed
+import CartItem from "@/components/shared/cart-item"; // Assuming CartItem is appropriately typed
 import { Button } from "@/components/ui/button";
 import { CartItemType } from "@/data/index";
 

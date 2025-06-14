@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import Header from "@/components/layout/Header";
+import Header from "@/components/layout/header";
 import { useRouter } from "next/navigation";
 import RegisterForm from "@/components/forms/register-form";
 import { useLanguage } from "@/context/LanguageContext";
@@ -347,7 +347,7 @@ export default function SignUp() {
         {/* Terms and Privacy Policy Section */}
         <p className="text-left mt-3 text-xs text-gray-500 px-6 w-[100%]">
           {dictionary.landingPage.loginPage.tosDesc}{" "}
-          <Link href="/term" className="text-black underline">
+          <Link href="/terms" className="text-black underline">
             {dictionary.landingPage.loginPage.tos}
           </Link>{" "}
           {dictionary.landingPage.loginPage.and}{" "}

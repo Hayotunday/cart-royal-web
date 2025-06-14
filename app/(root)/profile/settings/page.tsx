@@ -1,15 +1,15 @@
 "use client";
 
 import React, { useState } from "react";
-import Header from "@/components/layout/Header";
-import CategoryNav from "@/components/layout/CategoryNav";
+import Header from "@/components/layout/header";
+import CategoryNav from "@/components/layout/category-nav";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Switch } from "@/components/ui/switch";
 import Link from "next/link";
 
-export default function Settings() {
+export default function SettingsPage() {
   // Account Management state
   const [name, setName] = useState("John Doe");
   const [email, setEmail] = useState("john.doe@example.com");
@@ -78,10 +78,10 @@ export default function Settings() {
     promotions: false,
     system: true,
   });
-
   // Close Account state
   const [closeReason, setCloseReason] = useState("");
   const [confirmClose, setConfirmClose] = useState("");
+  const [activeTab, setActiveTab] = useState("account");
 
   // Form submission handlers
   const handleUpdateProfile = (e: React.FormEvent) => {
@@ -155,50 +155,52 @@ export default function Settings() {
   };
 
   return (
-    <main className="min-h-screen flex flex-col">
+    <main className="min-h-screen flex flex-col w-full">
       <Header />
       <CategoryNav />
 
-      <div className="container px-4 py-8">
+      <div className="container px-4 py-8 w-full">
         <h1 className="text-2xl font-bold mb-6">Settings</h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div className="w-full gap-6 flex items-center">
           {/* Sidebar Navigation */}
-          <div className="md:col-span-1">
-            <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
+          <div className=" w-full">
+            <div className="bg-white rounded-lg overflow-hidden">
               <Tabs
                 defaultValue="account"
-                className="w-full"
+                className="w-full flex flex-row"
                 orientation="vertical"
+                value={activeTab}
+                onValueChange={setActiveTab}
               >
-                <TabsList className="flex flex-col items-start p-0 bg-transparent border-r border-gray-200 h-full">
+                <TabsList className="flex flex-col items-start p-0 bg-transparent h-full">
                   <TabsTrigger
                     value="account"
-                    className="w-full justify-start px-4 py-3 data-[state=active]:bg-gray-100 data-[state=active]:border-l-2 data-[state=active]:border-primary rounded-none"
+                    className="w-full justify-start px-4 py-3 data-[state=active]:bg-gray-100 rounded-md"
                   >
                     Account Management
                   </TabsTrigger>
                   <TabsTrigger
                     value="payment"
-                    className="w-full justify-start px-4 py-3 data-[state=active]:bg-gray-100 data-[state=active]:border-l-2 data-[state=active]:border-primary rounded-none"
+                    className="w-full justify-start px-4 py-3 data-[state=active]:bg-gray-100 rounded-md"
                   >
                     Payment Settings
                   </TabsTrigger>
                   <TabsTrigger
                     value="address"
-                    className="w-full justify-start px-4 py-3 data-[state=active]:bg-gray-100 data-[state=active]:border-l-2 data-[state=active]:border-primary rounded-none"
+                    className="w-full justify-start px-4 py-3 data-[state=active]:bg-gray-100 rounded-md"
                   >
                     Address Book
                   </TabsTrigger>
                   <TabsTrigger
                     value="notifications"
-                    className="w-full justify-start px-4 py-3 data-[state=active]:bg-gray-100 data-[state=active]:border-l-2 data-[state=active]:border-primary rounded-none"
+                    className="w-full justify-start px-4 py-3 data-[state=active]:bg-gray-100 rounded-md"
                   >
                     Notifications
                   </TabsTrigger>
                   <TabsTrigger
                     value="close"
-                    className="w-full justify-start px-4 py-3 data-[state=active]:bg-gray-100 data-[state=active]:border-l-2 data-[state=active]:border-primary rounded-none text-red-600"
+                    className="w-full justify-start px-4 py-3 data-[state=active]:bg-gray-100 rounded-md text-red-600"
                   >
                     Close Account
                   </TabsTrigger>

@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
-import Header from "@/components/layout/Header";
-import ProductCard from "@/components/shared/ProductCard";
+import Header from "@/components/layout/header";
+import ProductCard from "@/components/shared/product-card";
 import { Button } from "@/components/ui/button";
 
 // Sample favorite items data - in a real app, this would come from an API

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-const AuthBar = () => {
+const AdBar = () => {
   return (
     <div className="w-full h-fit flex flex-row justify-end gap-5 items-center bg-gray-300 py-1 px-6">
       <Link
@@ -20,4 +20,4 @@ const AuthBar = () => {
   );
 };
 
-export default AuthBar;
+export default AdBar;

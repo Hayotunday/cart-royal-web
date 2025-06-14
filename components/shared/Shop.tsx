@@ -1,7 +1,7 @@
 import React from "react";
-import Advertisement from "./Advertisement";
-import StoresList from "./StoreList";
-import ProductList from "./ProductList";
+import Advertisement from "./advertisement";
+import StoresList from "./store-list";
+import ProductList from "./product-list";
 import { sampleStoreProducts } from "@/data/index";
 
 const Shop = () => {

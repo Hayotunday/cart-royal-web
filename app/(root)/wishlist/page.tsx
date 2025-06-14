@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
-import Header from "@/components/layout/Header";
-import CategoryNav from "@/components/layout/CategoryNav";
+import Header from "@/components/layout/header";
+import CategoryNav from "@/components/layout/category-nav";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -157,8 +157,7 @@ export default function Wishlist() {
 
   return (
     <main className="min-h-screen flex flex-col items-center w-full">
-      <Header />
-      <CategoryNav />
+      <Header viewOnly />
 
       <div className="container px-4 py-8 w-full">
         <h1 className="text-2xl font-bold mb-6">Wishlist Special Requests</h1>

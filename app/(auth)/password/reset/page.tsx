@@ -7,7 +7,7 @@ import { BsEye, BsEyeSlash } from "react-icons/bs";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { CheckCircle2 } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
-import Header from "@/components/layout/Header";
+import Header from "@/components/layout/header";
 
 export default function ResetPassword() {
   const [formData, setFormData] = useState({

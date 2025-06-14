@@ -1,12 +1,11 @@
 "use client";
 
 import React, { useState } from "react";
-import Header from "@/components/layout/Header";
-import CategoryNav from "@/components/layout/CategoryNav";
+import Header from "@/components/layout/header";
+import CategoryNav from "@/components/layout/category-nav";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import Link from "next/link";
 
 // Sample gift card data - in a real app, this would come from an API
 const giftCards = [

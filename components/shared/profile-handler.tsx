@@ -41,15 +41,6 @@ const ProfileHandler = () => {
             >
               <DropdownMenuItem>
                 <Link
-                  href="/profile"
-                  className="flex flex-row items-center gap-2 w-full"
-                >
-                  <MdPerson className="text-lg" />
-                  <p className="text-center font-semibold">Profile</p>
-                </Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem>
-                <Link
                   href="/gift-card"
                   className="flex flex-row items-center gap-2 w-full"
                 >
@@ -78,6 +69,15 @@ const ProfileHandler = () => {
               <DropdownMenuSeparator />
               <DropdownMenuItem>
                 <Link
+                  href="/profile"
+                  className="flex flex-row items-center gap-2 w-full"
+                >
+                  <MdPerson className="text-lg" />
+                  <p className="text-center font-semibold">Profile</p>
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link
                   href="/profile/settings"
                   className="flex flex-row items-center gap-2 w-full"
                 >
@@ -88,7 +88,7 @@ const ProfileHandler = () => {
               <DropdownMenuSeparator />
               <DropdownMenuItem>
                 <Link
-                  href="/signin"
+                  href="/login"
                   className="flex flex-row items-center gap-2 w-full"
                 >
                   <MdLogout className="text-lg" />
@@ -101,7 +101,7 @@ const ProfileHandler = () => {
       ) : (
         <>
           <Link
-            href="/signin"
+            href="/login"
             className="flex flex-row justify-center items-center gap-1"
           >
             <IoPersonCircleSharp className="text-3xl text-gray-700" />

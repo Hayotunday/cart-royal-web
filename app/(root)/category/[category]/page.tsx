@@ -1,14 +1,16 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import Header from "@/components/layout/Header";
-import CategoryNav from "@/components/layout/CategoryNav";
-import ProductCard from "@/components/shared/ProductCard";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { useParams } from "next/navigation";
+import { Button } from "@/components/ui/button";
+import Header from "@/components/layout/header";
+import CategoryNav from "@/components/layout/category-nav";
+import ProductCard from "@/components/shared/product-card";
+import FilterSidebar, {
+  FilterState,
+  StringArrayFilterKeys,
+} from "@/components/layout/filter-sidebar";
 
-// Sample product data - in a real app, this would come from an API
 const allProducts = [
   {
     id: "1",
@@ -143,25 +145,6 @@ const filterOptions = {
   rating: ["4.5 & Above", "4.0 & Above", "3.5 & Above", "3.0 & Above"],
   seller: ["Official Stores", "All Sellers"],
 };
-
-interface FilterState {
-  type: string[];
-  brand: string[];
-  color: string[];
-  size: string[];
-  shipping: string[];
-  rating: string[];
-  seller: string[];
-  priceRange: {
-    min: number | null;
-    max: number | null;
-  };
-}
-
-// Utility type to extract keys of FilterState whose values are string arrays
-type StringArrayFilterKeys = {
-  [K in keyof FilterState]: FilterState[K] extends string[] ? K : never;
-}[keyof FilterState];
 
 export default function Products() {
   const params = useParams<{ category?: string }>();
@@ -307,16 +290,13 @@ export default function Products() {
     setFilteredProducts(result);
   }, [filters, products]);
 
-  // Function to fetch random products (simulated)
   const fetchRandomProducts = () => {
-    // In a real app, this would be an API call
-    // For now, we'll just shuffle the existing products
     const shuffled = [...allProducts].sort(() => 0.5 - Math.random());
     setProducts(shuffled);
   };
 
   return (
-    <main className="min-h-screen flex flex-col w-full flex flex-col items-center">
+    <main className="min-h-screen flex flex-col w-full items-center">
       <Header />
       <CategoryNav />
 
@@ -327,399 +307,14 @@ export default function Products() {
 
         <div className="flex flex-col md:flex-row gap-6">
           {/* Filter Sidebar */}
-          <div className="w-full md:w-64 flex-shrink-0">
-            <div className="bg-white rounded-lg border p-4">
-              {/* Type Filter */}
-              <div className="border-b pb-4 mb-4">
-                <button
-                  className="flex justify-between items-center w-full font-medium"
-                  onClick={() => toggleFilterSection("type")}
-                >
-                  Type
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className={`transition-transform ${
-                      expandedFilters.type ? "rotate-180" : ""
-                    }`}
-                  >
-                    <polyline points="6 9 12 15 18 9" />
-                  </svg>
-                </button>
-
-                {expandedFilters.type && (
-                  <div className="mt-2 space-y-1">
-                    {filterOptions.type.map((option) => (
-                      <div key={option} className="flex items-center">
-                        <input
-                          type="checkbox"
-                          id={`type-${option}`}
-                          className="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
-                          checked={filters.type.includes(option)}
-                          onChange={() => handleFilterChange("type", option)}
-                        />
-                        <label
-                          htmlFor={`type-${option}`}
-                          className="ml-2 text-sm text-gray-700"
-                        >
-                          {option}
-                        </label>
-                      </div>
-                    ))}
-                  </div>
-                )}
-              </div>
-
-              {/* Brand Filter */}
-              <div className="border-b pb-4 mb-4">
-                <button
-                  className="flex justify-between items-center w-full font-medium"
-                  onClick={() => toggleFilterSection("brand")}
-                >
-                  Brand
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className={`transition-transform ${
-                      expandedFilters.brand ? "rotate-180" : ""
-                    }`}
-                  >
-                    <polyline points="6 9 12 15 18 9" />
-                  </svg>
-                </button>
-
-                {expandedFilters.brand && (
-                  <div className="mt-2 space-y-1">
-                    {filterOptions.brand.map((option) => (
-                      <div key={option} className="flex items-center">
-                        <input
-                          type="checkbox"
-                          id={`brand-${option}`}
-                          className="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
-                          checked={filters.brand.includes(option)}
-                          onChange={() => handleFilterChange("brand", option)}
-                        />
-                        <label
-                          htmlFor={`brand-${option}`}
-                          className="ml-2 text-sm text-gray-700"
-                        >
-                          {option}
-                        </label>
-                      </div>
-                    ))}
-                  </div>
-                )}
-              </div>
-
-              {/* Color Filter */}
-              <div className="border-b pb-4 mb-4">
-                <button
-                  className="flex justify-between items-center w-full font-medium"
-                  onClick={() => toggleFilterSection("color")}
-                >
-                  Color
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className={`transition-transform ${
-                      expandedFilters.color ? "rotate-180" : ""
-                    }`}
-                  >
-                    <polyline points="6 9 12 15 18 9" />
-                  </svg>
-                </button>
-
-                {expandedFilters.color && (
-                  <div className="mt-2 space-y-1">
-                    {filterOptions.color.map((option) => (
-                      <div key={option} className="flex items-center">
-                        <input
-                          type="checkbox"
-                          id={`color-${option}`}
-                          className="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
-                          checked={filters.color.includes(option)}
-                          onChange={() => handleFilterChange("color", option)}
-                        />
-                        <label
-                          htmlFor={`color-${option}`}
-                          className="ml-2 text-sm text-gray-700"
-                        >
-                          {option}
-                        </label>
-                      </div>
-                    ))}
-                  </div>
-                )}
-              </div>
-
-              {/* Price Filter */}
-              <div className="border-b pb-4 mb-4">
-                <button
-                  className="flex justify-between items-center w-full font-medium"
-                  onClick={() => toggleFilterSection("price")}
-                >
-                  Price
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className={`transition-transform ${
-                      expandedFilters.price ? "rotate-180" : ""
-                    }`}
-                  >
-                    <polyline points="6 9 12 15 18 9" />
-                  </svg>
-                </button>
-
-                {expandedFilters.price && (
-                  <div className="mt-2 space-y-2">
-                    <div className="flex items-center gap-2">
-                      <Input
-                        type="number"
-                        placeholder="Min"
-                        value={filters.priceRange.min || ""}
-                        onChange={(e) =>
-                          handlePriceChange("min", e.target.value)
-                        }
-                        className="w-full"
-                      />
-                      <span>-</span>
-                      <Input
-                        type="number"
-                        placeholder="Max"
-                        value={filters.priceRange.max || ""}
-                        onChange={(e) =>
-                          handlePriceChange("max", e.target.value)
-                        }
-                        className="w-full"
-                      />
-                    </div>
-                  </div>
-                )}
-              </div>
-
-              {/* Size Filter */}
-              <div className="border-b pb-4 mb-4">
-                <button
-                  className="flex justify-between items-center w-full font-medium"
-                  onClick={() => toggleFilterSection("size")}
-                >
-                  Size
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className={`transition-transform ${
-                      expandedFilters.size ? "rotate-180" : ""
-                    }`}
-                  >
-                    <polyline points="6 9 12 15 18 9" />
-                  </svg>
-                </button>
-
-                {expandedFilters.size && (
-                  <div className="mt-2 space-y-1">
-                    {filterOptions.size.map((option) => (
-                      <div key={option} className="flex items-center">
-                        <input
-                          type="checkbox"
-                          id={`size-${option}`}
-                          className="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
-                          checked={filters.size.includes(option)}
-                          onChange={() => handleFilterChange("size", option)}
-                        />
-                        <label
-                          htmlFor={`size-${option}`}
-                          className="ml-2 text-sm text-gray-700"
-                        >
-                          {option}
-                        </label>
-                      </div>
-                    ))}
-                  </div>
-                )}
-              </div>
-
-              {/* Shipping Filter */}
-              <div className="border-b pb-4 mb-4">
-                <button
-                  className="flex justify-between items-center w-full font-medium"
-                  onClick={() => toggleFilterSection("shipping")}
-                >
-                  Shipping
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className={`transition-transform ${
-                      expandedFilters.shipping ? "rotate-180" : ""
-                    }`}
-                  >
-                    <polyline points="6 9 12 15 18 9" />
-                  </svg>
-                </button>
-
-                {expandedFilters.shipping && (
-                  <div className="mt-2 space-y-1">
-                    {filterOptions.shipping.map((option) => (
-                      <div key={option} className="flex items-center">
-                        <input
-                          type="checkbox"
-                          id={`shipping-${option}`}
-                          className="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
-                          checked={filters.shipping.includes(option)}
-                          onChange={() =>
-                            handleFilterChange("shipping", option)
-                          }
-                        />
-                        <label
-                          htmlFor={`shipping-${option}`}
-                          className="ml-2 text-sm text-gray-700"
-                        >
-                          {option}
-                        </label>
-                      </div>
-                    ))}
-                  </div>
-                )}
-              </div>
-
-              {/* Product Rating Filter */}
-              <div className="border-b pb-4 mb-4">
-                <button
-                  className="flex justify-between items-center w-full font-medium"
-                  onClick={() => toggleFilterSection("rating")}
-                >
-                  Product Rating
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className={`transition-transform ${
-                      expandedFilters.rating ? "rotate-180" : ""
-                    }`}
-                  >
-                    <polyline points="6 9 12 15 18 9" />
-                  </svg>
-                </button>
-
-                {expandedFilters.rating && (
-                  <div className="mt-2 space-y-1">
-                    {filterOptions.rating.map((option) => (
-                      <div key={option} className="flex items-center">
-                        <input
-                          type="checkbox"
-                          id={`rating-${option}`}
-                          className="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
-                          checked={filters.rating.includes(option)}
-                          onChange={() => handleFilterChange("rating", option)}
-                        />
-                        <label
-                          htmlFor={`rating-${option}`}
-                          className="ml-2 text-sm text-gray-700"
-                        >
-                          {option}
-                        </label>
-                      </div>
-                    ))}
-                  </div>
-                )}
-              </div>
-
-              {/* Seller Rating Filter */}
-              <div>
-                <button
-                  className="flex justify-between items-center w-full font-medium"
-                  onClick={() => toggleFilterSection("seller")}
-                >
-                  Official Stores
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className={`transition-transform ${
-                      expandedFilters.seller ? "rotate-180" : ""
-                    }`}
-                  >
-                    <polyline points="6 9 12 15 18 9" />
-                  </svg>
-                </button>
-
-                {expandedFilters.seller && (
-                  <div className="mt-2 space-y-1">
-                    {filterOptions.seller.map((option) => (
-                      <div key={option} className="flex items-center">
-                        <input
-                          type="checkbox"
-                          id={`seller-${option}`}
-                          className="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
-                          checked={filters.seller.includes(option)}
-                          onChange={() => handleFilterChange("seller", option)}
-                        />
-                        <label
-                          htmlFor={`seller-${option}`}
-                          className="ml-2 text-sm text-gray-700"
-                        >
-                          {option}
-                        </label>
-                      </div>
-                    ))}
-                  </div>
-                )}
-              </div>
-            </div>
-          </div>
+          <FilterSidebar
+            filterOptions={filterOptions}
+            filters={filters}
+            expandedFilters={expandedFilters}
+            onToggleFilterSection={toggleFilterSection}
+            onFilterChange={handleFilterChange}
+            onPriceChange={handlePriceChange}
+          />
 
           {/* Products Grid */}
           <div className="flex-1 w-full flex flex-col items-center">

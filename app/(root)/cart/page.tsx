@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import Header from "@/components/layout/Header";
+import Header from "@/components/layout/header";
 import CartClientPage from "@/components/features/CartClientPage";
 import { sampleCartItems, fetchData, CartItemType } from "@/data/index";
 

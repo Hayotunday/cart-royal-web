@@ -1,7 +1,7 @@
 // This is now a Server Component
 import React from "react";
-import Header from "@/components/layout/Header";
-import CategoryNav from "@/components/layout/CategoryNav";
+import Header from "@/components/layout/header";
+import CategoryNav from "@/components/layout/category-nav";
 import StoresClientPage from "@/components/features/StoresClientPage";
 import {
   fetchData,
