@@ -6,6 +6,7 @@ import React, { Fragment, useState } from "react";
 import { showToast } from "../ui/toast";
 import { Input } from "../ui/input";
 import { useLanguage } from "@/context/LanguageContext";
+import { Button } from "../ui/button";
 
 const Footer = () => {
   const { dictionary, isReady } = useLanguage();
@@ -27,283 +28,392 @@ const Footer = () => {
 
   return (
     <Fragment>
-      <div className="p-12 bg-[#F3F4F6] text-black">
-        <div className="md:max-w-6xl mx-auto">
-          <div className="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-4 md:grid-rows-2 2xl:grid-rows-none 2xl:grid-cols-5 gap-y-6 gap-x-10">
-            {/* Item 1 */}
-            <div className="h-fit">
-              <h1 className="font-semibold text-black">Do You Need Help ?</h1>
-              <p className="text-[#6B7280] text-[13px] mt-2">
-                We are always ready to help. Online 24/7.
+      <div className="bg-[#F3F4F6] py-12">
+        <div className="container mx-auto px-4">
+          {/* Newsletter Subscription Section */}
+          <div className="flex flex-col md:flex-row items-start justify-between gap-6 md:gap-x-30 mx-auto">
+            <div className="">
+              <h1 className="text-xl font-semibold">Join our newsletter</h1>
+              <p className="text-[13px] text-[#6B7280] mt-2">
+                Register now to get latest updates on promotions & coupons.
+                Don’t worry, we don't spam!
               </p>
-              <div className="flex items-start gap-6 mt-6">
-                <span className="mt-2.5">
-                  <i className="fal fa-phone text-2xl" />
+            </div>
+
+            <div className="mt-1 md:mt-0">
+              <div className="flex">
+                <Input
+                  type="email"
+                  placeholder="Enter your email address"
+                  className="h-[48px] bg-white border-1 rounded-l-[8px] rounded-r-0"
+                />
+                <Button
+                  onClick={handleSubmit}
+                  type="button"
+                  className="bg-primary text-white w-[73px] h-[48px] rounded-r-[8px] font-semibold text-sm"
+                >
+                  SEND
+                </Button>
+              </div>
+              <div className="text-[12px] mt-2 ml-1">
+                By subscribing you agree to our{" "}
+                <span className="text-primary font-medium">
+                  Terms & Conditions and Privacy & Cookies Policy.
                 </span>
-                <div>
-                  <span className="text-[13px] text-[#111827]">
-                    Monday-Friday: 8am-9pm
-                  </span>
-                  <a
-                    href="tel:0800300353"
-                    className="block font-bold text-black text-[22px]"
-                  >
-                    0 800 300-353
-                  </a>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-6 mt-6">
-                <span className="mt-2.5">
-                  <i className="fal fa-envelope text-2xl" />
-                </span>
-                <div>
-                  <span className="text-[13px] text-[#111827]">
-                    Need help with your order?
-                  </span>
-                  <a
-                    href="mailto:cartroyalhq@gmail.com"
-                    className="block font-bold text-black text-sm"
-                  >
-                    cartroyalhq@gmail.com
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            {/* Item 2 */}
-            <div>
-              <h4 className="font-semibold">Make Money With Us</h4>
-              <ul className="text-[13px] text-[#4B5563] mt-2 space-y-1">
-                <li>
-                  <a href="">Sell on CartRoyal</a>
-                </li>
-                <li>
-                  <a href="">Sell Your Services on CartRoyal</a>
-                </li>
-                <li>
-                  <a href="">Become an Affiliate</a>
-                </li>
-                <li>
-                  <a href="">Advertise Your Products</a>
-                </li>
-                <li>
-                  <a href="">Self-Publish with Us</a>
-                </li>
-                <li>
-                  <a href="">Become a CartRoyal Vendor</a>
-                </li>
-              </ul>
-            </div>
-
-            {/* Item 3 */}
-            <div>
-              <h4 className="font-semibold">Let Us Help You</h4>
-              <ul className="text-[13px] text-[#4B5563] mt-2 space-y-1">
-                <li>
-                  <a href="">Accessibility Statement</a>
-                </li>
-                <li>
-                  <a href="">Your Orders</a>
-                </li>
-                <li>
-                  <a href="">Returns & Replacements</a>
-                </li>
-                <li>
-                  <a href="">Shopping Rates & Policies</a>
-                </li>
-                <li>
-                  <a href="">Refunds and Returns Policy</a>
-                </li>
-                <li>
-                  <a href="">Privacy Policy</a>
-                </li>
-                <li>
-                  <a href="">Terms & Conditions</a>
-                </li>
-                <li>
-                  <a href="">Cookie Settings</a>
-                </li>
-                <li>
-                  <a href="">Help Center</a>
-                </li>
-              </ul>
-            </div>
-
-            {/* Item 4 */}
-            <div>
-              <h4 className="font-semibold">Get to Know Us</h4>
-              <ul className="text-[13px] text-[#4B5563] mt-2 space-y-1">
-                <li>
-                  <a href="">Careers for CartRoyal</a>
-                </li>
-                <li>
-                  <a href="">About CartRoyal</a>
-                </li>
-                <li>
-                  <a href="">Investor Relations</a>
-                </li>
-                <li>
-                  <a href="">CartRoyal Devices</a>
-                </li>
-                <li>
-                  <a href="">Customer Reviews</a>
-                </li>
-                <li>
-                  <a href="">Social Responsiblity</a>
-                </li>
-                <li>
-                  <a href="">Store Locations</a>
-                </li>
-              </ul>
-            </div>
-
-            {/* Item 5 */}
-            <div className="w-full">
-              <h4 className="font-semibold">Download our app</h4>
-              <div className="flex flex-col text-[11px] text-[#6B7280] mt-2">
-                <div className="flex items-center gap-x-4 mt-2">
-                  <Image
-                    src="/google-play.png"
-                    alt="Play Store"
-                    width={150}
-                    height={38}
-                  />
-                </div>
-                <div className="flex items-center gap-x-4 mt-2">
-                  <Image
-                    src="/apple-store.png"
-                    alt="Apple Store"
-                    width={150}
-                    height={38}
-                  />
-                </div>
-
-                <div className="mt-8">
-                  <span className="text-[12px] text-[#111827]">
-                    Follow us on social media:
-                  </span>
-                  <div className="flex items-center gap-x-1 mt-2">
-                    <a
-                      href="#"
-                      className="text-primary bg-white h-[36px] rounded-[6px] w-[36px] flex items-center justify-center"
-                    >
-                      <i className="fab fa-facebook-f text-xl"></i>
-                    </a>
-                    <a
-                      href="#"
-                      className="text-primary bg-white h-[36px] rounded-[6px] w-[36px] flex items-center justify-center"
-                    >
-                      <i className="fab fa-instagram text-xl"></i>
-                    </a>
-                    <a
-                      href="#"
-                      className="text-primary bg-white h-[36px] rounded-[6px] w-[36px] flex items-center justify-center"
-                    >
-                      <i className="fab fa-x-twitter text-xl"></i>
-                    </a>
-                    <a
-                      href="#"
-                      className="text-primary bg-white h-[36px] rounded-[6px] w-[36px] flex items-center justify-center"
-                    >
-                      <i className="fab fa-youtube text-xl"></i>
-                    </a>
-                    <a
-                      href="#"
-                      className="text-primary bg-white h-[36px] rounded-[6px] w-[36px] flex items-center justify-center"
-                    >
-                      <i className="fab fa-tiktok text-xl"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Item 6 */}
-            <div className="w-full">
-              <h4 className="font-semibold">Our Partners</h4>
-              <div className="flex flex-col text-[11px] text-[#6B7280] mt-2">
-                <div className="flex items-center gap-x-4 mt-2">
-                  <Image
-                    src="/noun-logo.png"
-                    alt="Visa"
-                    width={75}
-                    height={12}
-                  />
-                  <span>National Open University Of Nigeria (NOUN)</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Item 7 */}
-            <div className="w-full">
-              <h4 className="font-semibold">Our Offices</h4>
-              <div className="flex flex-col text-sm text-[#111827] mt-3">
-                <ul>
-                  <li className="mb-3 flex items-center gap-x-3">
-                    <span>
-                      <i className="fal fa-map-marker-alt text-black text-2xl" />
-                    </span>
-                    85 Challenger Road, Ridgefield Park, America NJ07660,
-                    Espargos, SAL, Cape Verde Island
-                  </li>
-                  <li className="my-3 flex items-center gap-x-3">
-                    <span>
-                      <i className="fal fa-map-marker-alt text-black text-2xl" />
-                    </span>
-                    101 Stress Bredford, London, United Kingdom
-                  </li>
-                  <li className="flex items-center gap-x-3">
-                    <span>
-                      <i className="fal fa-map-marker-alt text-black text-2xl" />
-                    </span>
-                    Admiralty Way, Ebaeno Supermarket, Lekki Phase 1, Lagos,
-                    Nigeria.
-                  </li>
-                </ul>
               </div>
             </div>
           </div>
-          <hr className="my-8 bg-gray-900" />
-          <div className="text-center text-[13px] text-[#6B7280] flex flex-col md:flex-row items-center justify-between">
-            <div className="text-center md:text-left">
-              <span>Copyright 2025 © CartRoyal. All rights reserved.</span>
-              <div className="flex items-center gap-x-2 mt-4">
-                <Image src={"/visa.svg"} width={36} height={12} alt="Visa" />
+
+          <hr className="my-10 bg-gray-900" />
+
+          {/* Main Footer Content */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Column 1: Cart Royal */}
+            <div>
+              <div className="flex items-center mb-6">
                 <Image
-                  src={"/mastercard.svg"}
+                  src="/logo.png"
+                  alt="Cart Royal"
+                  width={40}
+                  height={40}
+                  className="mr-2"
+                />
+                <h3 className="text-xl font-bold">Cart Royal</h3>
+              </div>
+              <p className="mb-6">
+                Made with love by our team to provide you with the best shopping
+                experience.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <Image
+                  src="/visa.svg"
+                  width={36}
+                  height={12}
+                  alt="Visa"
+                  className="h-8 w-auto"
+                />
+                <Image
+                  src="/mastercard.svg"
                   width={24}
                   height={15}
                   alt="MasterCard"
+                  className="h-8 w-auto"
                 />
                 <Image
-                  src={"/paystack.png"}
+                  src="/paystack.png"
                   width={75}
                   height={15}
                   alt="Paystack"
+                  className="h-8 w-auto"
                 />
                 <Image
-                  src={"/flutterwave.png"}
+                  src="/flutterwave.png"
                   width={120}
                   height={15}
                   alt="Flutterwave"
+                  className="h-8 w-auto"
                 />
-                <Image src={"/usdt.png"} width={25} height={15} alt="USDT" />
-                <Image src={"/eth.png"} width={15} height={15} alt="Ethereum" />
-                <Image src={"/bnb.svg"} width={25} height={15} alt="BNB" />
               </div>
             </div>
 
-            <div className="flex items-center mt-4 md:mt-7">
-              <span className="ml-2 underline underline-offset-4">
+            {/* Column 2: Shop & Services */}
+            <div>
+              <h3 className="text-lg font-bold mb-6">Shop & Services</h3>
+              <ul className="space-y-3">
+                <li>
+                  <Link
+                    href="/category/men"
+                    className="hover:text-primary transition-colors"
+                  >
+                    Men's Fashion
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/category/women"
+                    className="hover:text-primary transition-colors"
+                  >
+                    Women's Fashion
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/category/electronics"
+                    className="hover:text-primary transition-colors"
+                  >
+                    Electronics
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/category/home"
+                    className="hover:text-primary transition-colors"
+                  >
+                    Home & Garden
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/category/kids"
+                    className="hover:text-primary transition-colors"
+                  >
+                    Kids & Baby
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/stores"
+                    className="hover:text-primary transition-colors"
+                  >
+                    Official Stores
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/gift-card"
+                    className="hover:text-primary transition-colors"
+                  >
+                    Gift Cards
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            {/* Column 3: Help & Support */}
+            <div>
+              <h3 className="text-lg font-bold mb-6">Help & Support</h3>
+              <ul className="space-y-3">
+                <li>
+                  <Link
+                    href="/info/terms"
+                    className="hover:text-primary transition-colors"
+                  >
+                    Terms & Conditions
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/info/privacy"
+                    className="hover:text-primary transition-colors"
+                  >
+                    Privacy Policy
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/purchases"
+                    className="hover:text-primary transition-colors"
+                  >
+                    Order Tracking
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/returns"
+                    className="hover:text-primary transition-colors"
+                  >
+                    Returns & Replacements
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/shipping"
+                    className="hover:text-primary transition-colors"
+                  >
+                    Shipping Rates & Policies
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/help"
+                    className="hover:text-primary transition-colors"
+                  >
+                    Help Center
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/contact"
+                    className="hover:text-primary transition-colors"
+                  >
+                    Contact Us
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            {/* Column 4: For Sellers */}
+            <div>
+              <h3 className="text-lg font-bold mb-6">For Sellers</h3>
+              <ul className="space-y-3">
+                <li>
+                  <Link
+                    href="/sell"
+                    className="hover:text-primary transition-colors"
+                  >
+                    Sell on CartRoyal
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/affiliate"
+                    className="hover:text-primary transition-colors"
+                  >
+                    Become an Affiliate
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/advertise"
+                    className="hover:text-primary transition-colors"
+                  >
+                    Advertise Your Products
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/vendor"
+                    className="hover:text-primary transition-colors"
+                  >
+                    Become a CartRoyal Vendor
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/seller-center"
+                    className="hover:text-primary transition-colors"
+                  >
+                    Seller Center
+                  </Link>
+                </li>
+              </ul>
+
+              <div className="mt-8">
+                <h3 className="text-lg font-bold mb-4">Download our app</h3>
+                <div className="flex flex-col sm:flex-row gap-3">
+                  <Link href="#">
+                    <Image
+                      src="/google-play.png"
+                      alt="Play Store"
+                      width={150}
+                      height={38}
+                      className="h-10 w-auto"
+                    />
+                  </Link>
+                  <Link href="#">
+                    <Image
+                      src="/apple-store.png"
+                      alt="Apple Store"
+                      width={150}
+                      height={38}
+                      className="h-10 w-auto"
+                    />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Social Media Icons */}
+          <div className="">
+            <div className="w-full flex justify-center gap-3 mt-6">
+              <a
+                href="#"
+                className="w-10 h-10 rounded-full border border-gray-600 flex items-center justify-center hover:bg-gray-700 transition-colors"
+                aria-label="TikTok"
+              >
+                <i className="fab fa-tiktok"></i>
+              </a>
+              <a
+                href="#"
+                className="w-10 h-10 rounded-full border border-gray-600 flex items-center justify-center hover:bg-gray-700 transition-colors"
+                aria-label="Twitter"
+              >
+                <i className="fab fa-x-twitter"></i>
+              </a>
+              <a
+                href="#"
+                className="w-10 h-10 rounded-full border border-gray-600 flex items-center justify-center hover:bg-gray-700 transition-colors"
+                aria-label="Facebook"
+              >
+                <i className="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="#"
+                className="w-10 h-10 rounded-full border border-gray-600 flex items-center justify-center hover:bg-gray-700 transition-colors"
+                aria-label="LinkedIn"
+              >
+                <i className="fab fa-linkedin-in"></i>
+              </a>
+              <a
+                href="#"
+                className="w-10 h-10 rounded-full border border-gray-600 flex items-center justify-center hover:bg-gray-700 transition-colors"
+                aria-label="YouTube"
+              >
+                <i className="fab fa-youtube"></i>
+              </a>
+              <a
+                href="#"
+                className="w-10 h-10 rounded-full border border-gray-600 flex items-center justify-center hover:bg-gray-700 transition-colors"
+                aria-label="Instagram"
+              >
+                <i className="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+
+          {/* Free Tools Section */}
+          <div className="mt-5">
+            <h3 className="text-lg font-bold mb-6">Our Offices</h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="flex items-start">
+                <i className="fal fa-map-marker-alt text-primary text-xl mr-3 mt-1"></i>
+                <p className="">
+                  85 Challenger Road, Ridgefield Park, America NJ07660,
+                  Espargos, SAL, Cape Verde Island
+                </p>
+              </div>
+              <div className="flex items-start">
+                <i className="fal fa-map-marker-alt text-primary text-xl mr-3 mt-1"></i>
+                <p className="">101 Stress Bredford, London, United Kingdom</p>
+              </div>
+              <div className="flex items-start">
+                <i className="fal fa-map-marker-alt text-primary text-xl mr-3 mt-1"></i>
+                <p className="">
+                  Admiralty Way, Ebaeno Supermarket, Lekki Phase 1, Lagos,
+                  Nigeria.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <hr className="my-10 bg-gray-900" />
+
+          {/* Footer Bottom */}
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <p className="text-sm mb-4 md:mb-0">
+              © 2023 - {new Date().getFullYear()} Cart Royal. All rights
+              reserved.
+            </p>
+            <div className="flex flex-wrap gap-6">
+              <Link
+                href="/info/terms"
+                className="hover:text-primary text-sm transition-colors"
+              >
                 Terms and Conditions
-              </span>
-              <span className="ml-2 underline underline-offset-4">
+              </Link>
+              <Link
+                href="/info/privacy"
+                className="hover:text-primary text-sm transition-colors"
+              >
                 Privacy Policy
-              </span>
-              <span className="ml-2 underline underline-offset-4">
+              </Link>
+              <Link
+                href="/purchases"
+                className="hover:text-primary text-sm transition-colors"
+              >
                 Order Tracking
-              </span>
+              </Link>
             </div>
           </div>
         </div>
