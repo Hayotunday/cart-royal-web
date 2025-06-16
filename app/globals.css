@@ -127,6 +127,15 @@
   }
 }
 
+@keyframes scroll-ltr {
+  0% {
+    transform: translateX(-100%); /* Start off-screen to the right */
+  }
+  100% {
+    transform: translateX(100%); /* End off-screen to the left */
+  }
+}
+
 /* Styles for the slider thumb */
 .slider .thumb {
   height: 20px;
@@ -140,4 +149,10 @@
 /* Styles for the slider active state */
 .slider .thumb.active {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.marquee-text-ltr {
+  display: inline-block; /* Allows transform and respects white-space: nowrap */
+  white-space: nowrap; /* Prevents the text from wrapping */
+  animation: scroll-ltr 15s linear infinite; /* Adjust 15s duration as needed */
 }
