@@ -152,7 +152,8 @@
 }
 
 .marquee-text-ltr {
+  width: 100%;
   display: inline-block; /* Allows transform and respects white-space: nowrap */
   white-space: nowrap; /* Prevents the text from wrapping */
-  animation: scroll-ltr 15s linear infinite; /* Adjust 15s duration as needed */
+  animation: scroll-ltr 45s linear infinite; /* Adjust 15s duration as needed */
 }

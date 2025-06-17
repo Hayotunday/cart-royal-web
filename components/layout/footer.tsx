@@ -74,11 +74,10 @@ const Footer = () => {
                 <Image
                   src="/logo.png"
                   alt="Cart Royal"
-                  width={40}
-                  height={40}
+                  width={150}
+                  height={150}
                   className="mr-2"
                 />
-                <h3 className="text-xl font-bold">Cart Royal</h3>
               </div>
               <p className="mb-6">
                 Made with love by our team to provide you with the best shopping

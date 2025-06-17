@@ -5,7 +5,7 @@ const AdBar = () => {
   return (
     <div className="w-full h-fit flex flex-row justify-end gap-5 items-center bg-gray-300 py-1 px-6">
       {/* Container for the scrolling text. It needs to clip its content and take available space. */}
-      <div className="flex-grow overflow-hidden">
+      <div className="w-full flex-grow overflow-hidden">
         <span className="marquee-text-ltr text-gray-700 text-sm">
           Advertisement
         </span>

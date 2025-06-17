@@ -4,7 +4,6 @@ import React from "react";
 import Link from "next/link";
 import { categories } from "@/lib/constants";
 import { FaBars } from "react-icons/fa6";
-import { Button } from "../ui/button";
 
 const CategoryNav = ({ onClick }: { onClick?: () => void }) => {
   return (
