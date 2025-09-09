@@ -10,7 +10,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "CartRoyal",
-  description: "",
+  description: "Africa Global E-Commerce. Shopping like a King",
 };
 
 export default function RootLayout({
