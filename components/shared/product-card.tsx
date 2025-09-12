@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -27,7 +29,7 @@ const ProductCard = ({
 }: ProductCardProps) => {
   return (
     <Link href={`/products/${id}`}>
-      <div className="group flex flex-col w-60 h-80 rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-all">
+      <div className="group flex flex-col max-w-60 h-80 rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-all">
         <div className="relative aspect-square overflow-hidden rounded-t-lg">
           {/* Product image */}
           <div className="relative h-full w-full">
@@ -82,7 +84,7 @@ const ProductCard = ({
             </div>
           )}
 
-          <div className="flex flex-row w-full justify-between items-center">
+          <div className="flex flex-col md:flex-row w-full justify-start md:justify-between items-end md:items-center">
             {/* Price in Naira */}
             <div className="text-lg font-semibold">
               ₦{price.toLocaleString()}
@@ -91,7 +93,7 @@ const ProductCard = ({
             {/* Free shipping tag */}
             {freeShipping && (
               <div className="">
-                <span className="text-xs px-2 py-0.5 bg-green-100 text-green-800 rounded-full">
+                <span className="text-xs px-2 py-0.5 bg-green-100 text-green-800 rounded-full text-right flex-wrap">
                   Free Shipping
                 </span>
               </div>
@@ -100,7 +102,13 @@ const ProductCard = ({
 
           <div className="w-full h-fit my-0.5">
             {/* Placeholder for additional actions or buttons */}
-            <Button className="w-full h-8 py-1 border border-purple-500 bg-white text-purple-500 rounded-full hover:bg-purple-500 hover:text-white transition-colors">
+            <Button
+              onClick={(e) => {
+                e.preventDefault();
+                console.log(`Add product ${id} to cart`);
+              }}
+              className="w-full h-8 py-1 border border-purple-500 bg-white text-purple-500 rounded-full hover:bg-purple-500 hover:text-white transition-colors"
+            >
               Add to Cart
             </Button>
           </div>

@@ -165,30 +165,32 @@ export default function Profile() {
       <CategoryNav />
 
       <div className="container px-4 py-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 xl:grid-cols-4 gap-6">
           {/* Profile Sidebar */}
           <div className="md:col-span-1">
-            <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
-              <div className="p-6 flex flex-col items-center text-center">
-                <div className="w-24 h-24 rounded-full overflow-hidden mb-4">
-                  <img
-                    src={userData.profileImage || "/catalogue/img.jpg"}
-                    alt={userData.name}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+            <div className="bg-white w-full rounded-lg shadow-sm border border-gray-200 overflow-hidden">
+              <div className="w-full p-6 flex-col md:flex-row xl:flex-col justify-center items-center text-center">
+                <div className="w-full flex flex-col items-center text-center">
+                  <div className="w-24 h-24 rounded-full overflow-hidden mb-4">
+                    <img
+                      src={userData.profileImage || "/catalogue/img.jpg"}
+                      alt={userData.name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
 
-                <h2 className="text-xl font-bold">{userData.name}</h2>
-                <p className="text-gray-600 text-sm mb-4">
-                  Member since {userData.joinDate}
-                </p>
+                  <h2 className="text-xl font-bold">{userData.name}</h2>
+                  <p className="text-gray-600 text-sm mb-4">
+                    Member since {userData.joinDate}
+                  </p>
 
-                <div className="w-full border-t border-gray-200 pt-4 mt-2">
-                  <div className="flex justify-between items-center mb-2">
-                    <span className="text-gray-600">Cart Royal Points</span>
-                    <span className="font-semibold text-primary">
-                      {userData.points.toLocaleString()}
-                    </span>
+                  <div className="w-full border-t border-gray-200 pt-4 mt-2">
+                    <div className="flex justify-between items-center mb-2">
+                      <span className="text-gray-600">Cart Royal Points</span>
+                      <span className="font-semibold text-primary">
+                        {userData.points.toLocaleString()}
+                      </span>
+                    </div>
                   </div>
                 </div>
 
@@ -219,43 +221,45 @@ export default function Profile() {
                 onValueChange={setActiveTab}
                 className="w-full"
               >
-                <TabsList className="flex w-full">
-                  <TabsTrigger
-                    value="overview"
-                    className="px-4 rounded-md flex items-center justify-center"
-                  >
-                    Overview
-                  </TabsTrigger>
-                  <TabsTrigger
-                    value="followed-stores"
-                    className="px-4 rounded-md flex items-center justify-center"
-                  >
-                    Followed Stores
-                  </TabsTrigger>
-                  <TabsTrigger
-                    value="notifications"
-                    className="px-4 rounded-md flex items-center justify-center"
-                  >
-                    Notifications
-                    {unreadCount > 0 && (
-                      <span className="ml-2 bg-primary text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
-                        {unreadCount}
-                      </span>
-                    )}
-                  </TabsTrigger>
-                  <TabsTrigger
-                    value="wishlist"
-                    className="px-4 rounded-md flex items-center justify-center"
-                  >
-                    Wishlist
-                  </TabsTrigger>
-                  <TabsTrigger
-                    value="point-history"
-                    className="px-4 rounded-md flex items-center justify-center"
-                  >
-                    Point History
-                  </TabsTrigger>
-                </TabsList>
+                <div className="overflow-x-auto border-b border-gray-200">
+                  <TabsList className="flex w-max md:w-full px-4">
+                    <TabsTrigger
+                      value="overview"
+                      className="px-4 py-2.5 whitespace-nowrap"
+                    >
+                      Overview
+                    </TabsTrigger>
+                    <TabsTrigger
+                      value="followed-stores"
+                      className="px-4 py-2.5 whitespace-nowrap"
+                    >
+                      Followed Stores
+                    </TabsTrigger>
+                    <TabsTrigger
+                      value="notifications"
+                      className="px-4 py-2.5 whitespace-nowrap"
+                    >
+                      Notifications
+                      {unreadCount > 0 && (
+                        <span className="ml-2 bg-primary text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
+                          {unreadCount}
+                        </span>
+                      )}
+                    </TabsTrigger>
+                    <TabsTrigger
+                      value="wishlist"
+                      className="px-4 py-2.5 whitespace-nowrap"
+                    >
+                      Wishlist
+                    </TabsTrigger>
+                    <TabsTrigger
+                      value="point-history"
+                      className="px-4 py-2.5 whitespace-nowrap"
+                    >
+                      Point History
+                    </TabsTrigger>
+                  </TabsList>
+                </div>
 
                 {/* Overview Tab */}
                 <TabsContent

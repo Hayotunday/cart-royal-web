@@ -67,7 +67,7 @@ const Footer = () => {
           <hr className="my-10 bg-gray-900" />
 
           {/* Main Footer Content */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center md:left">
             {/* Column 1: Cart Royal */}
             <div>
               <div className="flex items-center mb-6">

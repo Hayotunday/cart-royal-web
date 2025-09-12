@@ -2,6 +2,15 @@
 
 import React from "react";
 import { Input } from "@/components/ui/input";
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "../ui/sheet";
+import { MdFilterAlt } from "react-icons/md";
 
 interface FilterOption {
   [key: string]: string[];
@@ -96,8 +105,141 @@ const FilterSidebar: React.FC<FilterSidebarProps> = ({
   );
 
   return (
-    <div className="w-full md:w-64 flex-shrink-0">
-      <div className="bg-white rounded-lg border p-4">
+    <div className="w-full md:w-56 xl:w-64 flex-shrink-0">
+      <div className="md:hidden mb-4">
+        <Sheet>
+          <SheetTrigger asChild>
+            <div className="relative flex flex-row items-center gap-2 px-4 py-2 border rounded-md bg-white cursor-pointer w-fit">
+              <MdFilterAlt className="text-lg" />
+              Filter Products
+            </div>
+          </SheetTrigger>
+          <SheetContent className="w-[300px] sm:w-[400px] p-3 md:hidden">
+            <SheetHeader>
+              <SheetTitle>Products Filter</SheetTitle>
+              <SheetDescription className="invisible">
+                Filter Products
+              </SheetDescription>
+            </SheetHeader>
+            <div className="bg-white rounded-lg border p-4 overflow-scroll">
+              {renderFilterSection("Type", "type", filterOptions.type)}
+              {renderFilterSection("Brand", "brand", filterOptions.brand)}
+              {renderFilterSection("Color", "color", filterOptions.color)}
+
+              {/* Price Filter */}
+              <div className="border-b pb-4 mb-4">
+                <button
+                  className="flex justify-between items-center w-full font-medium"
+                  onClick={() => onToggleFilterSection("price")}
+                >
+                  Price
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className={`transition-transform ${
+                      expandedFilters.price ? "rotate-180" : ""
+                    }`}
+                  >
+                    <polyline points="6 9 12 15 18 9" />
+                  </svg>
+                </button>
+
+                {expandedFilters.price && (
+                  <div className="mt-2 space-y-2">
+                    <div className="flex items-center gap-2">
+                      <Input
+                        type="number"
+                        placeholder="Min"
+                        value={filters.priceRange.min ?? ""}
+                        onChange={(e) => onPriceChange("min", e.target.value)}
+                        className="w-full"
+                      />
+                      <span>-</span>
+                      <Input
+                        type="number"
+                        placeholder="Max"
+                        value={filters.priceRange.max ?? ""}
+                        onChange={(e) => onPriceChange("max", e.target.value)}
+                        className="w-full"
+                      />
+                    </div>
+                  </div>
+                )}
+              </div>
+
+              {renderFilterSection("Size", "size", filterOptions.size)}
+              {renderFilterSection(
+                "Shipping",
+                "shipping",
+                filterOptions.shipping
+              )}
+              {renderFilterSection(
+                "Product Rating",
+                "rating",
+                filterOptions.rating
+              )}
+
+              {/* Seller Filter - Note: The title was "Official Stores" but filterKey is "seller" */}
+              <div className="border-b pb-4 mb-4 last:border-b-0 last:pb-0 last:mb-0">
+                <button
+                  className="flex justify-between items-center w-full font-medium"
+                  onClick={() => onToggleFilterSection("seller")}
+                >
+                  Official Stores{" "}
+                  {/* Title can be more generic if options change */}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className={`transition-transform ${
+                      expandedFilters.seller ? "rotate-180" : ""
+                    }`}
+                  >
+                    <polyline points="6 9 12 15 18 9" />
+                  </svg>
+                </button>
+
+                {expandedFilters.seller && (
+                  <div className="mt-2 space-y-1">
+                    {filterOptions.seller.map((option) => (
+                      <div key={option} className="flex items-center">
+                        <input
+                          type="checkbox"
+                          id={`seller-${option}`}
+                          className="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
+                          checked={filters.seller.includes(option)}
+                          onChange={() => onFilterChange("seller", option)}
+                        />
+                        <label
+                          htmlFor={`seller-${option}`}
+                          className="ml-2 text-sm text-gray-700"
+                        >
+                          {option}
+                        </label>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            </div>
+          </SheetContent>
+        </Sheet>
+      </div>
+
+      <div className="bg-white rounded-lg border p-4 hidden md:block">
         {renderFilterSection("Type", "type", filterOptions.type)}
         {renderFilterSection("Brand", "brand", filterOptions.brand)}
         {renderFilterSection("Color", "color", filterOptions.color)}

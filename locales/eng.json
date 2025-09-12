@@ -119,5 +119,63 @@
       "minUsername": "Username must be at least 3 characters",
       "cpasswordRequired": "Confirm password is required"
     }
+  },
+  "components": {
+    "adbar": {
+      "advertisment": "Advertisement",
+      "signin": "Sign In",
+      "signup": "Sign Up",
+      "becomeSeller": "Become a Seller"
+    },
+    "categorybar": {
+      "allCategories": "All Categories",
+      "electronics": "Electronics",
+      "fashion": "Fashion",
+      "homeAndGarden": "Home & Garden",
+      "sports": "Sports",
+      "toys": "Toys",
+      "automotive": "Automotive",
+      "books": "Books",
+      "moreCategories": "More Categories"
+    },
+    "header":{
+  
+    },
+    "searchbar": {
+      "placeholder": "Search products, brands, and categories..."
+    },
+    "cartsheet": {
+      "yourCart": "Your Cart",
+      "emptyCart": "Your cart is empty",
+      "clearCart": "Clear Cart",
+      "viewCart": "View Cart",
+      "checkout": "Checkout",
+      "total": "Total"
+    },
+    "profilehandler": {
+      "giftCard": "Gift Card",
+      "yourProfile": "Profile",
+      "wishlist": "Wishlist",
+      "purchases": "Purchases",
+      "settings": "Settings",
+      "logout": "Log out",
+      "login": "Log in"
+    },
+    "footer": {
+      "company": "Company",
+      "aboutUs": "About Us",
+      "careers": "Careers",
+      "press": "Press",
+      "blog": "Blog",
+      "support": "Support",
+      "helpCenter": "Help Center",
+      "safetyCenter": "Safety Center",
+      "communityGuidelines": "Community Guidelines",
+      "legal": "Legal",
+      "cookiesPolicy": "Cookies Policy",
+      "privacyPolicy": "Privacy Policy",
+      "termsOfService": "Terms of Service",
+      "lawEnforcement": "Law Enforcement"
+    }
   }
 }

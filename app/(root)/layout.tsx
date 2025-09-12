@@ -13,7 +13,7 @@ export default function HomeLayout({
 }>) {
   return (
     <>
-      <main>{children}</main>
+      <main className="w-screen">{children}</main>
       <Toaster />
     </>
   );

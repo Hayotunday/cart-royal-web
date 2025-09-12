@@ -10,7 +10,8 @@ import {
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { BiSolidPurchaseTag } from "react-icons/bi";
 import { IoPersonCircleSharp } from "react-icons/io5";
-import { MdCardGiftcard, MdLogout, MdPerson, MdSettings } from "react-icons/md";
+import { MdFavorite, MdLogout, MdPerson, MdSettings } from "react-icons/md";
+import { TbGiftCardFilled } from "react-icons/tb";
 import { TbJewishStarFilled } from "react-icons/tb";
 
 const ProfileAvatar = () => {
@@ -44,8 +45,17 @@ const ProfileHandler = () => {
                   href="/gift-card"
                   className="flex flex-row items-center gap-2 w-full"
                 >
-                  <MdCardGiftcard className="text-lg" />
+                  <TbGiftCardFilled className="text-lg" />
                   <p className="text-center font-semibold">Gift Card</p>
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link
+                  href="/favorites"
+                  className="flex flex-row items-center gap-2 w-full"
+                >
+                  <MdFavorite className="text-lg" />
+                  <p className="text-center font-semibold">Favorites</p>
                 </Link>
               </DropdownMenuItem>
               <DropdownMenuItem>

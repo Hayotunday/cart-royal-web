@@ -4,6 +4,7 @@ import { LanguageDropdown } from "@/components/ui/language-dropdown";
 import {
   Sheet,
   SheetContent,
+  SheetDescription,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
@@ -44,6 +45,9 @@ const SelectLanguages = () => {
       <SheetContent className="pt-2 px-6">
         <SheetHeader>
           <SheetTitle>Change language</SheetTitle>
+          <SheetDescription className="invisible">
+            Change Language
+          </SheetDescription>
         </SheetHeader>
 
         <div className="mt-6">

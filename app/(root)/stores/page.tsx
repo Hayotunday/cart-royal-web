@@ -2,7 +2,7 @@
 import React from "react";
 import Header from "@/components/layout/header";
 import CategoryNav from "@/components/layout/category-nav";
-import StoresClientPage from "@/components/features/StoresClientPage";
+import StoresClientPage from "@/components/pages/StoresClientPage";
 import {
   fetchData,
   sampleStores,

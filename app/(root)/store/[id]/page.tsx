@@ -168,7 +168,7 @@ export default function StoreDetails() {
   };
 
   return (
-    <main className="min-h-screen flex flex-col w-full items-center">
+    <main className="min-h-screen max-w-screen flex flex-col w-full items-center">
       <Header />
       <CategoryNav />
 
@@ -335,7 +335,7 @@ export default function StoreDetails() {
               </div>
 
               {filteredProducts.length > 0 ? (
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 w-full">
                   {filteredProducts.map((product) => (
                     <ProductCard
                       key={product.id}

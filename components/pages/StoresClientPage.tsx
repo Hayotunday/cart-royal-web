@@ -3,7 +3,7 @@
 import React, { useState, useMemo } from "react";
 import StoreCard from "@/components/shared/store-card";
 import StoreFilters from "@/components/shared/store-filters";
-import NoStoresFound from "@/components/features/NoStoresFound";
+import NoStoresFound from "@/components/pages/NoStoresFound";
 import { Store } from "@/data/index";
 
 export type StoreSortOption = "name" | "rating" | "products";

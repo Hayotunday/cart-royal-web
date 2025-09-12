@@ -23,7 +23,7 @@ export default function RootLayout({
       <head>
         <link rel="stylesheet" href="/css/all.min.css" />
       </head>
-      <body className="antialiased scroll-smooth">
+      <body className="antialiased scroll-smooth w-screen">
         <Providers>{children}</Providers>
         <Toaster />
       </body>

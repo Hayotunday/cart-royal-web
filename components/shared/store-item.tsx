@@ -12,7 +12,7 @@ const StoreItems = ({ title, img }: StoreCardProps) => {
 
   return (
     <Link href={`/store/${title}`} className="group cursor-pointer block">
-      <div className="relative my-1 w-[200px] h-[125px] overflow-hidden rounded-md shadow-lg">
+      <div className="relative my-1 h-[125px] overflow-hidden rounded-md shadow-lg">
         <img
           src={imageUrl}
           alt={`${title} store`}
@@ -30,3 +30,5 @@ const StoreItems = ({ title, img }: StoreCardProps) => {
 };
 
 export default StoreItems;
+
+// w-[200px] h-[125px]

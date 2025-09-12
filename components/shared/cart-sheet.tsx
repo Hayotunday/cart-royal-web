@@ -3,6 +3,7 @@ import Link from "next/link";
 import {
   Sheet,
   SheetContent,
+  SheetDescription,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
@@ -29,6 +30,7 @@ const CartSheet = () => {
         <SheetContent className="w-[300px] sm:w-[400px] p-3">
           <SheetHeader>
             <SheetTitle>Your Cart</SheetTitle>
+            <SheetDescription className="invisible">Cart</SheetDescription>
           </SheetHeader>
           <div className="py-4">
             <div className="flex flex-col space-y-4">

@@ -2,7 +2,7 @@
 
 import React from "react";
 import { Input } from "@/components/ui/input";
-import { StoreSortOption } from "@/components/features/StoresClientPage"; // Define this type in StoresClientPage
+import { StoreSortOption } from "@/components/pages/StoresClientPage"; // Define this type in StoresClientPage
 
 interface StoreFiltersProps {
   searchTerm: string;

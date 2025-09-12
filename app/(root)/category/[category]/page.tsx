@@ -296,7 +296,7 @@ export default function Products() {
   };
 
   return (
-    <main className="min-h-screen flex flex-col w-full items-center">
+    <main className="min-h-screen flex flex-col w-full items-center p-4">
       <Header />
       <CategoryNav />
 
@@ -318,7 +318,7 @@ export default function Products() {
 
           {/* Products Grid */}
           <div className="flex-1 w-full flex flex-col items-center">
-            <div className="w-full flex justify-between items-center mb-4">
+            <div className="w-full flex justify-between items-center mb-4 px-4">
               <p className="text-gray-600">
                 {filteredProducts.length} products found
               </p>
@@ -327,7 +327,7 @@ export default function Products() {
               </Button>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+            <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
               {filteredProducts.map((product) => (
                 <ProductCard
                   key={product.id}

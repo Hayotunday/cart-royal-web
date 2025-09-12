@@ -19,8 +19,8 @@ const HomeBackground = () => {
   };
 
   return (
-    <div className="w-full h-full flex relative overflow-hidden">
-      <div className="min-w-full min-h-full bg-primary-red relative flex flex-col justify-around items-">
+    <div className="w-full md:h-full flex relative overflow-hidden">
+      <div className="min-w-full min-h-full py-10 bg-primary-red relative flex flex-col justify-around">
         <Image
           src="/gradient-mask.png"
           alt="Gradient Mask Image"
@@ -28,10 +28,12 @@ const HomeBackground = () => {
           height={1000}
           className="absolute -right-1/3 top-5 z-10"
         />
-        <div className="justify-between items-center px-20 mt-24 flex z-20">
-          <div className="flex flex-col justify-center items-start text-white w-1/2">
-            <h1 className="py-1 text-6xl font-extrabold">Buy and Sell</h1>
-            <p className="text-white text-sm mt-10">
+        <div className="flex flex-col md:flex-row justify-center md:justify-between items-center md:px-20 mt-24 z-20">
+          <div className="flex flex-col justify-center items-center md:items-start text-white w-1/2">
+            <h1 className="py-1 text-5xl md:text-6xl font-extrabold text-center md:text-start">
+              Buy and Sell
+            </h1>
+            <p className="text-white text-sm text-center md:text-start mt-10">
               Receive the product as described or get a refund <br />
               posting for sale is completely <b>FREE</b>
             </p>
@@ -45,11 +47,11 @@ const HomeBackground = () => {
             alt="Background Phone Image"
             width={400}
             height={400}
-            className="mt-20"
+            className="mt-20 hidden md:block"
           />
         </div>
 
-        <div className="w-full flex justify-center items-center mb-3">
+        <div className="w-full flex justify-center items-center my-5 md:mb-10 md:mt-0">
           <Button
             onClick={scrollToShop}
             className="bg-white hover:bg-white text-primary-red font-bold py-2 px-4 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105"

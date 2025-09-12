@@ -15,7 +15,7 @@ const StoresList = () => {
             </p>
           </Link>
         </div>
-        <div className="flex flex-row flex-wrap justify-between items-center gap-1">
+        <div className="grid lg:grid-cols-6 md:grid-cols-4 grid-cols-3 w-full h-full flex-wrap justify-between items-center gap-1">
           <StoreItem title="Samsung" />
           <StoreItem title="Adidas" />
           <StoreItem title="Apple" />

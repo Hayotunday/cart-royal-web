@@ -1,5 +1,6 @@
 import React from "react";
 import { Input } from "@/components/ui/input";
+import { MdSearch } from "react-icons/md";
 
 const SearchBar = () => {
   return (
@@ -8,8 +9,10 @@ const SearchBar = () => {
         <Input
           type="search"
           placeholder="Search products, brands, and categories..."
-          className="w-full"
+          className="w-full hidden md:block"
         />
+
+        <MdSearch className="text-3xl text-gray-700 cursor-pointer md:hidden" />
       </div>
     </div>
   );

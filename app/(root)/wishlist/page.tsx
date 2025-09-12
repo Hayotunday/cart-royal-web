@@ -157,7 +157,7 @@ export default function Wishlist() {
 
   return (
     <main className="min-h-screen flex flex-col items-center w-full">
-      <Header viewOnly />
+      <Header />
 
       <div className="container px-4 py-8 w-full">
         <h1 className="text-2xl font-bold mb-6">Wishlist Special Requests</h1>

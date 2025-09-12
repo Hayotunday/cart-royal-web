@@ -16,9 +16,8 @@ const StoreCard: React.FC<StoreCardProps> = ({ store }) => {
             <Image
               src={store.logo || "/catalogue/img.jpg"}
               alt={`${store.name} logo`}
-              layout="fill"
-              objectFit="cover"
-              className="transform group-hover:scale-110 transition-transform duration-300"
+              fill
+              className="transform group-hover:scale-110 transition-transform duration-300 object-cover"
             />
           </div>
           <h3 className="font-semibold text-lg mb-1">{store.name}</h3>

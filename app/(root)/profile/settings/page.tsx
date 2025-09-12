@@ -162,68 +162,69 @@ export default function SettingsPage() {
       <div className="container px-4 py-8 w-full">
         <h1 className="text-2xl font-bold mb-6">Settings</h1>
 
-        <div className="w-full gap-6 flex items-center">
-          {/* Sidebar Navigation */}
-          <div className=" w-full">
-            <div className="bg-white rounded-lg overflow-hidden">
-              <Tabs
-                defaultValue="account"
-                className="w-full flex flex-row"
-                orientation="vertical"
-                value={activeTab}
-                onValueChange={setActiveTab}
-              >
-                <TabsList className="flex flex-col items-start p-0 bg-transparent h-full">
+        <div className="w-full">
+          <div className="bg-white rounded-lg overflow-hidden">
+            <Tabs
+              defaultValue="account"
+              className="w-full flex flex-col md:flex-row"
+              orientation="vertical"
+              value={activeTab}
+              onValueChange={setActiveTab}
+            >
+              <div className="md:w-1/4 border-b md:border-b-0 md:border-r border-gray-200">
+                <TabsList className="flex flex-row md:flex-col justify-start items-start p-2 md:p-4 bg-transparent h-full w-full overflow-x-auto md:overflow-x-visible">
                   <TabsTrigger
                     value="account"
-                    className="w-full justify-start px-4 py-3 data-[state=active]:bg-gray-100 rounded-md"
+                    className="max-h-16 w-full justify-start px-4 py-3 data-[state=active]:bg-gray-100 rounded-md whitespace-nowrap"
                   >
                     Account Management
                   </TabsTrigger>
                   <TabsTrigger
                     value="payment"
-                    className="w-full justify-start px-4 py-3 data-[state=active]:bg-gray-100 rounded-md"
+                    className="max-h-16 w-full justify-start px-4 py-3 data-[state=active]:bg-gray-100 rounded-md whitespace-nowrap"
                   >
                     Payment Settings
                   </TabsTrigger>
                   <TabsTrigger
                     value="address"
-                    className="w-full justify-start px-4 py-3 data-[state=active]:bg-gray-100 rounded-md"
+                    className="max-h-16 w-full justify-start px-4 py-3 data-[state=active]:bg-gray-100 rounded-md whitespace-nowrap"
                   >
                     Address Book
                   </TabsTrigger>
                   <TabsTrigger
                     value="notifications"
-                    className="w-full justify-start px-4 py-3 data-[state=active]:bg-gray-100 rounded-md"
+                    className="max-h-16 w-full justify-start px-4 py-3 data-[state=active]:bg-gray-100 rounded-md whitespace-nowrap"
                   >
                     Notifications
                   </TabsTrigger>
                   <TabsTrigger
                     value="close"
-                    className="w-full justify-start px-4 py-3 data-[state=active]:bg-gray-100 rounded-md text-red-600"
+                    className="max-h-16 w-full justify-start px-4 py-3 data-[state=active]:bg-red-50 data-[state=active]:text-red-700 rounded-md text-red-600 whitespace-nowrap"
                   >
                     Close Account
                   </TabsTrigger>
                 </TabsList>
+              </div>
 
+              <div className="md:w-3/4">
                 {/* Account Management Tab */}
                 <TabsContent
                   value="account"
-                  className="p-6 focus:outline-none md:ml-4 md:border md:border-gray-200 md:rounded-lg md:shadow-sm"
+                  className="p-6 focus:outline-none mt-0"
                 >
                   <div className="space-y-6">
                     <div>
                       <h2 className="text-xl font-semibold mb-4">
                         Account Management
                       </h2>
-                      <p className="text-gray-600 mb-6">
+                      <p className="text-gray-600 mb-6 text-sm md:text-base">
                         Update your personal information and manage your account
                         settings.
                       </p>
                     </div>
 
-                    <div className="space-y-6">
-                      <div className="bg-white rounded-lg border border-gray-200 overflow-hidden">
+                    <div className="space-y-8">
+                      <div className="rounded-lg border border-gray-200 overflow-hidden">
                         <div className="p-6">
                           <h3 className="text-lg font-medium mb-4">
                             Personal Information
@@ -286,7 +287,7 @@ export default function SettingsPage() {
                         </div>
                       </div>
 
-                      <div className="bg-white rounded-lg border border-gray-200 overflow-hidden">
+                      <div className="rounded-lg border border-gray-200 overflow-hidden">
                         <div className="p-6">
                           <h3 className="text-lg font-medium mb-4">
                             Change Password
@@ -359,19 +360,19 @@ export default function SettingsPage() {
                 {/* Payment Settings Tab */}
                 <TabsContent
                   value="payment"
-                  className="p-6 focus:outline-none md:ml-4 md:border md:border-gray-200 md:rounded-lg md:shadow-sm"
+                  className="p-6 focus:outline-none mt-0"
                 >
                   <div className="space-y-6">
                     <div>
                       <h2 className="text-xl font-semibold mb-4">
                         Payment Settings
                       </h2>
-                      <p className="text-gray-600 mb-6">
+                      <p className="text-gray-600 mb-6 text-sm md:text-base">
                         Manage your payment methods and preferences.
                       </p>
                     </div>
 
-                    <div className="bg-white rounded-lg border border-gray-200 overflow-hidden">
+                    <div className="rounded-lg border border-gray-200 overflow-hidden">
                       <div className="p-6">
                         <div className="flex justify-between items-center mb-4">
                           <h3 className="text-lg font-medium">
@@ -387,7 +388,7 @@ export default function SettingsPage() {
                             {cards.map((card) => (
                               <div
                                 key={card.id}
-                                className="border rounded-lg p-4 hover:shadow-sm transition-shadow"
+                                className="border rounded-lg p-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4"
                               >
                                 <div className="flex items-center justify-between">
                                   <div className="flex items-center">
@@ -404,7 +405,7 @@ export default function SettingsPage() {
                                     </div>
                                   </div>
 
-                                  <div className="flex items-center space-x-2">
+                                  <div className="flex items-center space-x-2 self-end sm:self-center">
                                     {card.isDefault ? (
                                       <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded-full">
                                         Default
@@ -476,19 +477,19 @@ export default function SettingsPage() {
                 {/* Address Book Tab */}
                 <TabsContent
                   value="address"
-                  className="p-6 focus:outline-none md:ml-4 md:border md:border-gray-200 md:rounded-lg md:shadow-sm"
+                  className="p-6 focus:outline-none mt-0"
                 >
                   <div className="space-y-6">
                     <div>
                       <h2 className="text-xl font-semibold mb-4">
                         Address Book
                       </h2>
-                      <p className="text-gray-600 mb-6">
+                      <p className="text-gray-600 mb-6 text-sm md:text-base">
                         Manage your shipping and billing addresses.
                       </p>
                     </div>
 
-                    <div className="bg-white rounded-lg border border-gray-200 overflow-hidden">
+                    <div className="rounded-lg border border-gray-200 overflow-hidden">
                       <div className="p-6">
                         <div className="flex justify-between items-center mb-4">
                           <h3 className="text-lg font-medium">
@@ -504,9 +505,9 @@ export default function SettingsPage() {
                             {addresses.map((address) => (
                               <div
                                 key={address.id}
-                                className="border rounded-lg p-4 hover:shadow-sm transition-shadow"
+                                className="border rounded-lg p-4 flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4"
                               >
-                                <div className="flex flex-col md:flex-row md:items-center justify-between">
+                                <div className="flex flex-col md:flex-row md:items-start justify-between w-full">
                                   <div>
                                     <div className="font-medium">
                                       {address.name}
@@ -527,7 +528,7 @@ export default function SettingsPage() {
                                     </div>
                                   </div>
 
-                                  <div className="mt-4 md:mt-0 flex flex-wrap items-center gap-2">
+                                  <div className="mt-4 sm:mt-0 flex items-center gap-2 self-end sm:self-start flex-shrink-0">
                                     {address.isDefault ? (
                                       <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded-full">
                                         Default
@@ -599,19 +600,19 @@ export default function SettingsPage() {
                 {/* Notifications Tab */}
                 <TabsContent
                   value="notifications"
-                  className="p-6 focus:outline-none md:ml-4 md:border md:border-gray-200 md:rounded-lg md:shadow-sm"
+                  className="p-6 focus:outline-none mt-0"
                 >
                   <div className="space-y-6">
                     <div>
                       <h2 className="text-xl font-semibold mb-4">
                         Notification Settings
                       </h2>
-                      <p className="text-gray-600 mb-6">
+                      <p className="text-gray-600 mb-6 text-sm md:text-base">
                         Manage how you receive notifications from Cart Royal.
                       </p>
                     </div>
 
-                    <div className="bg-white rounded-lg border border-gray-200 overflow-hidden">
+                    <div className="rounded-lg border border-gray-200 overflow-hidden">
                       <div className="p-6">
                         <h3 className="text-lg font-medium mb-4">
                           Email Notifications
@@ -682,7 +683,7 @@ export default function SettingsPage() {
                       </div>
                     </div>
 
-                    <div className="bg-white rounded-lg border border-gray-200 overflow-hidden">
+                    <div className="rounded-lg border border-gray-200 overflow-hidden">
                       <div className="p-6">
                         <h3 className="text-lg font-medium mb-4">
                           Push Notifications
@@ -758,14 +759,14 @@ export default function SettingsPage() {
                 {/* Close Account Tab */}
                 <TabsContent
                   value="close"
-                  className="p-6 focus:outline-none md:ml-4 md:border md:border-gray-200 md:rounded-lg md:shadow-sm"
+                  className="p-6 focus:outline-none mt-0"
                 >
                   <div className="space-y-6">
                     <div>
                       <h2 className="text-xl font-semibold mb-4 text-red-600">
                         Close Account
                       </h2>
-                      <p className="text-gray-600 mb-6">
+                      <p className="text-gray-600 mb-6 text-sm md:text-base">
                         Permanently close your Cart Royal account. This action
                         cannot be undone.
                       </p>
@@ -810,7 +811,7 @@ export default function SettingsPage() {
                       </div>
                     </div>
 
-                    <div className="bg-white rounded-lg border border-gray-200 overflow-hidden">
+                    <div className="rounded-lg border border-gray-200 overflow-hidden">
                       <div className="p-6">
                         <h3 className="text-lg font-medium mb-4">
                           Close Your Account
@@ -883,8 +884,8 @@ export default function SettingsPage() {
                     </div>
                   </div>
                 </TabsContent>
-              </Tabs>
-            </div>
+              </div>
+            </Tabs>
           </div>
         </div>
       </div>
